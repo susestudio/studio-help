@@ -11,4 +11,5 @@ We are here to help you to
 
 software appliances with the software you care about.
 
-You can [contribute](contribute) to this. Your help is very much appreciated.
+You can [contribute](contribute.html) to this. Your help is very much
+appreciated.
