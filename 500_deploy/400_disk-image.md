@@ -180,7 +180,7 @@ line (cmd) and type:
     Virtual output devices
     -           (standard output)
 
-    C:\temp></pre>
+    C:\temp>
 
 * The entry we are looking for is the one that says '''removable media''' which
 is the USB stick you just plugged in. If you're in doubt, try removing it,
