@@ -26,8 +26,9 @@ On some cases you may want to launch konqueror with a specific profile. In order
 4. Change the window size, the menus that are visible, etc.
 5. Save your profile ("Settings" -» "Save View Profile your_profile ...").
 6. Include these files into your appliance (on the overlay section):  
-    `1. /home/tux/.kde/share/apps/konqueror/profiles/your_profile`  
-    `2. /home/tux/.kde/share/config/konquerorrc`  
+    
+       1. /home/tux/.kde/share/apps/konqueror/profiles/your_profile
+       2. /home/tux/.kde/share/config/konquerorrc  
 
 Launch Konqueror with "konqueror --profile your_profile" on your scripts.
 
@@ -35,7 +36,8 @@ Launch Konqueror with "konqueror --profile your_profile" on your scripts.
 ## How to launch an application in fullscreen mode in KDE(3)
 
 You can use that together with the "How to launch a kde application on login " so you have kind of a kiosk.  
-`kstart --fullscreen [--ontop] application application_parameters`
+       
+       kstart --fullscreen [--ontop] application application_parameters
 
 
 ##How to add applications to favorites
@@ -60,7 +62,9 @@ If you want to customize the SUSEgreeter, like the text on it, the icons, etc. e
 ## How to start an empty kde session at every login
 
 * On test drive, open a console and type  
-`kcmshell kcmsmserver`
+
+       kcmshell kcmsmserver
+
 * This will start the session manager. Then, select whether you want kde to remember your session, or start from scratch every time.
 
 Once you've done that, copy the file `/home/tux/.kde/share/config/ksmserverrc` to your overlay section.

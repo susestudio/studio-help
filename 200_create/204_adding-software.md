@@ -90,8 +90,9 @@ Proceed as follows to add an RPM package:
 3. Open a shell, for example press *Alt+F2* and enter `xterm`.
 
 4. Execute the following commands:   
-`cd /tmp/RPMs`  
-`zip myrpms.zip *.rpm`
+
+       cd /tmp/RPMs
+       zip myrpms.zip *.rpm
 
 5. Upload the archive as described in Procedure 2.1, "Uploading an RPM Package" and start with Step 2. After a successful upload, the archive name is shown in the list.
 

@@ -246,8 +246,10 @@ Here is an example on how to achieve that with the gbrainy application :
 
 ## How to add X for JeOS and Server templates
 
-* In order to get X up and running for JeOS and Server based templates you have to add several packages to your appliance:   
-`- xorg-x11-server - xorg-x11-driver-video - xorg-x11-fonts - xorg-x11-driver-input - sax2`
+* In order to get X up and running for JeOS and Server based templates you have to add several packages to your appliance:
+
+       - xorg-x11-server - xorg-x11-driver-video - xorg-x11-fonts - xorg-x11-driver-input - sax2
+       
 * Then go to Configuration tab section and under Startup choose 5:Graphical login.
 * Note: by default you will have IceWM as window manager!
 
