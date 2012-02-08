@@ -1,32 +1,4 @@
-# SUSE Studio API
-
-
-## RESTful API
-
-SUSE Studio features a RESTful API over HTTP which can be used to clone appliances, upload files, trigger and monitor builds and more. See the SUSE [Studio API documentation][studio-api] for more details.
-
-
-## Authentication
-
-In order to use the API you have to create an API key which will be used as the password for HTTP Basic Authentication. This can be done on [the user page within SUSE Studio][studio-api-key].
-
-
-## Libraries & Clients
-
-There are a number of libraries and clients which use the SUSE Studio API:
-
-* [Ruby library][gh-studio-api]
-* [Python library][pysusestudio]
-* [C++ library][qsusestudio]
-* [command line client][studio-cmd]
-* [SUSE Gallery desktop widgets][studio-gallery-widget]
-* [Graphical SUSE Studio client][studiosus]
-* [SUSE Gallery desktop client][sf-susegallery]
-* [Android client][gh-studio_android]
-* [Dister - a Heroku like solution for Studio][gh-dister]
-* [Java library (incomplete, patches welcomed)][gh-susestudio-api-java]
-* [Complete rewrite of the Python library, implementing a few additional features.][gh-susestudio-api-java] Jan 2012 - Fully functional, but still work-in-progress when time is available
-
+# Using the API with curl
 
 ## Using the API with curl
 
@@ -93,12 +65,6 @@ Monitor build progress:
    
 [Example][example-6]
 
-
-## RESTful API
-
-SUSE Studio features a RESTful API over HTTP which can be used to clone appliances, upload files, trigger and monitor builds and more. See the [SUSE Studio API documentation][studio-api] for more details.
-
-
 ## URL Encoding
 
 Not all the characters are allowed into an URL ([http://tools.ietf.org/html/rfc1738][rfc-characters]). This is a problem for example if you try to add the gcc-c++ package into your appliance as "+" is not allowed. So, the following will not work:
@@ -111,27 +77,6 @@ So, in our example, you should :
 
        curl -u  user:secret -XPOST http://susestudio.com/api/v1/user/appliances/263276/cmd/add_package?name=gcc-c%2B%2B
 
-
-
-
-
-
-
-
-[studio-api]: http://susestudio.com/help/api/v1
-[studio-api-key]: http://susestudio.com/user/show_api_key
-
-[gh-studio-api]: https://github.com/jreidinger/studio_api
-[pysusestudio]: http://code.google.com/p/pysusestudio/
-[qsusestudio]: http://qsusestudio.sourceforge.net/
-[studio-cmd]: http://en.opensuse.org/openSUSE:SUSE_Studio_command_line_client
-[studio-gallery-widget]: https://github.com/mess110/suse_gallery_widget
-[studiosus]: http://gitorious.org/suse-studio/studiosus
-[sf-susegallery]: http://susegallery.sourceforge.net/
-[gh-studio_android]: https://github.com/mess110/studio_android
-[gh-dister]: https://github.com/flavio/dister/
-[gh-susestudio-api-java]: https://github.com/jamestyj/susestudio-api-java
-[gh-pysusestudio]: https://github.com/cshorler/PySUSEStudio
 
 [example-1]: http://www.susestudio.com/help/api/v1/template_sets.xml
 [example-2]: http://www.susestudio.com/help/api/v1/appliances.xml
