@@ -1,4 +1,4 @@
-## Xen Howtos
+# Xen Howtos
 
 ## Note to Xen howtos
 
