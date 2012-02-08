@@ -1,13 +1,17 @@
 # Xen Howtos
 
-## Note to Xen howtos
+These howtos are related to Xen DomU appliances built with SUSE Studio. Some if
+not all of these changes can be made automatic by scripting them.
+In order to boot a DomU Xen guest you need to have a running xen hypervisor with
+a priviledged Dom0 xen appliance booted.
+Note that Virtual Machine images built in SUSE Studio do NOT include a Swap
+space. It is a common practice to leave swap management up to the hypervisor.
 
-* These howtos are related to Xen DomU appliances built with SUSE Studio. Some if not all of these changes can be made automatic by scripting them.
-* In order to boot a DomU Xen guest you need to have a running xen hypervisor with a priviledged Dom0 xen appliance booted.
-* Note that Virtual Machine images built in SUSE Studio do NOT include a Swap space. It is a common practice to leave swap management up to the hypervisor.
+* This will become a table of contents (this text will be scraped).
+{:toc}
 
 
-How to start a Xen guest
+## How to start a Xen guest
 
 Every DomU Xen guest comes from studio as a .tar.gz package that needs to be unpacked in order to start the guest. Once unpacked you will find some directory containing two files like this:
 

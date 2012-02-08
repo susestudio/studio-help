@@ -1,7 +1,8 @@
 # How to run appliances on VMware
 
-The downloaded file: '''.vmx.tar.gz'''. After extraction you will see a new
-subdirectory with 2 files: '''.vmdk''' and '''.vmx'''
+The downloaded file has the suffix *.vmx.tar.gz*. After extraction you
+will see a new subdirectory with two files with the suffixes *.vmdk* and
+*.vmx*
 
 ## VMware Player (Linux and Windows)
 

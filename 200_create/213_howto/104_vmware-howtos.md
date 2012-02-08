@@ -1,16 +1,16 @@
 # VMware Howtos
 
-Virtual machines in the VMware format are similar to disk images, but with special information which specifies memory and hard drive sizes. They do not include a swap partition as it is common practice to leave memory management to the hypervisor. The swap setting in SUSE Studio only applies to disk images.  
+Virtual machines in the VMware format are similar to disk images, but with
+special information which specifies memory and hard drive sizes. They do not
+include a swap partition as it is common practice to leave memory management to
+the hypervisor. The swap setting in SUSE Studio only applies to disk images.
 To use these images, simply open the file in VMware, VMware player, or VirtualBox.  
-This set of howtos are specific to VMware machines. They are focused on changing some stuff after the image is built but usually after booting for the first time.  
+This set of howtos are specific to VMware machines. They are focused on changing
+some stuff after the image is built but usually after booting for the first
+time.
 
-
-## Note to VMware howtos
-
-* Virtual machines in the VMware format are similar to disk images, but with special information which specifies memory and hard drive sizes.
-* Note that Virtual Machine images built in SUSE Studio do NOT include a Swap space. It is a common practice to leave swap management up to the hypervisor.
-* To use these images, simply open the file in VMware, VMware player, or VirtualBox.
-* This set of howtos are specific to vmware machines. They are focused on changing some stuff after the image is build but usually after booting for the first time.
+* This will become a table of contents (this text will be scraped).
+{:toc}
 
 
 ## How to enable VMware Server, ESX, and ESXi support

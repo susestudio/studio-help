@@ -1,7 +1,8 @@
 # How to run appliances on VirtualBox
 
-The downloaded file: '''.vmx.tar.gz'''. After extraction you will see a new
-subdirectory with 2 files: '''.vmdk''' and '''.vmx'''
+The downloaded file has the suffix *.vmx.tar.gz*. After extraction you
+will see a new subdirectory with two files with the suffixes *.vmdk* and
+*.vmx*
 
 [VirtualBox](http://www.virtualbox.org/wiki/Downloads) is another
 popular solution for using the VMDK appliance format. It is free software (GPL)

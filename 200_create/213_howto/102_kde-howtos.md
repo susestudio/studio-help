@@ -1,12 +1,15 @@
 # KDE howtos
 
-These howtos are related to KDE. Since there are two KDE versions, some of them are specific to one version and some of them can be applied to both. Most of them implies running the appliance on testdrive, do the modifications and get the modified files to the overlay section. Only few need deeper knowledge. On some cases, the modifications affect only one user. In this howto we expect this user to be the tux user. In case you want to do it for a different user, adapt the examples to your case.
+These howtos are related to KDE. Since there are two KDE versions, some of them
+are specific to one version and some of them can be applied to both. Most of
+them implies running the appliance on testdrive, do the modifications and get
+the modified files to the overlay section. Only few need deeper knowledge. On
+some cases, the modifications affect only one user. In this howto we expect this
+user to be the tux user. In case you want to do it for a different user, adapt
+the examples to your case.
 
-## Note to KDE howtos
-
-* This howtos are related to KDE. Since there are two kde versions, some of them are specific to one version and some of them can be applied to both. Most of them implies running the appliance on testdrive, do the modifications and get the modified files to the overlay section. Only few need deeper knowledge.
-* On some cases, the modifications affect to only one user. In this howto we expect this user to be the tux user. In case you want to do it for a different user, adapt the examples to your case.
-
+* This will become a table of contents (this text will be scraped).
+{:toc}
 
 ## How to launch a kde application on login
 

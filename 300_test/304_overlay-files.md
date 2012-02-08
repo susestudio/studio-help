@@ -2,7 +2,8 @@
 
 SUSE Studio has the concept of *overlay files*. Overlay files are all files which are modified or created after the installation during your testdrive. These files can be incorporated back into your configuration and automatically added during the next build of your appliance. Usually the procedure with overlay files looks like this:
 
-1. Build your appliance as described in [Chapter 2, Creating Appliances][create].
+1. Build your appliance as described in section ["Creating
+Appliances"][create].
 
 2. Start the *testdrive*.
 

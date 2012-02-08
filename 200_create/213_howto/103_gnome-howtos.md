@@ -1,11 +1,10 @@
 # GNOME howtos
 
-These are howtos related to the gnome template. Some of them are the same as kde and some are different.
+These are howtos related to the gnome template. Some of them are the same as KDE
+and some are different.
 
-
-## Note to Gnome howtos
-
-These are howtos related to the gnome template. Some of them are the same as kde and some are different.
+* This will become a table of contents (this text will be scraped).
+{:toc}
 
 
 ## How to add bookmarks to nautilus

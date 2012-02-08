@@ -1,12 +1,11 @@
 # VirtualBox Howtos
 
-VirtualBox can run vmdk discs so the vmware build can work for VirtualBox as well. However, the vmware tools will not, so you may want to add the virtualbox tools instead.
+VirtualBox can run vmdk discs so the vmware build can work for VirtualBox as
+well. However, the vmware tools will not, so you may want to add the virtualbox
+tools instead.
 
-## Note to VirtualBox
-
-* VirtualBox can run vmdk discs so the VMware build can work for VirtualBox as well.
-* The provided machine configuration offers a VMware configuration only!
-* So the VMware tools will not fit. You may want to add the virtualbox tools instead.
+* This will become a table of contents (this text will be scraped).
+{:toc}
 
 
 ## How to add a vmx to virtualbox
