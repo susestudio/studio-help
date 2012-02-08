@@ -1,6 +1,6 @@
 # Legal Notice
 
-Copyright&copy; 2006– 2011 Novell, Inc. and contributors. All rights reserved.
+Copyright&copy; 2006-2011 Novell, Inc. and contributors. All rights reserved.
 
 Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or (at your option) version 1.3; with the Invariant Section being this copyright notice and license. A copy of the license version 1.2 is included in the section entitled "GNU Free Documentation License".
 
