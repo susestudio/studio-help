@@ -1,0 +1,41 @@
+%header
+  = css "helphelp"
+  %title #{title}
+
+%body
+
+  #page
+    #header-wrap
+      #header
+        %a#logo{ :href => "http://susestudio.com" }
+          %img{ :src => "http://susestudio.com/images/logo.png" }
+
+    #content
+      %aside#aside-toc
+        =render_toc
+
+      .content
+        = render_content
+
+  #footer
+    %ul.links
+      %li.first
+        %a{:href => "http://susestudio.com/forum/", :target => "_blank"} Forum
+      %li
+        %a{:href => "http://webchat.freenode.net/?channels=#susestudio&nick=Robert_Lihm", :target => "_blank"} Chat (IRC)
+      %li
+        %a{:href => "http://blog.susestudio.com/", :target => "_blank"} Blog
+      %li
+        %a{:href => "http://facebook.com/susestudio", :target => "_blank"} Facebook
+      %li
+        %a{:href => "http://twitter.com/susestudio/", :target => "_blank"} Twitter
+      %li
+        %a{:href => "http://susestudio.com/screencast/", :target => "_blank"} Screencast
+      %li
+        %a{:href => "http://susestudio.com/artwork/", :target => "_blank"} Logos & badges
+      %li
+        %a{:href => "http://susestudio.com/jobs/", :target => "_blank"} Jobs
+    .copy
+      &copy; 2012 SUSE
+      %a{:href => "http://novell.com/company/legal/", :target => "_blank"} Legal
+      %a{:href => "http://novell.com/company/policies/privacy/", :target => "_blank"} Privacy
