@@ -1,0 +1,23 @@
+#!/usr/bin/ruby
+
+if ARGV.size != 1
+  STDERR.puts "Usage: do_create <output_directory>"
+  exit 1
+end
+
+output_dir = ARGV[0]
+
+puts "Generating help into directory '#{output_dir}'"
+
+input_dir = File.expand_path( File.dirname( __FILE__ ) )
+
+cmd = "helphelp -o #{output_dir} #{input_dir}"
+
+if !system cmd
+  STDERR.puts "Error executing command '#{cmd}'"
+  STDERR.puts "Make sure you have installed the helphelp gem by running"
+  STDERR.puts "  sudo gem install helphelp"
+  exit 1
+end
+
+system "xdg-open #{output_dir}/overview.html"
