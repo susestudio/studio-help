@@ -106,9 +106,6 @@ aside {
     font-size: 0.8em;
     color: #777;
   }
-  .content img {
-    display: block;
-  }
 
   div.content hr {
     clear: none;
