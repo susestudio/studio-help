@@ -1,4 +1,4 @@
-# How to contribute to the SUSE Studio Online documentation
+# How to contribute
 
 Our goal is to provide great online documentation for SUSE Studio. While we do
 our best, we realize that there are so many smart people out there which can do
@@ -6,5 +6,5 @@ just as well as us. So we want to make it as easy as possible for you to
 contribute. It's very much appreciated.
 
 To contribute to the SUSE Studio Online documentation just fork the [SUSE Studio
-Help](http://github.com/susestudio) repository on Github, add your changes, and
-send us a merge request.
+Help](http://github.com/susestudio/studio-help) repository on Github, add your
+changes, and send us a merge request.
