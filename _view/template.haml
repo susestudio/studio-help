@@ -1,17 +1,18 @@
-%header
+%head
+  = css "application"
   = css "helphelp"
   %title #{title}
 
 %body
 
   #page
-    #header-wrap
-      #header
-        %a#logo{ :href => "http://susestudio.com" }
-          %img{ :src => "http://susestudio.com/images/logo.png" }
+    #header
+      #topbar
+        %a#logo-header{ :href => "http://susestudio.com" }
+          %img{ :src => "http://susestudio.com/images/logo-header.png", :alt => "Logo-header" }
 
     #content
-      %aside#aside-toc
+      %aside#aside-toc.page-header
         =render_toc
 
       .content
@@ -22,7 +23,7 @@
       %li.first
         %a{:href => "http://susestudio.com/forum/", :target => "_blank"} Forum
       %li
-        %a{:href => "http://webchat.freenode.net/?channels=#susestudio&nick=Robert_Lihm", :target => "_blank"} Chat (IRC)
+        %a{:href => "http://webchat.freenode.net/?channels=#susestudio", :target => "_blank"} Chat (IRC)
       %li
         %a{:href => "http://blog.susestudio.com/", :target => "_blank"} Blog
       %li

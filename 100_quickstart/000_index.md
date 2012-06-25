@@ -1,5 +1,5 @@
 # Quickstart
 
-Quick introduction how to use SUSE Studio.
+A quick introduction to SUSE Studio.
 
 #dir_toc
