@@ -32,7 +32,7 @@ Personalize the appearance, locale, network, and other settings of your applianc
 
 ## 5. Creating Your Appliance
 
-Build the appliance in different downloadable like ISO, USB stick, hard disk image, VMware/VirtualBox image and Xen guests, or target the cloud with EC2 and Azure formats.
+Build the appliance in different downloadable formats like ISO, USB stick, hard disk image, VMware/VirtualBox image and Xen guests, or target the cloud with EC2 and Azure formats.
 
 ![Studio Qs Build Online](studio-qs-build-online.png)
 
