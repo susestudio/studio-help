@@ -20,7 +20,7 @@ Users can unpack .tar.gz files with built-in system tools. Examples of such grap
 
 For example, suppose you have downloaded `LAMP_Server.i686-1.0.0.vmx.tar.gz`. You can extract it by executing:
 
-    $ tar xvf LAMP_Server.i686-1.0.0.vmx.tar.gz 
+    $ tar xvf LAMP_Server.i686-1.0.0.vmx.tar.gz
     LAMP_Server-1.0.0/
     LAMP_Server-1.0.0/LAMP_Server.i686-1.0.0.vmdk
     LAMP_Server-1.0.0/LAMP_Server.i686-1.0.0.vmx
@@ -42,8 +42,8 @@ For example, suppose you have downloaded `LAMP_Server.i686-1.0.0.vmx.tar.gz`. He
 
 1. Download and install LibArchive: [http://downloads.sourceforge.net/gnuwin32/libarchive-2.4.12-1-setup.exe][libarchive2].
 2. Add the LibArchive path (default is `C:\Program Files\GnuWin32\bin`) to your [system %PATH% variable][win-sys-path].
-3. Extract the tarball by executing the following in the command terminal:   
-`$ bsdtar.exe -xf LAMP_Server.i686-1.0.0.vmx.tar.gz`   
+3. Extract the tarball by executing the following in the command terminal:
+`$ bsdtar.exe -xf LAMP_Server.i686-1.0.0.vmx.tar.gz`
 The files will be unpacked to the `LAMP_Server-1.0.0` directory.
 
 Note: Legacy Windows file systems like FAT32 have several limitations, in particular the lack of sparse file support (required by some build formats, such as Xen) and a maximum file size of 4 GB.
@@ -53,9 +53,9 @@ Note: Legacy Windows file systems like FAT32 have several limitations, in partic
 
 * Use the susestudio opensuse default root password of linux
 
-    `username: root or tux`  
+    `username: root or tux`
     `password: linux`
-    
+
 * You can change this in susestudio on the configuration page 'susestudio.com/appliance/edit/NNNN#tab-configuration'
 
 
@@ -107,7 +107,7 @@ Upload your custom crontab files onto /etc/cron.daily, /etc/cron.hourly, /etc/cr
 You have two options. Either use the SuSEfirewall2 or the iptools.
 
     ** For the first option, edit the /etc/sysconfig/SuSEfirewall2 and the /etc/sysconfig/SuSEfirewall2.d files.
-    ** If you prefer the second one, remove the SUSEfirewall2 package, install the iptools one and add a custom iptools script on boot (see How to run local scripts). 
+    ** If you prefer the second one, remove the SUSEfirewall2 package, install the iptools one and add a custom iptools script on boot (see How to run local scripts).
 
 
 ## How to add autoyast so that some configurations are done automatically on booting
@@ -156,7 +156,7 @@ On some cases you may want to not have any window manager. This cases include wh
     l3:3:wait:/etc/init.d/rc 3
     #l4:4:wait:/etc/init.d/rc 4
     l5:5:wait:/etc/init.d/rc 5
-    l6:6:wait:/etc/init.d/rc 6 
+    l6:6:wait:/etc/init.d/rc 6
 
     # what to do in single-user mode
     ls:S:wait:/etc/init.d/rc S
@@ -167,7 +167,7 @@ On some cases you may want to not have any window manager. This cases include wh
 
     # special keyboard request (Alt-UpArrow)
     # look into the kbd-0.90 docs for this
-    kb::kbrequest:/bin/echo "Keyboard Request -- edit /etc/inittab to let this work." 
+    kb::kbrequest:/bin/echo "Keyboard Request -- edit /etc/inittab to let this work."
 
     # what to do when power fails/returns
     pf::powerwait:/etc/init.d/powerfail start
@@ -247,25 +247,9 @@ Here is an example on how to achieve that with the gbrainy application :
 * In order to get X up and running for JeOS and Server based templates you have to add several packages to your appliance:
 
        - xorg-x11-server - xorg-x11-driver-video - xorg-x11-fonts - xorg-x11-driver-input - sax2
-       
+
 * Then go to Configuration tab section and under Startup choose 5:Graphical login.
 * Note: by default you will have IceWM as window manager!
-
-
-## Pango Bugfix
-
-Well now, if you speak squareese, thats great, but for ordinary people, this is kinda not so good:
-
-![12 Gibberish Pango](12_gibberish_pango.png)
-
-This is a known pango bug (which we hope they will fix soon) and can be remedied easily. We'll just need to regenerate pango's module list and we're going to fix this using Studio again. Let's open the Configuration tab and click on scripts:
-
-![13 Buildscript](13_buildscript.png)
-
-Studio enables users to run bash scripts after build finishes, or optionally on every boot of the appliance. Since this one-time fix, we'll go for the former option and add pango-querymodules-64 > `/etc/pango/pango64.modules` to the build script. If you started with a 32-bit appliance, add pango-querymodules > `/etc/pango/pango.modules` instead.
-
-![14 Done](14_done.png)
-
 
 
 
