@@ -1,40 +1,35 @@
 # Adding Software
 
-Usually you derive your appliance from a base template and add missing software using Software link, if needed. Find the link in the second row of your browser window of your SUSE Studio Web page. Choose your software from three sources:
+Once you've created your appliance from a base template, you have a few different options for adding software:
 
-1. **From a Pre-Configured Base Template.**  Add software from the already available base template. For example, if you choose openSUSE 11.3, you can add everything that is available from this software collection.
+1. **Base template sources.**  Every base template is pre-subscribed to repositories that supply the software for the template. Every package included in the OS is available through these repositories; the base templates simply use a different subset of the software to provide a tailored foundation for your appliance.
 
-2. **From External Repositories.**  Add additional repositories from the openSUSE Build Server or any other URL providing a software collection which is compatible with SUSE Studio and its template.
+2. **External sources.**  Add additional repositories from the [openSUSE Build Service](http://build.opensuse.org) or any other compatible software collection on the web. *Be sure to use sources which are compatible with the base template you selected.* Popular third-pary sources include [Packman](http://packman.links2linux.org/), [VideoLan](http://www.videolan.org/vlc/download-suse.html), and hardware vendors. [The openSUSE wiki](http://en.opensuse.org/Additional_package_repositories) has a more definitive list.
 
-3. **Any Compatible RPMs.**  Upload any compatible RPM package from your hard disk or from the Web to SUSE Studio. Make sure it is built for your base template and its architecture is the same as your appliance.
+3. **Any Compatible RPM.**  Upload any compatible RPM package from your hard disk or from the web to SUSE Studio. Make sure it's built for an OS version & architecture compatible with your appliance.
 
-SUSE Studio notifies you if any dependencies cannot be fully resolved.
+*You will be notified if any dependencies cannot be fully resolved.*
 
 
 ## 1. Adding External Repositories
 
-To add an external repository from openSUSE Build Server to SUSE Studio, proceed as follows:
+To add an external repository from [OBS](http://build.opensuse.org) to SUSE Studio:
 
-1. Switch to Software and click on Add Repositories.... The page looks like this:
+1. Click "Add Repositories..." on the Software tab. You'll see a selection of available repositories, submitted by users:
 
 ![Studio Qs Addrepo Overview](studio-qs-addrepo-overview.png)
 
-2. Enter a search word to reduce the list of shown repositories. Whenever a user adds a repository, the repository will be available for all users. If you have found a repository, click Add and you are finished.
+2. Enter a search term to reduce the list of shown repositories. When you find the repository you're looking for, click the "add" to include it in your appliance.
 
-3. If your repository is not available in the list, click Import New Repository.... The following page is shown:
+3. If your can't find what you're looking for, click "Import New Repository..." and enter either the name of an [OBS](http://build.opensuse.org) project, or the URL of a collection on the web:
 
 ![Studio Qs Addrepo Import](studio-qs-addrepo-import.png)
-
-4. Choose from a local or a remote source (usually openSUSE Build Server):
-
-* **From openSUSE Build Server.**  Enter the project name, for example `devel:languages:python`.
-* **From URL.**  Enter the URL pointing to your external repository.
 
 
 ## 2.2. Uploading RPMs
 
-SUSE Studio allows you to upload individual packages as RPM format. If you have a couple of RPM packages, it is easier to create an archive (.tar, .tar.gz, .tgz, .tar.bz2, .tbz, or .zip) and upload this archive to SUSE Studio. SUSE Studio can extract this archive and add the individual RPM files to your software collection.
+SUSE Studio allows you to upload software packaged in the RPM format. If you have a few RPMs you need to upload, you may find it easier to create an archive (.tar, .tar.gz, .tgz, .tar.bz2, .tbz, or .zip) and upload that to SUSE Studio instead of uploading each individual package. SUSE Studio can extract this archive and add the individual RPM packages to your software collection.
 
-Click *Software+Upload RPMs*... and decide whether you want to upload an RPM or an archive with RPMs from your local hard disk or from an URL. In the first case click Upload RPM... and select your RPM package. In the second case, click Add from the Web (URL)... and enter your URL.
+Click "Upload and manage RPMs..." and you'll see a list of packages you have uploaded into your appliance. To upload a package on your local machine, click the "Upload RPM..." button, or click "Add from the Web (URL)..." and enter an address for SUSE Studio to fetch the package directly.
 
 Regardless of the method, SUSE Studio adds the RPM(s) to your software selections and tries to resolve any dependencies. In case of an error, SUSE Studio will notify you. Resolve the errors by adding additional external repositories, importing other RPMs, or removing any problematic RPMs.
