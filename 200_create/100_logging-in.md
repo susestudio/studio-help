@@ -1,20 +1,20 @@
 # Logging In
 
-Before you can use SUSE Studio decide where to log in:
+Before you can use SUSE Studio, you need to log in.
 
-If you want to use the official SUSE Studio website from
-[http://susestudio.com][susestudio], use your login credentials from Novell,
-Google, or Yahoo. It is also possible to use an [OpenID][openid] account from
-any OpenID provider.
+SUSE Studio allows you to use your login credentials from [Novell](https://secure-www.novell.com/selfreg/jsp/createAccount.jsp),
+[Google](https://accounts.google.com/NewAccount), [Yahoo](https://edit.yahoo.com/registration), [Twitter](https://twitter.com/), [Facebook](https://www.facebook.com/), or an any [OpenID](http://openid.net) provider.
 
-When logging in for the first time your SUSE Studio account will be created.
-Note that the SUSE Studio account is tied to the way you log in. So if you log
-in with a different login provider, you'll have a different account on SUSE
-Studio. It is possible to merge your accounts on your user page in SUSE Studio.
+![Studio Qs Login Online](studio-qs-login-online.png)
 
-If you still need help, click the link [Need help signing in?][signin-help] to
-get detailed information.
+The first time you log in, we'll create an account for you, linked to your preferred login provider. You're welcome to link other accounts to your Studio account:
 
-[susestudio]: http://susestudio.com
-[openid]: http://openid.net
-[signin-help]:http://staging.susestudio.com/account/help
+1. Click on "Edit account"
+2. On your account page, switch to the "Linked accounts" tab.
+3. Click "Add another account..."
+
+You'll be prompted to login again, but this time we'll link your accounts instead of creating a new one.
+
+If you forget your credentials, the [account help form](http://susestudio.com/account/help) will help you out by letting you search by username or email, and sending you a hint about your login.
+
+![Studio account help](studio-account-help.png)
