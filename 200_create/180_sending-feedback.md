@@ -1,6 +1,11 @@
 # Sending Feedback
 
-If your SUSE Studio administrator has enabled feedback, it is possible to send your comments to him (see Figure 2.4, "Feedback Link on The Home Site"). Click *Home* to display your home site. On the left pane click the Send feedback link and enter your text in the text field below. When you are finished, press the Send feedback button to send your comments.
+Click "Send feedback" and enter your praise, comments, questions, complements, and praise (we like praise ;). When you are finished, press the "Send feedback" button.
 
-![Studio Feedback Online](studio-feedback-online.png "Figure 2.4. Feedback Link on The Home Site")
-*Figure 2.4. Feedback Link on The Home Site*
+![Studio Feedback Online](studio-feedback-online.png)
+
+Your message will be sent to the *studio-feedback* mailing list.
+
+Alternatively, you may start a new thread on our [feedback forum](http://susestudio.com/forum/).  This forum mirrors the *studio-users* mailing list, so use whichever interface you prefer.
+
+We look forward to hearing from you.
