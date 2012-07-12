@@ -1,5 +1,7 @@
 # Viewing the Supportability Report
 
-If you have a support contract with Novell, you need to know whether your appliance is supported or not. SUSE Studio can analyze each package in your appliance and determine any possible conflicting changes to your support contract.
+SUSE Studio can analyze each package in your SUSE Linux Enterprise appliances and determine if your appliance is supported, and if there are any exceptions to supporting an appliance..
 
-Go to the *Build* page. If you have successfully built your appliance, SUSE Studio displays the report with the *View supportability report...* link. The report is viewed in a new window and contains a summary of each format of your appliance. With *full supportability report* it lists each package in your appliance.
+On the *Build* tab, each build of a SUSE Linux Enterprise appliance includes a link to "View supportability report...".
+
+The report opens in a new window and contains a summary of each format of your appliance. With *full supportability report* it lists each package in your appliance.
