@@ -1,5 +1,5 @@
 %head
-  = css "application"
+  -#= css "application"
   = css "helphelp"
   %title #{title}
 
@@ -12,10 +12,11 @@
           %img{ :src => "http://susestudio.com/images/logo-header.png", :alt => "Logo-header" }
 
     #content
-      %aside#aside-toc.page-header
+      %aside#aside-toc
         =render_toc
 
-      = render_content
+      #wrapper.content
+        = render_content
 
   #footer
     %ul.links
