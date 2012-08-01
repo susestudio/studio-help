@@ -1,4 +1,4 @@
-# General howtos
+# General
 
 In this section we explain howtos that are not specific to any template or
 target but to all of them. You'll see that most of them are related to firstboot
