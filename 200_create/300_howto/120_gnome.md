@@ -1,4 +1,4 @@
-# GNOME howtos
+# GNOME
 
 These are howtos related to the gnome template. Some of them are the same as KDE
 and some are different.

@@ -1,10 +1,10 @@
-# VMware Howtos
+# VMware
 
 Virtual machines in the VMware format are similar to disk images, but with
 special information which specifies memory and hard drive sizes. They do not
 include a swap partition as it is common practice to leave memory management to
 the hypervisor. The swap setting in SUSE Studio only applies to disk images.
-To use these images, simply open the file in VMware, VMware player, or VirtualBox.  
+To use these images, simply open the file in VMware, VMware player, or VirtualBox.
 This set of howtos are specific to VMware machines. They are focused on changing
 some stuff after the image is built but usually after booting for the first
 time.
