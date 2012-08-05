@@ -18,5 +18,5 @@ within SUSE Studio][studio-api-key].
 * [Using the API with curl](using_api_with_curl.html)
 
 
-[studio-api]: http://susestudio.com/help/api/v2
+[studio-api]: v2/index.html
 [studio-api-key]: http://susestudio.com/user/show_api_key
