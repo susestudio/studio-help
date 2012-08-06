@@ -48,11 +48,11 @@ PUT /api/v2/user/appliances/`<id>`/configuration
 >
 >Modify portions (or all) of the configuration.  The input is sent as XML fragments in the POST body, using the same schema as what the GET call.  For example, to change the network settings to "dhcp", the POST body would have:
 >
->`    <configuration>
->      <network>
->        <type>dhcp</type>
->      </network>
->    </configuration>`
+>     <configuration>
+>       <network>
+>         <type>dhcp</type>
+>       </network>
+>     </configuration>
 
 >The result is then the current configuration settings, or an error.
 >
