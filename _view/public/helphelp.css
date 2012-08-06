@@ -121,7 +121,6 @@ pre, code {
     padding: 0.5em;
     overflow-x: auto;
     width: auto;
-    white-space: pre-line;
 }
 code {
     padding: 2px;
