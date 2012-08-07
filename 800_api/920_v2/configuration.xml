@@ -1,0 +1,164 @@
+<configuration>
+  <id>24</id>
+  <name>LAMP Server</name>
+  <description>This is a LAMP server.
+
+It provides Linux, Apache, MySQL, and Perl.</description>
+  <website>http://susestudio.com</website>
+  <tags count="2">
+    <tag>lamp</tag>
+    <tag>server</tag>
+  </tags>
+  <locale>
+    <keyboard_layout>english-uk</keyboard_layout>
+    <language>en_GB.UTF-8</language>
+    <timezone>
+      <location>Europe/Berlin</location>
+    </timezone>
+  </locale>
+  <network>
+    <type>manual</type>
+    <hostname>lampserver</hostname>
+    <ip>192.168.1.100</ip>
+    <netmask>255.255.255.0</netmask>
+    <route>192.168.1.1</route>
+    <nameservers>192.168.1.1, 192.168.1.2</nameservers>
+  </network>
+  <firewall>
+    <enabled>true</enabled>
+    <open_port>ssh</open_port>
+    <open_port>http</open_port>
+  </firewall>
+  <users count="3">
+    <user>
+      <name>root</name>
+      <password>linux</password>
+      <group>root</group>
+      <shell>/bin/bash</shell>
+      <homedir>/root</homedir>
+    </user>
+    <user>
+      <name>tux</name>
+      <password>linux</password>
+      <group>users</group>
+      <shell>/bin/bash</shell>
+      <homedir>/home/tux</homedir>
+    </user>
+    <user>
+      <name>webdev</name>
+      <password>linux1234</password>
+      <group>users</group>
+      <shell>/bin/bash</shell>
+      <homedir>/home/webdev</homedir>
+    </user>
+  </users>
+  <eulas count="1">
+    <eula>This is an End User License Agreement.
+</eula>
+  </eulas>
+  <databases count="1">
+    <database>
+      <type>pgsql</type>
+        <users count="1">
+          <user>
+            <username>db_user</username>
+            <password>linux</password>
+            <database_list>project_db</database_list>
+          </user>
+        </users>
+    </database>
+  </databases>
+  <autostarts count="1">
+    <autostart>
+      <command>/usr/bin/someprogram</command>
+      <description>Launch "someprogram"</description>
+      <enabled>true</enabled>
+      <user>tux</user>
+    </autostart>
+  </autostarts>
+  <settings>
+    <memory_size>512</memory_size>
+    <disk_size>16</disk_size>
+    <swap_size>512</swap_size>
+    <pae_enabled></pae_enabled>
+    <xen_host_mode_enabled>true</xen_host_mode_enabled>
+    <cdrom_enabled>true</cdrom_enabled>
+    <webyast_enabled>false</webyast_enabled>
+    <public_clonable>true</public_clonable>
+    <runlevel>3</runlevel>
+    <automatic_login>tux</automatic_login>
+  </settings>
+  <lvm>
+    <enabled>true</enabled>
+    <volume_group>systemVG</volume_group>
+    <volumes count="2">
+      <volume>
+        <size>1000</size>
+        <path>/</path>
+      </volume>
+      <volume>
+        <size>100000</size>
+        <path>/home</path>
+      </volume>
+    </volumes>
+  </lvm>
+  <scripts>
+    <build>
+      <enabled>true</enabled>
+      <script>#!/bin/bash -e
+      #
+      # This script is executed at the end of appliance creation.  Here you can do
+      # one-time actions to modify your appliance before it is ever used, like
+      # removing files and directories to make it smaller, creating symlinks,
+      # generating indexes, etc.
+      #
+      # The 'kiwi_type' variable will contain the format of the appliance (oem =
+      # disk image, vmx = VMware, iso = CD/DVD, xen = Xen).
+      #
+      
+      # read in some variables
+      . /studio/profile
+      
+      #======================================
+      # Prune extraneous files
+      #--------------------------------------
+      # Remove all documentation
+      docfiles=`find /usr/share/doc/packages -type f |grep -iv "copying\|license\|copyright"`
+      rm -f $docfiles
+      rm -rf /usr/share/info
+      rm -rf /usr/share/man
+      
+      # fix the setlocale error
+      sed -i 's/en_US.UTF-8/POSIX/g' /etc/sysconfig/language
+      
+      exit 0</script>
+    </build>
+    <boot>
+      <enabled>true</enabled>
+      <script>#!/bin/bash
+      #
+      # This script is executed whenever your appliance boots.  Here you can add
+      # commands to be executed before the system enters the first runlevel.  This
+      # could include loading kernel modules, starting daemons that aren't managed
+      # by init files, asking questions at the console, etc.
+      #
+      # The 'kiwi_type' variable will contain the format of the appliance (oem =
+      # disk image, vmx = VMware, iso = CD/DVD, xen = Xen).
+      #
+      
+      # read in some variables
+      . /studio/profile
+      
+      if [ -f /etc/init.d/suse_studio_firstboot ]
+      then
+        
+        # Put commands to be run on the first boot of your appliance here
+        echo "Running SUSE Studio first boot script..."
+      
+      fi</script>
+    </boot>
+    <autoyast>
+      <enabled>false</enabled>
+    </autoyast>
+  </scripts>
+</configuration>
