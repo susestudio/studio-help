@@ -18,6 +18,13 @@ POST /api/v2/user/repositories?url=`<url>`&name=`<name>`
 >
 >Result: [Example](repository.xml)
 
+POST /api/v2/user/repositories/`<id>`/refresh
+>* `<id>`: Id of the repository to update.
+>
+>Instructs the server to update package metadata for repository `id`.
+>
+>Result: empty.
+
 GET /api/v2/user/repositories/`<id>`
 >* `<id>`: Id of the repository.
 >
