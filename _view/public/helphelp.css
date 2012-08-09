@@ -58,6 +58,7 @@ a:hover {
     -webkit-box-shadow: 0 1px 5px -3px #6c6c6c;
     -moz-box-shadow: 0 1px 5px -3px #6c6c6c;
     box-shadow: 0 1px 5px -3px #6c6c6c;
+	
 }
 
 #header a {
@@ -68,6 +69,7 @@ a:hover {
     margin-left: -11px;
     text-indent: -5000px;
     width: 100px;
+	
 }
 
 #header a:hover {
@@ -79,7 +81,8 @@ a:hover {
 
 #topbar  {
     margin: 0 auto;
-    width: 1040px;
+    max-width: 970px;
+	padding-left: 10px;
 }
 
 #logo-header {
@@ -100,7 +103,7 @@ a:hover {
     height: auto;
     min-height: 100%;
     position: relative;
-    width: 1100px;
+    max-width: 996px;
     background-color: #FFFFFF;
     margin: 0 auto;
 }
@@ -111,7 +114,9 @@ a:hover {
     min-height: 500px;
     padding-top: 45px;
     position: relative;
-    width: 1040px;
+    max-width: 963px;
+	padding-left: 10px;
+    padding-right: 10px;
 }
 pre, tt, code {
     background-color: #eee;
@@ -137,6 +142,8 @@ aside {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     -khtml-border-radius: 6px;
+	margin-bottom: 10px;
+    margin-left: 10px;
 }
 .aside-box ul, .aside-box li {
     list-style: none outside;
@@ -227,7 +234,7 @@ span.current-page {
 /* Begin Notebook Content   */
 
 #wrapper {
-    max-width: 700px;
+    max-width: 970px;
 }
 
 #suse_studio_online_help{
@@ -247,7 +254,7 @@ span.current-page {
     background-repeat: no-repeat;
     background-position: left top;
     height: 416px;
-    padding-left: 320px;
+    padding-left: 290px;
     margin-left: -10px;
 }
 
@@ -332,7 +339,7 @@ div.navigation {
     height: 14ex;
     position: relative;
     text-align: center;
-    width: 1100px;
+    max-width: 996px;
     margin: -15px auto;
     background-color: #FFFFFF;
     padding-top: 20px;
