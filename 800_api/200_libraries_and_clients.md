@@ -17,18 +17,16 @@ There are a number of libraries and clients which use the SUSE Studio API:
 * [SUSE Gallery desktop widgets][studio-gallery-widget]
 * [Graphical SUSE Studio client][studiosus]
 * [SUSE Gallery desktop client][sf-susegallery]
-* [Android client][gh-studio_android]
 * [Dister - a Heroku like solution for Studio][gh-dister]
 
 
 [gh-studio-api]: https://github.com/jreidinger/studio_api
 [pysusestudio]: http://code.google.com/p/pysusestudio/
 [qsusestudio]: http://qsusestudio.sourceforge.net/
-[studio-cmd]: http://en.opensuse.org/openSUSE:SUSE_Studio_command_line_client
+[studio-cmd]: http://github.com/susestudio/ssc 
 [studio-gallery-widget]: https://github.com/mess110/suse_gallery_widget
 [studiosus]: http://gitorious.org/suse-studio/studiosus
 [sf-susegallery]: http://susegallery.sourceforge.net/
-[gh-studio_android]: https://github.com/mess110/studio_android
 [gh-dister]: https://github.com/flavio/dister/
 [gh-susestudio-api-java]: https://github.com/jamestyj/susestudio-api-java
 [gh-pysusestudio]: https://github.com/cshorler/PySUSEStudio
