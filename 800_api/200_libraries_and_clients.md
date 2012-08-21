@@ -5,7 +5,7 @@ There are a number of libraries and clients which use the SUSE Studio API:
 ## Libraries
 
 * [C++ library][qsusestudio]
-* [Java library][gh-susestudio-api-java]
+* [Java library][gh-susestudio-lib-java]
 * Python library ([original][pysusestudio], [rewrite][gh-pysusestudio])
 * [Ruby library][gh-studio-api]
 
@@ -26,5 +26,5 @@ There are a number of libraries and clients which use the SUSE Studio API:
 [studiosus]: http://gitorious.org/suse-studio/studiosus
 [sf-susegallery]: http://susegallery.sourceforge.net/
 [gh-dister]: https://github.com/flavio/dister/
-[gh-susestudio-api-java]: https://github.com/susestudio/susestudio-lib-java
+[gh-susestudio-lib-java]: https://github.com/susestudio/susestudio-lib-java
 [gh-pysusestudio]: https://github.com/cshorler/PySUSEStudio
