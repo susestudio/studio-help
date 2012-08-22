@@ -1,21 +1,19 @@
 # Using the API with curl
 
-## Using the API with curl
-
 All API functions can be used with curl. The following examples should give you an idea on how this is to be used.
 
-### Get the list of template sets
+## Get the list of template sets
 
 The available templates are grouped in template sets. The following command gets the list of template sets from Studio:
 
        curl -u <user>:<api_key> "http://susestudio.com/api/v1/user/template_sets"
-   
+
 [Example][example-1]
 
 Usually you will pick one of the templates in the 'default' template set, which lists the default SUSE templates, and clone an appliance from it.
 
 
-### List your appliances
+## List your appliances
 
 All appliances:
 
@@ -29,14 +27,14 @@ A specific appliance:
 
 [Example][example-3]
 
-### Clone an appliance
+## Clone an appliance
 
 To create a new appliance pick a template from the template set and use its id with the following command (name and arch are optional parameters):
 
        curl -u <user>:<api_key> -XPOST "http://susestudio.com/api/v1/user/appliances?clone_from=14774&name=My%20Server&arch=x86_64"
 
 
-### Manage overlay files
+## Manage overlay files
 
 List the files of an appliance:
 
@@ -53,7 +51,7 @@ Upload a file:
 Optionally, you can specify the filename, path, owner, group or permissions, here.
 
 
-### Build your appliance
+## Build your appliance
 
 Trigger a build of an appliance:
 
@@ -62,7 +60,7 @@ Trigger a build of an appliance:
 Monitor build progress:
 
        curl -u <user>:<api_key> "http://susestudio.com/api/v1/user/running_builds?appliance_id=<id>"
-   
+
 [Example][example-6]
 
 ## URL Encoding
