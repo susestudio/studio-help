@@ -8,3 +8,8 @@ Please check if a new Flash-Version is available. If you have the current versio
 ## Why isn't my SWAP-partition created?
 
 SWAP is only built in usb stick / hard disk format.
+
+
+## How do I proceed when the license (EULA) gets displayed during boot of the appliance?
+
+One need to press 'q' to quit displaying the contents of the license and after that, accepting the license with 'y'.
