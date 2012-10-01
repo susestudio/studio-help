@@ -5,5 +5,7 @@ This is the content of the SUSE Studio Online documentation.
 You can create the formatted documentation by running the script "do_create".
 
 Please feel free to contribute. Just fork the repo and send us a pull request.
+The SUSE Studio online help content is licensed under the GNU Free Documentation
+License (GFDL). See file 001_legal_notice.md for details.
 
 If you need a Markdown Cheat Sheet visit: http://goo.gl/byBVT
