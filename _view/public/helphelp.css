@@ -58,7 +58,7 @@ a:hover {
     -webkit-box-shadow: 0 1px 5px -3px #6c6c6c;
     -moz-box-shadow: 0 1px 5px -3px #6c6c6c;
     box-shadow: 0 1px 5px -3px #6c6c6c;
-	
+
 }
 
 #header a {
@@ -69,7 +69,7 @@ a:hover {
     margin-left: -11px;
     text-indent: -5000px;
     width: 100px;
-	
+
 }
 
 #header a:hover {
@@ -96,6 +96,15 @@ a:hover {
     top: 5px;
     -moz-opacity:0;
     opacity: 0;
+}
+
+/* Github ribbon */
+#fork-me {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    z-index: 2;  /* header is z-index: 1 */
 }
 
 /* Begin Page CSS  */
