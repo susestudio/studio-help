@@ -1,5 +1,5 @@
+!!!
 %head
-  -#= css "application"
   = css "helphelp"
   %title #{title}
 
@@ -8,19 +8,16 @@
   #page
     #header
       #topbar
-        %a#logo-header{ :href => "http://susestudio.com" }
+        %a#logo-header{ :href => "/" }
           %img{ :src => "http://susestudio.com/images/logo-header.png", :alt => "Logo-header" }
 
     #content
-      %aside#aside-toc
-        =render_toc
+      #aside
+        #aside-toc
+          =render_toc
 
       #wrapper.content
         = render_content
-
-  %map#ribbon-map{:name => "ribbon-map"}
-    %area{:shape => "poly", :coords => "16,0,56,0,148,92,148,132", :href => "https://github.com/susestudio/studio-help/", :alt => "Fork me on Github", :target => "_blank" }
-  %img#fork-me{:src => "https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png", :usemap => "#ribbon-map"}
 
   #new_footer
     #content_footer
@@ -33,7 +30,7 @@
             %a{:href => "/browse/"} Gallery
             |
           %li
-            %a{:href => "/susestudio.com/forum", :target => "_blank"} Forum
+            %a{:href => "/forum", :target => "_blank"} Forum
             |
           %li
             %a{:href => "/artwork/", :target => "_blank"} Logos & badges
@@ -60,3 +57,6 @@
           %a{ :href => "http://twitter.com/susestudio/", :target=>"_blank" }
             %img{ :src => "http://susestudio.com/images/tt_social_footer.png", :alt => "Twitter" }
 
+  %map#ribbon-map{:name => "ribbon-map"}
+    %area{:shape => "poly", :coords => "16,0,56,0,148,92,148,132", :href => "https://github.com/susestudio/studio-help/", :alt => "Fork me on Github", :target => "_blank" }
+  %img#fork-me{:src => "https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png", :usemap => "#ribbon-map"}
