@@ -1,5 +1,10 @@
 # Adding Software
 
+[OBS]:         http://build.opensuse.org/
+[Packman]:     http://packman.links2linux.org/
+[VideoLan]:    http://www.videolan.org/vlc/download-suse.html
+[other-repos]: http://en.opensuse.org/Additional_package_repositories
+
 Once you've created your appliance from a base template, you have a few
 different options for adding software:
 
@@ -10,13 +15,12 @@ different options for adding software:
    tailored foundation for your appliance.
 
 2. **External sources.**  Add additional repositories from the
-   [openSUSE Build Service](http://build.opensuse.org) or any other
-   compatible software collection on the web. *Be sure to use sources
-   which are compatible with the base template you selected.*
-   Popular third-pary sources include [Packman](http://packman.links2linux.org/),
-   [VideoLan](http://www.videolan.org/vlc/download-suse.html), and
-   hardware vendors. [The openSUSE wiki](http://en.opensuse.org/Additional_package_repositories)
-   has a more definitive list.
+   [openSUSE Build Service][OBS] or any other compatible software
+   collection on the web. *Be sure to use sources which are compatible
+   with the base template you selected.*
+   Popular third-pary sources include [Packman], [VideoLan],
+   and hardware vendors.
+   [The openSUSE wiki][other-repos] has a more definitive list.
 
 3. **Any Compatible RPM.**  Upload any compatible RPM package from your
    hard disk or from the web to SUSE Studio. Make sure it's built for an
@@ -27,8 +31,7 @@ different options for adding software:
 
 ## 1. Adding External Repositories
 
-To add an external repository from [OBS](http://build.opensuse.org) to
-SUSE Studio:
+To add an external repository from [OBS] to SUSE Studio:
 
 1. Click "Add Repositories..." on the Software tab. You'll see
    a selection of available repositories, submitted by users:
@@ -41,7 +44,7 @@ SUSE Studio:
 
 3. If your can't find what you're looking for, click "Import New
    Repository..." and enter either the name of an
-   [OBS](http://build.opensuse.org) project, or the URL of a collection
+   [OBS] project, or the URL of a collection
    on the web:
 
    ![Studio Qs Addrepo Import](studio-qs-addrepo-import.png)
