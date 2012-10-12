@@ -1,24 +1,30 @@
 # General
 
-In this section we explain howtos that are not specific to any template or
-target but to all of them. You'll see that most of them are related to firstboot
-scripts.
+In this section we explain howtos that are not specific to any template
+or target but to all of them. You'll see that most of them are related
+to firstboot scripts.
 
 * This will become a table of contents (this text will be scraped).
 {:toc}
 
 ## How to uncompress/extract downloaded appliances
 
-To reduce bandwidth and downloading time, all appliances are compressed in the [gzip][wiki-gzip] [tarball][wiki-tar] format (.tar.gz).
+To reduce bandwidth and downloading time, all appliances are compressed
+in the [gzip][wiki-gzip] [tarball][wiki-tar] format (.tar.gz).
 
 
 ### Unix/Linux/Mac users
 
-Users can unpack .tar.gz files with built-in system tools. Examples of such graphical applications include [Ark][wiki-ark] and [File Roller][wiki-fileroller], which are included in KDE and GNOME respectively. Alternatively, you can extract the .tar.gz file with the following command in the console terminal:
+Users can unpack .tar.gz files with built-in system tools. Examples of
+such graphical applications include [Ark][wiki-ark] and [File
+Roller][wiki-fileroller], which are included in KDE and GNOME
+respectively. Alternatively, you can extract the .tar.gz file with the
+following command in the console terminal:
 
     $ tar xf <FILE_NAME>
 
-For example, suppose you have downloaded `LAMP_Server.i686-1.0.0.vmx.tar.gz`. You can extract it by executing:
+For example, suppose you have downloaded
+`LAMP_Server.i686-1.0.0.vmx.tar.gz`. You can extract it by executing:
 
     $ tar xvf LAMP_Server.i686-1.0.0.vmx.tar.gz
     LAMP_Server-1.0.0/
@@ -28,25 +34,38 @@ For example, suppose you have downloaded `LAMP_Server.i686-1.0.0.vmx.tar.gz`. Yo
 
 ### Windows users
 
-Users will need to install 3rd party utilities like WinZip, [WinRAR][winrar], and [7-Zip][7-Zip] (freeware).
+Users will need to install 3rd party utilities like WinZip,
+[WinRAR][winrar], and [7-Zip][7-Zip] (freeware).
 
-These tools have File Explorer integration and a graphical user interface, but they are unable to uncompress the .tar.gz in one step - you need to extract it twice, first for gzip uncompression and then tar extraction.
+These tools have File Explorer integration and a graphical user
+interface, but they are unable to uncompress the .tar.gz in one step -
+you need to extract it twice, first for gzip uncompression and then tar
+extraction.
 
-NOTE: If you get a "corrupt archive" error message during tar extraction even though the archive MD5 checksum matches, it is likely that the tar file contains files larger than 8 GB. You need WinRAR 3.9 and above, or 7-zip 9.16 beta and above. [LibArchive/BSD tar][libarchive] also works.
+NOTE: If you get a "corrupt archive" error message during tar extraction
+even though the archive MD5 checksum matches, it is likely that the tar
+file contains files larger than 8 GB. You need WinRAR 3.9 and above, or
+7-zip 9.16 beta and above. [LibArchive/BSD tar][libarchive] also works.
 
-We recommend using [LibArchive/BSD tar][libarchive-tool] (freeware). It only has a command line interface, but is easy to use:
+We recommend using [LibArchive/BSD tar][libarchive-tool] (freeware). It
+only has a command line interface, but is easy to use:
 
 `$ bsdtar.exe -xf <FILE_NAME>`
 
-For example, suppose you have downloaded `LAMP_Server.i686-1.0.0.vmx.tar.gz`. Here is a step-by-step guide:
+For example, suppose you have downloaded
+`LAMP_Server.i686-1.0.0.vmx.tar.gz`. Here is a step-by-step guide:
 
-1. Download and install LibArchive: [http://downloads.sourceforge.net/gnuwin32/libarchive-2.4.12-1-setup.exe][libarchive2].
-2. Add the LibArchive path (default is `C:\Program Files\GnuWin32\bin`) to your [system %PATH% variable][win-sys-path].
-3. Extract the tarball by executing the following in the command terminal:
-`$ bsdtar.exe -xf LAMP_Server.i686-1.0.0.vmx.tar.gz`
+1. Download and install LibArchive:
+   [http://downloads.sourceforge.net/gnuwin32/libarchive-2.4.12-1-setup.exe][libarchive2].
+2. Add the LibArchive path (default is `C:\Program Files\GnuWin32\bin`)
+   to your [system %PATH% variable][win-sys-path].
+3. Extract the tarball by executing the following in the command
+   terminal: `$ bsdtar.exe -xf LAMP_Server.i686-1.0.0.vmx.tar.gz`
 The files will be unpacked to the `LAMP_Server-1.0.0` directory.
 
-Note: Legacy Windows file systems like FAT32 have several limitations, in particular the lack of sparse file support (required by some build formats, such as Xen) and a maximum file size of 4 GB.
+Note: Legacy Windows file systems like FAT32 have several limitations,
+in particular the lack of sparse file support (required by some build
+formats, such as Xen) and a maximum file size of 4 GB.
 
 
 ## How to login for the first time
@@ -56,35 +75,59 @@ Note: Legacy Windows file systems like FAT32 have several limitations, in partic
     `username: root or tux`
     `password: linux`
 
-* You can change this in susestudio on the configuration page 'susestudio.com/appliance/edit/NNNN#tab-configuration'
+* You can change this in susestudio on the configuration page
+  'susestudio.com/appliance/edit/NNNN#tab-configuration'
 
 
 ## How to install proprietary drivers on first boot
 
-Write a script that uses lspci and grep commands in order to see which hardware you have, and then use zypper in order to add a repo and install the needed rpms. Once you have this script, upload it to the overlay section and add this script to the firstboot section. (see How to run firstboot scripts ).
+Write a script that uses lspci and grep commands in order to see which
+hardware you have, and then use zypper in order to add a repo and
+install the needed rpms. Once you have this script, upload it to the
+overlay section and add this script to the firstboot section. (see How
+to run firstboot scripts ).
 
 
 ## How to run local scripts
 
-* If you want your script to run on every boot, you have two options. One is using the "Scripts" option on the "Configuration" Tab; two is writing your own service.
-* By using the "Scripts" option, your script will be run before any service. If that is want you want, check the "Run script whenever the appliance boots" option and write your script.
-* If what you want is to run your script after the other services, create your own service. In order to do that, copy `/etc/init.d/skeleton` file and adapt it to your needs. Set the required_start to $ALL so it runs after all the other services. Then, upload this file to the overlay section and add an "insserv script_name" line on the "firstboot section" (See How to run firstboot scripts ).
+* If you want your script to run on every boot, you have two options.
+  One is using the "Scripts" option on the "Configuration" Tab; two is
+  writing your own service.
+* By using the "Scripts" option, your script will be run before any
+  service. If that is want you want, check the "Run script whenever the
+  appliance boots" option and write your script.
+* If what you want is to run your script after the other services,
+  create your own service. In order to do that, copy
+  `/etc/init.d/skeleton` file and adapt it to your needs. Set the
+  required_start to $ALL so it runs after all the other services. Then,
+  upload this file to the overlay section and add an "insserv
+  script_name" line on the "firstboot section" (See How to run firstboot
+  scripts).
 
 
 ## How to run firstboot scripts
 
-* Like "How to run local scripts ", firstboot scripts can be run before any services or after. For the first option, use the "Scripts" option on the "Configuration" tab. You'll see there is an if section that looks for a /etc/init.d/suse_studio_firstboot file. Put your commands there.
-* For the second option, do like in "How to run local scripts" and make your own service. Add a "insserv script_name -r" line at the end of this service so it removes itself after firstboot.
+* Like "How to run local scripts ", firstboot scripts can be run before
+  any services or after. For the first option, use the "Scripts" option
+  on the "Configuration" tab. You'll see there is an if section that
+  looks for a /etc/init.d/suse_studio_firstboot file. Put your commands
+  there.
+* For the second option, do like in "How to run local scripts" and make
+  your own service. Add a "insserv script_name -r" line at the end of
+  this service so it removes itself after firstboot.
 
 
 ## How to configure graphics on first boot
 
-If you want to configure graphics on your firstboot, write a firstboot script (see " How to run firstboot scripts ") that launches sax2. That will configure your graphics hardware.
+If you want to configure graphics on your firstboot, write a firstboot
+script (see " How to run firstboot scripts ") that launches sax2. That
+will configure your graphics hardware.
 
 
 ## How to add a user to the sudoers
 
-Add the sudo rpm and upload a custom /etc/sudoers like this one on the overlay section:
+Add the sudo rpm and upload a custom /etc/sudoers like this one on the
+overlay section:
 
     Defaults always_set_home Defaults env_reset
 
@@ -93,21 +136,30 @@ Add the sudo rpm and upload a custom /etc/sudoers like this one on the overlay s
 
 ## How to customize the yast2-firstboot
 
-* If you want to have your own yast2-firstboot, upload a file with any content as /var/lib/YaST2/reconfig_system and edit the /etc/yast2-firstboot.xml file as your convenience. Make sure the yast2-firstboot package is installed.
-* If you just want to run one module, you can do that by adding the line "yast2 modulename" at the firstboot ( see How to run firstboot scripts ).
+* If you want to have your own yast2-firstboot, upload a file with any
+  content as /var/lib/YaST2/reconfig_system and edit the
+  /etc/yast2-firstboot.xml file as your convenience. Make sure the
+  yast2-firstboot package is installed.
+* If you just want to run one module, you can do that by adding the line
+  "yast2 modulename" at the firstboot (see How to run firstboot scripts).
 
 
 ## How to set up crontab
 
-Upload your custom crontab files onto /etc/cron.daily, /etc/cron.hourly, /etc/cron.weekly, /etc/cron/monthly. Check that you have the crontab rpm installed.
+Upload your custom crontab files onto /etc/cron.daily, /etc/cron.hourly,
+/etc/cron.weekly, /etc/cron/monthly. Check that you have the crontab rpm
+installed.
 
 
 ## How to setup a custom firewall
 
 You have two options. Either use the SuSEfirewall2 or the iptools.
 
-    ** For the first option, edit the /etc/sysconfig/SuSEfirewall2 and the /etc/sysconfig/SuSEfirewall2.d files.
-    ** If you prefer the second one, remove the SUSEfirewall2 package, install the iptools one and add a custom iptools script on boot (see How to run local scripts).
+    ** For the first option, edit the /etc/sysconfig/SuSEfirewall2 and
+       the /etc/sysconfig/SuSEfirewall2.d files.
+    ** If you prefer the second one, remove the SUSEfirewall2 package,
+       install the iptools one and add a custom iptools script on boot
+       (see How to run local scripts).
 
 
 ## How to add autoyast so that some configurations are done automatically on booting
@@ -125,12 +177,19 @@ Run `insserv servicename` on firstboot (see How to run firstboot scripts).
 
 ## Minimal X (Icewm) howtos
 
-This howtos are specific to the minimal X template. They are basically focus on making kiosk like applications. There are different ways to achieve that and different ways to control the window sizes. As the Minimal X has the Icewm window manager, most of them are related to this window manager.
+This howtos are specific to the minimal X template. They are basically
+focus on making kiosk like applications. There are different ways to
+achieve that and different ways to control the window sizes. As the
+Minimal X has the Icewm window manager, most of them are related to this
+window manager.
 
 
 ## How to implement a KIOSK like application without window manager
 
-On some cases you may want to not have any window manager. This cases include when your application can get fullscreen and it is a single window application. You do that by editing the `/etc/inittab` file and the .bashrc file on the user home dir.
+On some cases you may want to not have any window manager. This cases
+include when your application can get fullscreen and it is a single
+window application. You do that by editing the `/etc/inittab` file and
+the .bashrc file on the user home dir.
 
 **/etc/inittab**
 
@@ -224,13 +283,20 @@ On some cases you may want to not have any window manager. This cases include wh
 
 ##     How to implement a KIOSK like application with window manager
 
-* On some cases you may want a window manager. Then, all you have to do is to select the runlevel 5 on the Configuration section and add an autostart program on user tux. That will overwrite the .xinitrc file on user tux.
-* If you want that autostart program to happen on all users, copy the generated /home/tux/.xinitrc to the /etc/skeleton/.xinitrc file.
+* On some cases you may want a window manager. Then, all you have to do
+  is to select the runlevel 5 on the Configuration section and add an
+  autostart program on user tux. That will overwrite the .xinitrc file
+  on user tux.
+* If you want that autostart program to happen on all users, copy the
+  generated /home/tux/.xinitrc to the /etc/skeleton/.xinitrc file.
 
 
 ## How to launch an application in fullscreen mode
 
-Some applications may not be started in fullscreen. One way to control such a thing is to use the icewm-ctrl utility on the `.xinitrc` (see How to implement a KIOSK like application with window manager ). In order to do so, the icewm-ctrl utility needs the window id.
+Some applications may not be started in fullscreen. One way to control
+such a thing is to use the icewm-ctrl utility on the `.xinitrc` (see How
+to implement a KIOSK like application with window manager ). In order to
+do so, the icewm-ctrl utility needs the window id.
 
 Here is an example on how to achieve that with the gbrainy application :
 
@@ -238,17 +304,27 @@ Here is an example on how to achieve that with the gbrainy application :
 
 ## How to customize icewm taskbar and windows
 
-* Icewm can be very customized. One of the customizations include the taskbar. Also you can customize each window size and design. You can customize this for the tux user by adding the needed files into the .icewm dir. If you want this to happen for all users, copy this dir to the `/etc/skeleton/` dir.
-* The easiest way to create these files is to use the icewm control panel application. To do that, add the icewmcp rpm into your appliance. Then build it and run it. Open an xterm and run icewmcp and customize your icewm. After that, copy the `.icewm` into the overlay section.
+* Icewm can be very customized. One of the customizations include the
+  taskbar. Also you can customize each window size and design. You can
+  customize this for the tux user by adding the needed files into the
+  .icewm dir. If you want this to happen for all users, copy this dir to
+  the `/etc/skeleton/` dir.
+* The easiest way to create these files is to use the icewm control
+  panel application. To do that, add the icewmcp rpm into your
+  appliance. Then build it and run it. Open an xterm and run icewmcp and
+  customize your icewm. After that, copy the `.icewm` into the overlay
+  section.
 
 
 ## How to add X for JeOS and Server templates
 
-* In order to get X up and running for JeOS and Server based templates you have to add several packages to your appliance:
+* In order to get X up and running for JeOS and Server based templates
+  you have to add several packages to your appliance:
 
        - xorg-x11-server - xorg-x11-driver-video - xorg-x11-fonts - xorg-x11-driver-input - sax2
 
-* Then go to Configuration tab section and under Startup choose 5:Graphical login.
+* Then go to Configuration tab section and under Startup choose
+  5:Graphical login.
 * Note: by default you will have IceWM as window manager!
 
 
