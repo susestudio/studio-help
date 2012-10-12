@@ -9,8 +9,8 @@ under the terms of the GNU Free Documentation License, Version 1.2 or
 copyright notice and license. A copy of the license version 1.2 is
 included in the section entitled "GNU Free Documentation License".
 
-For Novell trademarks, see the Novell Trademark and Service Mark list
-[http://www.novell.com/company/legal/trademarks/tmlist.html][Novel-Trademarks].
+For Novell trademarks, see the
+[Novell Trademark and Service Mark list][Novel-Trademarks].
 Linux* is a registered trademark of Linus Torvalds. All other third
 party trademarks are the property of their respective owners. A
 trademark symbol (&reg;, &trade; etc.) denotes a Novell trademark; an
