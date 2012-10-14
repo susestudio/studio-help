@@ -69,11 +69,13 @@ Choose from:
   configure the network during the appliance's first boot.
 
 * **Use NetworkManager to configure the network at run-time.** Enable
-  the network through NetworkManager. See the [SLES Administration
-  Guide](http://www.suse.com/documentation/sles11/book_sle_admin/?page=/documentation/sles11/book_sle_admin/data/sec_basicnet_nm.html)
-  or the [openSUSE
-  documentation](http://doc.opensuse.org/documentation/html/openSUSE/opensuse-reference/cha.nm.html)
-  for more information on NetworkManager in SUSE Linux.
+  the network through NetworkManager.
+  See the [SLES Administration Guide][nm-sles] or the
+  [openSUSE documentation][nm-open] for more information on
+  NetworkManager in SUSE Linux.
+
+[nm-sles]: http://www.suse.com/documentation/sles11/book_sle_admin/?page=/documentation/sles11/book_sle_admin/data/sec_basicnet_nm.html
+[nm-open]: http://doc.opensuse.org/documentation/html/openSUSE/opensuse-reference/cha.nm.html
 
 * **Discover network settings automatically (DHCP).** Use a DHCP server
   to get the IP address.
@@ -167,9 +169,12 @@ points. The border between different logical volumes do not have to be
 aligned with any partition border. See the border between LV 1 and LV 2
 in this example.
 
-See the [SLES Administration Guide](http://www.suse.com/documentation/sles11/stor_admin/?page=/documentation/sles11/stor_admin/data/lvm.html)
-or the [openSUSE documentation](http://doc.opensuse.org/documentation/html/openSUSE/opensuse-reference/cha.advdisk.html#sec.yast2.system.lvm)
+See the [SLES Administration Guide][lvm-sles]
+or the [openSUSE documentation][lvm-open]
 for more information on LVM in SUSE Linux.
+
+[lvm-sles]: http://www.suse.com/documentation/sles11/stor_admin/?page=/documentation/sles11/stor_admin/data/lvm.html
+[lvm-open]: http://doc.opensuse.org/documentation/html/openSUSE/opensuse-reference/cha.advdisk.html#sec.yast2.system.lvm
 
 SUSE Studio supports LVM with *one volume group*. To create your
 individual logical volumes, switch to the *Configure+Appliance* tab and:
