@@ -8,8 +8,10 @@ the "Send feedback" button.
 
 Your message will be sent to the *studio-feedback* mailing list.
 
-Alternatively, you may start a new thread on our [feedback
-forum](http://susestudio.com/forum/).  This forum mirrors the
-*studio-users* mailing list, so use whichever interface you prefer.
+Alternatively, you may start a new thread on our [feedback forum].
+This forum mirrors the *studio-users* mailing list, so use whichever
+interface you prefer.
+
+[feedback forum]: http://susestudio.com/forum/
 
 We look forward to hearing from you.
