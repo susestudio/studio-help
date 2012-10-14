@@ -42,17 +42,21 @@ by simply burning the .iso file to disc.
 Use this format if you want to start your appliance as a virtual machine
 on VMware, VirtualBox, or KVM-based hypervisors. This is another method
 to test an appliance without formatting any hard disk.
-[VirtualBox](https://www.virtualbox.org/) and
-[VMware](http://www.vmware.com/products/player/) virtualization
-applications are available for most host operating systems.
-[KVM](http://www.linux-kvm.org) virtualization is for Linux only.
+[VirtualBox] and [VMware] virtualization applications are available for
+most host operating systems.  [KVM] virtualization is for Linux only.
+
+[VirtualBox]: https://www.virtualbox.org/
+[VMware]:     http://www.vmware.com/products/player/
+[KVM]:        http://www.linux-kvm.org
 
 **OVF virtual machine (.ovf)**
-[Open Virtualization Format (OVF)](http://www.dmtf.org/standards/ovf) is
-an open, standards-based format for virtual machines.  A variety of
-hypervisors including SUSE Cloud, VirtualBox, VMware ESX, IBM
-SmartCloud, and Oracle VM support creating virtual machines by importing
-an .ovf file.
+[Open Virtualization Format (OVF)][OVF] is an open, standards-based
+format for virtual machines.
+A variety of hypervisors including SUSE Cloud, VirtualBox, VMware ESX,
+IBM SmartCloud, and Oracle VM support creating virtual machines by
+importing an .ovf file.
+
+[OVF]: http://www.dmtf.org/standards/ovf
 
 In order to use the an OVF image, you may require the `ovftool` from
 VMware. Due to licensing issues we cannot distribute the tools with SUSE
@@ -65,8 +69,10 @@ Use this format if you want to run your appliance on a Xen host system,
 such as SUSE Linux Enterprise Server. Xen guests works only on
 Xen-enabled Linux hosts, including many virtual hosting providers.
 
-See the [SLES Xen Book](http://www.suse.com/documentation/sles11/book_xen/?page=/documentation/sles11/book_xen/data/book_xen.html)
-for more information on Virtualization with Xen in SUSE Linux.
+See the [SLES Xen Book] for more information on Virtualization with Xen
+in SUSE Linux.
+
+[SLES Xen Book]: http://www.suse.com/documentation/sles11/book_xen/?page=/documentation/sles11/book_xen/data/book_xen.html
 
 **Hyper-V (.vhd)**
 This format allows seamless integration with Microsoft's Hyper-V
@@ -75,8 +81,10 @@ include all the necessary drivers to integrate with the Hyper-V
 management console and provide optimum performance.  A Hyper-V-enabled
 Microsoft Windows Server is required to run this format.
 
-See [Microsoft's Windows Server Library](http://technet.microsoft.com/library/cc794868%28WS.10%29.aspx)
+See [Microsoft's Windows Server Library][Hyper-V]
 for more information on virtualizing with Hyper-V.
+
+[Hyper-V]: http://technet.microsoft.com/library/cc794868%28WS.10%29.aspx
 
 ##Cloud formats##
 
@@ -84,8 +92,10 @@ for more information on virtualizing with Hyper-V.
 If you plan to use Amazon Web Services to host your server, this format
 will properly configure the appliance for you do to so. Link your AWS
 credentials to your Studio account, and you will be able to upload and
-launch EC2 instances directly from SUSE Studio. See [Use > Amazon
-EC2](../use/amazon-ec2.html) for more information.
+launch EC2 instances directly from SUSE Studio. See [Use > Amazon EC2]
+for more information.
+
+[Use > Amazon EC2]: ../use/amazon-ec2.html
 
 **Azure Image**
 Windows Azure is another option for hosting your appliances. The Azure
@@ -93,5 +103,7 @@ Image format will do the hard work for you, building a .vhd file
 tailored for hosting on Microsoft's Windows Azure service. Upload your
 Azure publishsettings file to your Studio account, and you will be able
 to create images on Windows Azure, then jump over to the management
-portal to instantiate and manage your virtual machines. See [Use >
-Windows Azure](../use/windows-azure.html) for more information.
+portal to instantiate and manage your virtual machines.
+See [Use > Windows Azure] for more information.
+
+[Use > Windows Azure]: ../use/windows-azure.html
