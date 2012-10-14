@@ -1,5 +1,11 @@
 # Software
 
+[OBS]:               http://build.opensuse.org
+[Packman]:           http://packman.links2linux.org/
+[VideoLan]:          http://www.videolan.org/vlc/download-suse.html
+[openSUSE wiki]: http://en.opensuse.org/Additional_package_repositories
+[openSUSE software search]: http://software.opensuse.org/search
+
 SUSE Studio provides comprehensive tools for modifying your appliance's
 software selection to suit your needs. You can add missing software or
 remove existing software from your base template.  You can use the
@@ -13,14 +19,11 @@ specific version. Choose your software from three sources:
    tailored foundation for your appliance.
 
 2. **External sources.**  Add additional repositories from the [openSUSE
-   Build Service](http://build.opensuse.org) or any other compatible
-   software collection on the web. *Be sure to use sources which are
-   compatible with the base template you selected.* Popular third-pary
-   sources include [Packman](http://packman.links2linux.org/),
-   [VideoLan](http://www.videolan.org/vlc/download-suse.html), and
-   hardware vendors. [The openSUSE
-   wiki](http://en.opensuse.org/Additional_package_repositories) has a
-   more definitive list.
+   Build Service][OBS] or any other compatible software collection on
+   the web. *Be sure to use sources which are compatible with the base
+   template you selected.*
+   Popular third-pary sources include [Packman], [VideoLan], and
+   hardware vendors. The [openSUSE wiki] has a more definitive list.
 
 3. **Any Compatible RPM.**  Upload any compatible RPM package from your
    hard disk or from the web to SUSE Studio. Make sure it's built for an
@@ -73,16 +76,14 @@ included in your appliance.
 
 3. If your can't find what you're looking for, click "Import New
    Repository..." and enter either the name of an
-   [OBS](http://build.opensuse.org) project, or the URL of a collection
-   on the web:
+   [OBS] project, or the URL of a collection on the web:
 
 ![Studio Qs Addrepo Import](studio-qs-addrepo-import.png)
 
 * **OBS Projects.**  Select "Add an openSUSE Build Service project
   repository" and enter the project name. Project names and their
-  contents can be found either by searching in
-  [OBS](http://build.opensuse.org) directly, or via [openSUSE software
-  search](http://software.opensuse.org/search)
+  contents can be found either by searching in [OBS] directly, or via
+  [openSUSE software search].
 * **Other online repositories.** Select "Add a repository via URL",
   select an appropriate name for the repository, and enter the URL of
   the external repository.
