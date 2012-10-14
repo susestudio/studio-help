@@ -10,8 +10,9 @@ following scheme for version numbering:
 * Update the major number, and change minor and release to 0, when you
   have done substantial modifications to your appliance.
 
-You can build images in a variety of [formats](appliance-formats.html)
-on the *Build* tab:
+You can build images in a variety of [formats] on the *Build* tab:
+
+[formats]: appliance-formats.html
 
 1. Select your default format. This is the format your appliance will be
    built with initially. Once you have a successful build in your
@@ -32,8 +33,9 @@ on the *Build* tab:
    and complexity of your appliance, and the number of jobs in queue,
    building may take anywhere from two minutes to hours.*
 
-7. Download your appliance, or start a
-   [Testdrive](../quickstart/testdrive-your-appliance.html)!
+7. Download your appliance, or start a [Testdrive]!
+
+[Testdrive]: ../quickstart/testdrive-your-appliance.html
 
 # Building additional formats
 
