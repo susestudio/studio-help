@@ -1,16 +1,20 @@
 # Using the API with curl
 
-All API functions can be used with curl. The following examples should give you an idea on how this is to be used.
+All API functions can be used with curl. The following examples should
+give you an idea on how this is to be used.
 
 ## Get the list of template sets
 
-The available templates are grouped in template sets. The following command gets the list of template sets from Studio:
+The available templates are grouped in template sets. The following
+command gets the list of template sets from Studio:
 
        curl -u <user>:<api_key> "http://susestudio.com/api/v2/user/template_sets"
    
 [Example][example-1]
 
-Usually you will pick one of the templates in the 'default' template set, which lists the default SUSE templates, and clone an appliance from it.
+Usually you will pick one of the templates in the 'default' template
+set, which lists the default SUSE templates, and clone an appliance from
+it.
 
 
 ## List your appliances
@@ -29,7 +33,9 @@ A specific appliance:
 
 ## Clone an appliance
 
-To create a new appliance pick a template from the template set and use its id with the following command (name and arch are optional parameters):
+To create a new appliance pick a template from the template set and use
+its id with the following command (name and arch are optional
+parameters):
 
        curl -u <user>:<api_key> -XPOST "http://susestudio.com/api/v2/user/appliances?clone_from=14774&name=My%20Server&arch=x86_64"
 
@@ -48,7 +54,8 @@ Upload a file:
 
 [Example][example-5]
 
-Optionally, you can specify the filename, path, owner, group or permissions, here.
+Optionally, you can specify the filename, path, owner, group or
+permissions, here.
 
 
 ## Build your appliance
@@ -65,11 +72,15 @@ Monitor build progress:
 
 ## URL Encoding
 
-Not all the characters are allowed into an URL ([http://tools.ietf.org/html/rfc1738][rfc-characters]). This is a problem for example if you try to add the gcc-c++ package into your appliance as "+" is not allowed. So, the following will not work:
+Not all the characters are allowed into an URL
+([http://tools.ietf.org/html/rfc1738][rfc-characters]).
+This is a problem for example if you try to add the gcc-c++ package into
+your appliance as "+" is not allowed. So, the following will not work:
 
        curl -u user:secret -XPOST http://susestudio.com/api/v2/user/appliances/263276/cmd/add_package?name=gcc-c++
 
-However, some characters can be encoded. See [http://www.w3schools.com/tags/ref_urlencode.asp][w3s-ref-urlencode].
+However, some characters can be encoded.
+See [http://www.w3schools.com/tags/ref_urlencode.asp][w3s-ref-urlencode].
 
 So, in our example, you should :
 
