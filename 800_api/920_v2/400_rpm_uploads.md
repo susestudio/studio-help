@@ -24,7 +24,9 @@ POST /api/v2/user/rpms?base_system=`<base>`
 >
 > Adds an RPM or archive to the user repository for appliances base on `base`.
 >
-> The file is expected to be wrapped as with form-based file uploads in HTML (RFC 1867) in the body of the POST request as the `file` parameter.
+> The file is expected to be wrapped as with form-based file uploads
+> in HTML (RFC 1867) in the body of the POST request as the `file`
+> parameter.
 >
 > Result: [Example](rpm.xml)
 
@@ -33,7 +35,9 @@ PUT /api/v2/user/rpms/`<rpm_id>`
 >
 > Update the content of the RPM or archive with the id `rpm_id`.
 >
-> The file is expected to be wrapped as with form-based file uploads in HTML (RFC 1867) in the body of the POST request as the `file` parameter.
+> The file is expected to be wrapped as with form-based file uploads
+> in HTML (RFC 1867) in the body of the POST request as the `file`
+> parameter.
 >
 > Result: [Example](rpm.xml)
 
