@@ -1,0 +1,7 @@
+<!-- vim: set ft=markdown tw=72 sw=2 sts=2 et: -->
+
+* keep text width of prose under 72 chars
+* start sentences on separate lines, even within a paragraph.
+  this keeps diffs readable as there's no need to reflow the rest
+  of a paragraph after a (even small) change.
+* keep enumerations (definition lists etc) sorted (LC_ALL=C)
