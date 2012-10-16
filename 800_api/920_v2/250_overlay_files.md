@@ -14,16 +14,22 @@ POST /api/v2/user/files?appliance_id=`<id>`&filename=`<name>`&path=`<path>`&owne
 > * (optional) `<owner>`: The owner of the file.
 > * (optional) `<group>`: The group of the file.
 > * (optional) `<permissions>`: The permissions of the file.
-> * (optional) `<enabled>`: Used to enable/disable this file for the builds.
-> * (optional) `<url>`: The url of the file to add from the internet (HTTP and FTP are supported) when using the web upload method
+> * (optional) `<enabled>`: Used to enable/disable this file for the
+>   builds.
+> * (optional) `<url>`: The url of the file to add from the internet
+>   (HTTP and FTP are supported) when using the web upload method.
 >
 > Adds a file to the appliance with id `id`.
 >
-> Files can either be uploaded in the body of the POST request or from a URL in the web:
-> * With direct uploads the file is expected to be wrapped as with form-based file uploads in HTML (RFC 1867) in the body of the POST request as the `file` parameter.
+> Files can either be uploaded in the body of the POST request or from a
+> URL in the web:
+> * With direct uploads the file is expected to be wrapped as with
+>   form-based file uploads in HTML (RFC 1867) in the body of the POST
+>   request as the `file` parameter.
 > * For Uploads from the web you have to provide the `url` parameter.
 >
-> Optionally, one or more metadata settings can be specified. If those are left out, they can also be change later (see below).
+> Optionally, one or more metadata settings can be specified. If those
+> are left out, they can also be change later (see below).
 >
 > Result: [Example](file.xml)
 
@@ -37,7 +43,9 @@ PUT /api/v2/user/files/`<file_id>`/data
 >
 > Writes the content of the file with id `file_id`.
 >
-> The file is expected to be wrapped as with form-based file uploads in HTML (RFC 1867) in the body of the PUT request as the `file` parameter.
+> The file is expected to be wrapped as with form-based file uploads
+> in HTML (RFC 1867) in the body of the PUT request as the `file`
+> parameter.
 >
 > Result: [Example](file.xml)
 
