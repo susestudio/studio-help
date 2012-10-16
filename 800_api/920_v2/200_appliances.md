@@ -24,9 +24,11 @@ POST /api/v2/user/appliances?clone_from=`<appliance_id>`&name=`<name>`&arch=`<ar
 > * (optional) `<name>`: The name of appliance
 > * (optional) `<arch>`: The architecture of the appliance (x86_64 or i686)
 >
-> Create a new appliance by cloning a template or another appliance with the id `appliance_id`.
+> Create a new appliance by cloning a template or another appliance with
+> the id `appliance_id`.
 >
-> If `name` is left out, a name will be generated. If `arch` is left out a i686 appliance will be created.
+> If `name` is left out, a name will be generated. If `arch` is left out
+> a i686 appliance will be created.
 
 DELETE /api/v2/user/appliances/`<id>`
 > * `<id>`: Id of the appliance
@@ -46,7 +48,10 @@ GET /api/v2/user/appliances/`<id>`/configuration
 PUT /api/v2/user/appliances/`<id>`/configuration
 > * `<id>`: Id of the appliance
 >
-> Modify portions (or all) of the configuration.  The input is sent as XML fragments in the POST body, using the same schema as what the GET call.  For example, to change the network settings to "dhcp", the POST body would have:
+> Modify portions (or all) of the configuration.  The input is sent as
+> XML fragments in the POST body, using the same schema as what the GET
+> call.  For example, to change the network settings to "dhcp", the POST
+> body would have:
 >
 >     <configuration>
 >       <network>
@@ -66,8 +71,8 @@ GET /api/v2/user/appliances/`<id>`/configuration/logo
 PUT /api/v2/user/appliances/`<id>`/configuration/logo
 > * `<id>`: Id of the appliance
 >
-> Changes the appliance logo.  The data must be sent as a form-based upload (RFC 1867)
-> in the `file` parameter in the body.
+> Changes the appliance logo.  The data must be sent as a form-based
+> upload (RFC 1867) in the `file` parameter in the body.
 >
 > Returns a success or fail message.
 
@@ -79,8 +84,8 @@ GET /api/v2/user/appliances/`<id>`/configuration/background
 PUT /api/v2/user/appliances/`<id>`/configuration/background
 > * `<id>`: Id of the appliance
 >
-> Changes the appliance background.  The data must be sent as a form-based upload (RFC 1867)
-> in the `file` parameter in the body.
+> Changes the appliance background.  The data must be sent as a
+> form-based upload (RFC 1867) in the `file` parameter in the body.
 >
 > Returns a success or fail message.
 
@@ -142,7 +147,8 @@ POST /api/v2/user/appliances/`<id>`/cmd/remove_repository?repo_id=`<repo_id>`
 
 POST /api/v2/user/appliances/`<id>`/cmd/add_user_repository
 >
-> Adds the according user repository (the one containing the uploaded RPMs) to the appliance.
+> Adds the according user repository (the one containing the uploaded
+> RPMs) to the appliance.
 
 ### Software Selection
 
@@ -156,7 +162,8 @@ GET /api/v2/user/appliances/`<id>`/software
 PUT /api/v2/user/appliances/`<id>`/software
 > * `<id>`: Id of the appliance
 >
-> Update the list of selected packages and patterns of the appliance with id `id`.
+> Update the list of selected packages and patterns of the appliance
+> with id `id`.
 >
 > Result: [Example](software.xml)
 
@@ -164,7 +171,11 @@ GET /api/v2/user/appliances/`<id>`/software/installed?build_id=`<build_id>`
 > * `<id>`: Id of the appliance
 > * (optional) `<build_id>`: Id of the build.
 >
-> List all packages and patterns that are installed. You can either specify the appliance with the `appliance_id` parameter, which will list the software that will installed with the next build or via an build id. That makes it possible to retrieve the installed software for older builds.
+> List all packages and patterns that are installed. You can either
+> specify the appliance with the `appliance_id` parameter, which will
+> list the software that will installed with the next build or via an
+> build id. That makes it possible to retrieve the installed software
+> for older builds.
 >
 > Result: [Example](software_map.xml)
 
@@ -221,12 +232,20 @@ POST /api/v2/user/appliances/`<id>`/cmd/unban_package?name=`<name>`
 GET /api/v2/user/appliances/`<id>`/software/search?q=`<search_string>`&all_fields=`<all_fields>`&all_repos=`<all_repos>`
 > * `<id>`: Id of the appliance
 > * `<q>`: The search string
-> * (optional) `<all_fields>`: Option to perform the search on all fields. Default is 'false'.
-> * (optional) `<all_repos>`: Option to perform the search on all repositories. Default is 'false'.
+> * (optional) `<all_fields>`: Option to perform the search on all
+>   fields. Default is 'false'.
+> * (optional) `<all_repos>`: Option to perform the search on all
+>   repositories. Default is 'false'.
 >
-> Search all software that matches the given `search_string`. If the `all_fields` parameter is set to `true` all fields are considered, otherwise only the name of the package or pattern is matched against the `search_string`.
+> Search all software that matches the given `search_string`. If the
+> `all_fields` parameter is set to `true` all fields are considered,
+> otherwise only the name of the package or pattern is matched against
+> the `search_string`.
 >
-> By default only software that is available to the appliance is considered, e.g. the search is limited to the repositories of this appliances. If you want to search in all repositories set the `all_repos` parameter to `true`.
+> By default only software that is available to the appliance is
+> considered, e.g. the search is limited to the repositories of this
+> appliances. If you want to search in all repositories set the
+> `all_repos` parameter to `true`.
 >
 > Result: [Example](software_map.xml)
 
@@ -248,7 +267,8 @@ GET /api/v2/user/appliances/`<id>`/image_files?build_id=`<build_id>`&path=`<path
 
 ### GPG Keys
 
-SUSE Studio allows to upload GPG keys that will be imported when the appliance is built.
+SUSE Studio allows to upload GPG keys that will be imported when the
+appliance is built.
 
 GET /api/v2/user/appliances/`<id>`/gpg_keys
 > * `<id>`: Id of the appliance.
@@ -268,12 +288,16 @@ GET /api/v2/user/appliances/`<id>`/gpg_keys/`<key_id>`
 POST /api/v2/user/appliances/`<id>`/gpg_keys?name=`<name>`&target=`<target>`&key=`<the_key>`
 > * `<id>`: Id of the appliance.
 > * `<name>`: A name for the key.
-> * `<target>`: The target specifies in which keyring the key will be importet. Possible values are: 'rpm'.
+> * `<target>`: The target specifies in which keyring the key will be
+>   importet. Possible values are: 'rpm'.
 > * (optional) `<the_key>`: The URL encoded key.
 >
-> Uploads a GPG key to the appliance with the id `id`. The key can either be given as the `key` parameter or wrapped as with form-based file uploads in HTML (RFC 1867) in the body of the POST request.
+> Uploads a GPG key to the appliance with the id `id`. The key can
+> either be given as the `key` parameter or wrapped as with form-based
+> file uploads in HTML (RFC 1867) in the body of the POST request.
 >
-> The key will be imported into the keyring that is specified in the `target` parameter.
+> The key will be imported into the keyring that is specified in the
+> `target` parameter.
 >
 > Result: [Example](gpg_key.xml)
 
