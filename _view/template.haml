@@ -1,5 +1,7 @@
+!!!
 %head
-  -#= css "application"
+  %link{ :rel => "shortcut icon", :href => "/help/public/favicon.ico", :type => "image/x-icon"}
+  %link{ :rel => "icon", :href => "/help/public/favicon.png", :type => "image/png"}
   = css "helphelp"
   %title #{title}
 
@@ -8,39 +10,51 @@
   #page
     #header
       #topbar
-        %a#logo-header{ :href => "http://susestudio.com" }
-          %img{ :src => "http://susestudio.com/images/logo-header.png", :alt => "Logo-header" }
+        %a#logo-header{ :href => "/help" }
+          %img{ :src => "/help/public/logo-studio-help.png", :alt => "Logo-header" }
 
     #content
-      %aside#aside-toc
-        =render_toc
+      #aside
+        #aside-toc
+          =render_toc
 
       #wrapper.content
         = render_content
 
-  #footer
-    %ul.links
-      %li.first
-        %a{:href => "http://susestudio.com/forum/", :target => "_blank"} Forum
-      %li
-        %a{:href => "http://webchat.freenode.net/?channels=#susestudio", :target => "_blank"} Chat (IRC)
-      %li
-        %a{:href => "http://blog.susestudio.com/", :target => "_blank"} Blog
-      %li
-        %a{:href => "http://facebook.com/susestudio", :target => "_blank"} Facebook
-      %li
-        %a{:href => "http://twitter.com/susestudio/", :target => "_blank"} Twitter
-      %li
-        %a{:href => "http://susestudio.com/screencast/", :target => "_blank"} Screencast
-      %li
-        %a{:href => "http://susestudio.com/artwork/", :target => "_blank"} Logos & badges
-      %li
-        %a{:href => "http://susestudio.com/jobs/", :target => "_blank"} Jobs
-    .copy
-      &copy; 2012 SUSE
-      %a{:href => "http://novell.com/company/legal/", :target => "_blank"} Legal
-      %a{:href => "http://novell.com/company/policies/privacy/", :target => "_blank"} Privacy
+  #new_footer
+    #content_footer
+      #links_footer
+        %ul.links
+          %li.first
+            %a{:href => "/help", :target => "_blank"} Studio
+            |
+          %li
+            %a{:href => "/browse/"} Gallery
+            |
+          %li
+            %a{:href => "/forum", :target => "_blank"} Forum
+            |
+          %li
+            %a{:href => "/artwork/", :target => "_blank"} Logos & badges
+            |
+          %li
+            %a{:href => "/jobs/", :target => "_blank"} Jobs
 
-  %map#ribbon-map{:name => "ribbon-map"}
-    %area{:shape => "poly", :coords => "16,0,56,0,148,92,148,132", :href => "https://github.com/susestudio/studio-help/", :alt => "Fork me on Github", :target => "_blank" }
-  %img#fork-me{:src => "https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png", :usemap => "#ribbon-map"}
+        .copy
+          \&copy; 2012 Novell, Inc.
+          %a{:href => "http://novell.com/company/legal/", :target => "_blank"} Legal
+          %a{:href => "http://novell.com/company/policies/privacy/", :target => "_blank"} Privacy
+
+      .social-footer
+        %li{ :style => "border-right: none; padding-right: 0px;" }
+          %a{ :href => "http://facebook.com/susestudio", :target=>"_blank" }
+            %img{ :src => "/help/public/fb_social_footer.png", :alt => "Facebook" }
+        %li
+          %a{ :href => "http://blog.susestudio.com", :target=>"_blank" }
+            %img{ :src => "/help/public/bl_social_footer.png", :alt => "SUSE Studio Blog" }
+        %li
+          %a{ :href => "https://plus.google.com/u/0/117588435588580984362/posts", :target=>"_blank" }
+            %img{ :src => "/help/public/gp_social_footer.png", :alt => "Google Plus" }
+        %li
+          %a{ :href => "http://twitter.com/susestudio/", :target=>"_blank" }
+            %img{ :src => "/help/public/tt_social_footer.png", :alt => "Twitter" }
