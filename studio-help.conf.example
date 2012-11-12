@@ -1,9 +1,9 @@
 <VirtualHost>
-Alias /studio-help /studio/filestore/help
+Alias /studio-help /srv/studio-help
   <Location /studio-help>
     PassengerEnabled off
   </Location>
-  <Directory /studio/filestore/help >
+  <Directory /srv/studio-help >
     DirectoryIndex overview.html
   </Directory>
 </VirtualHost>
