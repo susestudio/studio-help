@@ -1,0 +1,9 @@
+<VirtualHost>
+Alias /studio-help /srv/studio-help
+  <Location /studio-help>
+    PassengerEnabled off
+  </Location>
+  <Directory /srv/studio-help >
+    DirectoryIndex overview.html
+  </Directory>
+</VirtualHost>
