@@ -13,3 +13,5 @@ of your appliance. You can view:
 * With *full supportability report* it lists each package in your appliance and its license. 
 * With the *X licenses* link it gives you a list of all used licenses in your appliance. 
 * The *Y total packages* link shows a list of packages and their versions.
+
+If you want an overview of all licenses in your appliance, use `zypper licenses`
