@@ -13,18 +13,31 @@ download the image directly.
 The following Ruby template is used to generate JSON:
 
     {
-      :event => 'build_finished',
-      :id    => image.appliance_id,
-      :name  => image.name,
+      :event => 'build_finished',    # There's currently only one event type
+      :id    => image.appliance_id,  # An integer
+      :name  => image.name,          # A string
       :build => {
-        :id         => build.id,
-        :version    => image.version,
-        :image_type => image.image_type,
-        # Units of image_size and compressed_image_size are in MB.
-        :image_size => build.image_size,
-        :compressed_image_size => build.compressed_image_size,
-        :download_url => download_url,
-        :md5          => build.md5sum
+        :id                    => build.id,                     # An integer
+        :version               => image.version,                # A string
+        # image_type is one of the following values:
+        #   oem    - USB stick / hard disk image
+        #   vmx    - VMware / VirtualBox (.vmdk)
+        #   kvm    - SUSE Cloud / OpenStack / KVM
+        #   iso    - Live CD/DVD (.iso)
+        #   xen    - Xen guest
+        #   ec2    - Amazon EC2 image
+        #   ovf    - OVF virtual machine
+        #   net    - PXE/Net boot
+        #   oemiso - Preload ISO (.iso)
+        #   zfcp   - zFCP (.raw)
+        #   dasd   - DASD (.raw)
+        #   vhd    - Hyper-V (.vhd)
+        #   azure  - Azure Image
+        :image_type            => image.image_type,
+        :image_size            => build.image_size,             # An integer, in MBs
+        :compressed_image_size => build.compressed_image_size,  # An integer, in MBs
+        :download_url          => download_url,                 # A string
+        :md5                   => build.md5sum                  # A string
       }
     }
 
