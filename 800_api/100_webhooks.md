@@ -140,4 +140,4 @@ Finally, check the exact data sent by reloading the PostBin page.
 ![POST Payload](postbin_payload.png)
 
 
-[webhooks]: http://wiki.webhooks.org
+[webhooks]: http://en.wikipedia.org/wiki/Webhook
