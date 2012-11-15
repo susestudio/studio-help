@@ -114,7 +114,7 @@ could test WebHooks and look at the actual data being sent.
 
 ### Setting up
 
-Visit PostBin and click “Make a PostBin”. You will be directed to a page with a
+Visit PostBin and click "Make a PostBin". You will be directed to a page with a
 URL like the following:
 
 ![Postbin URL](postbin_url.png)
