@@ -1,7 +1,56 @@
 # WebHooks
 
-A [WebHook][webhooks] is a simple event notification/callback mechanism via HTTP
-POST.
+[WebHook][webhooks] are simple event notification and user-definied callback mechanism based on 
+the Hypertext Transfer Protocol (HTTP).
+With WebHooks you can react to events in your application emitted by your SUSE Studio server.
+An event occurs on the source site (typically your Studio server) and can invoke special 
+behaviour on the receiving site (usually a receiving script or application).
+
+For example, you can automatically ask the status of the build process of your
+appliance, convert an image format, perform additional configuration changes, or 
+automatically import Studio built images into your SUSE Cloud or OpenStack
+installation.
+
+
+## Testing WebHooks
+
+WebHooks are triggered whenever a build completes successfully. In this example,
+we build an appliance and use http://requestb.in to demostrate how you
+could test WebHooks and look at the actual data being sent.
+
+
+### Setting up
+
+Visit RequestBin and click the "Create a RequestBin" link. You will be directed to a page with a
+URL like the following:
+
+![Postbin URL](requestbin_url.png)
+
+Copy the URL and paste it into your SUSE Studio account's page and save:
+
+![WebHook URL](webhook_url.png)
+
+### Trigger WebHooks
+
+To test that the hook fires you will need to build an appliance. In this example
+we build an existing appliance.
+
+![Build](build.png)
+
+When the build completes, a call will be made to the URL stored in your account
+settings.
+
+![Build done](build_done.png)
+
+## Check the Data
+
+Finally, check the exact data sent by reloading the PostBin page.
+
+![POST Payload](requestbin_payload.png)
+
+
+
+# Creating Applications with WebHooks
 
 ## Setting up WebHooks
 
@@ -119,38 +168,11 @@ Example written in Perl for use as a CGI script:
     close LOG;
 
 
-## Testing WebHooks
+## For more Information
 
-WebHooks are triggered whenever a build completes successfully. In this example,
-we build an appliance and use <http://www.postbin.org> to demostrate how you
-could test WebHooks and look at the actual data being sent.
+* [API documentation of WebHook](http://susestudio.com/help/api/webhooks.html)
+* [Reference implementation of WebHook receivers](https://github.com/susestudio/susestudio-webhook-receivers)
 
-### Setting up
-
-Visit PostBin and click "Make a PostBin". You will be directed to a page with a
-URL like the following:
-
-![Postbin URL](postbin_url.png)
-
-Copy the URL and paste it into your SUSE Studio account's page and save:
-
-![WebHook URL](webhook_url.png)
-
-### Trigger WebHooks
-
-To test that the hook fires you will need to build an appliance. In this example
-we build an existing appliance.
-
-![Build](build.png)
-
-When the build completes, a call will be made to the URL stored in your account
-settings.
-
-![Build done](build_done.png)
-
-Finally, check the exact data sent by reloading the PostBin page.
-
-![POST Payload](postbin_payload.png)
 
 
 [webhooks]: http://en.wikipedia.org/wiki/Webhook
