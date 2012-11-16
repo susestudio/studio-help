@@ -1,4 +1,4 @@
-# Your Home Page
+# Viewing Your Home Page
 
 If you have already created an appliance, SUSE Studio lists your
 appliances, grouped by access rights (your private appliances, your

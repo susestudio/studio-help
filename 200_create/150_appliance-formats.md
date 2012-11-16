@@ -1,4 +1,4 @@
-# Appliance Formats
+# Selecting Appliance Formats
 
 SUSE Studio helps you build your appliance in a variety different
 formats. Each format is used for a different purpose:
