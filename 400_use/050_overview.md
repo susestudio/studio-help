@@ -1,4 +1,4 @@
-# How to use appliances created with SUSE Studio
+# Using Appliances Created With SUSE Studio
 
 SUSE Studio appliances can be used in many ways, depending on the formats
 chosen. Some formats can be copied to hard drives, USB sticks, CDs, and DVDs.
