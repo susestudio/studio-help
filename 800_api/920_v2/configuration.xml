@@ -84,6 +84,7 @@ It provides Linux, Apache, MySQL, and Perl.</description>
     <xen_host_mode_enabled>true</xen_host_mode_enabled>
     <cdrom_enabled>true</cdrom_enabled>
     <webyast_enabled>false</webyast_enabled>
+    <live_installer_enabled>false</live_installer_enabled>
     <public_clonable>true</public_clonable>
     <runlevel>3</runlevel>
     <automatic_login>tux</automatic_login>
