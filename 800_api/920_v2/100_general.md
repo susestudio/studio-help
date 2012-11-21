@@ -1,10 +1,5 @@
 # General information
 
-GET /user/show_api_key
-> Returns an HTML page which contains the API key flagged as:
->
-> `<span class="studio:api_key">ksdjfu93r</span>`.
-
 GET /api/v2/user/account
 >Returns information about the account, such as username, email address
 >and disk quota.
