@@ -238,7 +238,7 @@ code {
     line-height: 25px;
 }
 
-#aside-toc li a, a:visited {
+#aside-toc li a, #aside-toc li a:visited {
     color: #2e3436;
     text-decoration: none;
     -moz-transition-duration: 0.15s;
