@@ -425,7 +425,7 @@ div.navigation {
 #new_footer .copy {
     width: 200px;
     font-size: 11px;
-    margin-top: 7px;
+    margin: 0px auto;
 }
 
 #new_footer .copy a {
@@ -459,10 +459,8 @@ div.navigation {
 
 #links_footer {
     width: 45%;
-    float: left;
-    margin: auto;
-    text-align: left;
-    padding-left: 10px;
+    margin: 2em auto auto;
+    text-align: center;
 }
 
 /* End Footer */
