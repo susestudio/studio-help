@@ -18,6 +18,8 @@ POST /api/v2/user/files?appliance_id=`<id>`&filename=`<name>`&path=`<path>`&owne
 >   builds.
 > * (optional) `<url>`: The url of the file to add from the internet
 >   (HTTP and FTP are supported) when using the web upload method.
+> * (optional) `<extract_archive>`: Determines if archives are extracted
+>   during installation. Defaults to 'true'.
 >
 > Adds a file to the appliance with id `id`.
 >
