@@ -28,13 +28,14 @@ Live discs are unique because they can run on a computer without a hard
 drive, or act as rescue systems for computers with a corrupted hard
 drive or file system.
 
-**Preload ISO (.iso)**
-This is an ideal format if you planning to do installations on physical
+**Preload ISO (.iso)** and **Preload USB stick image**
+These are ideal formats if you planning to do installations on physical
 machines, when you do not require a 'live' experience (running from the
 media *without installing*).  Your appliance's disk image will be
 wrapped in a simple bootable installer that asks only which hard disk to
 install to. Your installation media can be prepared on any existing OS
-by simply burning the .iso file to disc.
+by simply burning the .iso file to disc (Preload ISO) or by writing it to
+an USB stick (Preload USB stick image).
 
 ##Virtual formats##
 
