@@ -1,16 +1,6 @@
 # SUSE Studio Online Help
 
 
-
-We are here to help you to
-
-* [Create](create/index.html)
-* [Test](test/index.html)
-* [Use](use/index.html)
-
-software appliances with the software you care about.
-
-You can [contribute](contribute.html) to this documentation.
-
-Your help is very much appreciated.
-
+* **Newcomers**, read our [Quickstart Guide](quickstart/index.html).
+* **Advanced Users** can [creating](create/index.html), [testing](test/index.html), and [using](use/index.html) appliances.
+* **Developers** can read the [SUSE Studio API](api/index.html).
