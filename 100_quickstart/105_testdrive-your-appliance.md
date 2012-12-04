@@ -1,4 +1,4 @@
-# Testdrive your appliance
+# Debugging your Appliance
 
 SUSE Studio's *Testdrive* enables you to boot and run your appliance
 without downloading it.

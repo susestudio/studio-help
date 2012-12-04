@@ -1,4 +1,4 @@
-# How to run appliances on VMware
+# Running Appliances on VMware
 
 The downloaded file has the suffix *.vmx.tar.gz*. After extraction you
 will see a new subdirectory with two files with the suffixes *.vmdk* and
