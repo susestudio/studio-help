@@ -12,9 +12,6 @@ After your first sign in you will not have an appliance. From your home
 page, you can create a new appliance and select a template to create
 your own custom appliance.
 
-
-## You can navigate the appliance editor by switching tabs
-
 **Software:** Add/Remove packages and repositories (you will have access
 to the openSUSE build service) or upload your own rpms.
 
