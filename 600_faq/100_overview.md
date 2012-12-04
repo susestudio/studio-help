@@ -65,3 +65,25 @@ shown on the top left in the appliance editor or your home page).
 
 The official documentation can be found on the [SUSE Studio
 help](http://susestudio.com/help "SUSE Studio Help") page.
+
+
+## Where can I find maintenance times of SUSE Studio?
+
+Maintenance times are published at
+[http://susestudio.com/maintenance_times](http://susestudio.com/maintenance_times "SUSE Studio Maintenance Times").
+This list will be updated continuously.
+During maintenance time new updates and bugfixes will be deployed to
+[SUSE Studio](http://susestudio.com/ "SUSE Studio").
+Most of the times you will still be able to access our service and edit
+your appliance, but starting new builds or running testdrive for your
+appliance will be disabled.
+
+In rare cases you might not be able to access SUSE Studio during these
+times.
+
+
+## Where can I see changes of the Studio functionality?
+
+Please follow our [Twitter feed](http://twitter.com/susestudio/), 
+[Blog](http://blog.susestudio.com/),
+or [Facebook page](http://facebook.com/susestudio).

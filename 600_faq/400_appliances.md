@@ -69,36 +69,12 @@ select the version you want to unpublish and click the "Unpublish"
 button.
 
 
-
-## Where can I find maintenance times of SUSE Studio?
-
-Maintenance times are published at
-[http://susestudio.com/maintenance_times](http://susestudio.com/maintenance_times "SUSE Studio Maintenance Times").
-This list will be updated continuously.
-During maintenance time new updates and bugfixes will be deployed to
-[SUSE Studio](http://susestudio.com/ "SUSE Studio").
-Most of the times you will still be able to access our service and edit
-your appliance, but starting new builds or running testdrive for your
-appliance will be disabled.
-
-In rare cases you might not be able to access SUSE Studio during these
-times.
-
-
-## Where can I see changes of the Studio functionality?
-
-Please follow our [Twitter feed](http://twitter.com/susestudio/), 
-[Blog](http://blog.susestudio.com/),
-or [Facebook page](http://facebook.com/susestudio).
-
 ## How can I build a standard image (like JeOS or Server)?
 
 When you create a new appliance, you will be starting from a predefined template, 
 based on openSUSE 12.2, SLE11 SP2 or SLE10 SP4 for 32 and 64-bit x86 systems.
 They are all working out of the box without any changes, or you can download images
 from other users in Gallery.
-
-
 
 
 ## What is a "Overlay File"?
