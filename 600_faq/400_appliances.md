@@ -43,6 +43,15 @@ RPMs or packages from the web. They must have the format .rpm or
 archives of RPMs in .tar, .tar.gz, .tgz, .tar.bz2, .tbz or .zip format.
 
 
+## How can I add packages into boot image (initrd)?
+
+Under the "Software" tab there is a list of your selected packages. 
+Click the package link and it will show a description of the package.
+Scroll down a bit and click the 'Add to boot image' link:
+   
+![Link to add a package to boot image](bootincludeflag.png)
+
+
 ## What appliance formats are available?
 
 At the moment you can create images for USB stick / hard disk, Live
