@@ -1,5 +1,8 @@
 # Troubleshooting
 
+* This will become a table of contents (this text will be scraped).
+{:toc}
+
 ## What can I do when testdrive is not working?
 
 Please check if a new Flash-Version is available. If you have the
