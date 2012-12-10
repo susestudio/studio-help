@@ -333,6 +333,23 @@ In order to do that, connect the usb disk and from a terminal do:
        \tw     «--- write changes to partition table
 
 
+## Creating a read-only appliance
+
+This is only useful if you build images for SLES11 SP1 or later. The 
+following procedure creates a root filesystem which is immutable:
+
+1. Enable the LVM configuration in the 'Configuration' > 'Appliance' tab.
+2. Define a volume group name (default is set to 'systemVG').
+3. Create a root partition and a data partition. The root partition will
+be read-only (placeholder LVM_GROUP_NAME), but the data partition will be set to read-write.
+4. Go to the 'Configuration' > 'Appliance' tab and enable 
+'Run script whenever the appliance boots'.
+5. Enter the following lines into the text field and replace '{LVM_GROUP_NAME}'
+with the real LVM root name:
+   
+       rm -f /etc/mtab && ln -s /proc/mounts /etc/mtab
+       sed -i 's#^\(\s*kernel .*\)#\1 readonlyroot state=/dev/mapper/{LVM_GROUP_NAME}-LVRoot#g' /boot/grub/menu.lst
+6. Build the appliance.
 
 
 [uncompress-blog]: http://blogs.simplythebest.net/entry.php?w=RadianT&e_id=8
