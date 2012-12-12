@@ -275,15 +275,9 @@ span.current-page {
     padding-bottom: 80px;
 }
 
-#suse_studio_online_help{
+#suse_studio_help{
     color: #78af42;
     font-size: 37px;
-    background-image: url(studio_online_title.png);
-    background-repeat: no-repeat;
-    width: 434px;
-    height: 69px;
-    text-indent: -5000px;
-    margin-left: -100px;
 }
 
 .content .page-overview{
