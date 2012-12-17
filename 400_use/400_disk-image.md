@@ -1,10 +1,10 @@
-# Using disk images
+# Disk images
 
 * This will become a table of contents (this text will be scraped).
 {:toc}
 
 
-## How to image USB flash drives (in Linux)
+## Writing image to USB flash drives (in Linux)
 
 To make a bootable USB stick from the appliance you've created, select
 the disk image type in the build tab, and then build and download the
@@ -106,7 +106,7 @@ second partition on the stick:
       Syncing disks.
       
 
-## How to image USB flash drives (in Windows)
+## Writing image to USB flash drives (in Windows)
 
 
 ### The GUI way
@@ -242,7 +242,7 @@ Now you have a custom software appliance ready to be booted from your
 USB stick!
 
 
-## How to check the MD5SUM of the raw image and the USB stick
+## Check the MD5SUM of the raw image and the USB stick
 
 We got some feedback that defective USB sticks can show problems with
 whole systems but not with single files.
@@ -256,7 +256,7 @@ compare the md5sums of the raw image and the newly created device**
        md5sum /dev/sdb
 
 
-## How to copy an image into hard disc
+## Copying an image into hard disc
 
 That is the same case as How to copy an image into the USB drive but
 with the difference that you need to boot with some external media, like
@@ -282,7 +282,7 @@ Replace 1.2.3.4 by the IP address of the machine you are writing to.
 Use a different number here, if needed.
 
 
-## How to change configurations on disc image
+## Changing configurations on disc image
 
 You can mount the disc image by using the following command:
        
@@ -293,7 +293,7 @@ You can mount the disc image by using the following command:
 Then change whatever you want to change and umount.
 
 
-## How to try out an image on qemu
+## Trying out an image on qemu
 
 You can try out the images on qemu before copying them into USB or disc.
 Even thought you can do that with qemu, I would recommend to use
@@ -317,7 +317,7 @@ or
        qemu-kvm --snapshot -m 512 image.raw
 
 
-## How to make a USB drive bootable
+## Making a USB drive bootable
 
 It is known that in some situation the USB drive would not boot.
 Even sometimes it will boot once and stop booting afterwards.
@@ -333,6 +333,23 @@ In order to do that, connect the usb disk and from a terminal do:
        \tw     «--- write changes to partition table
 
 
+## Creating a read-only appliance
+
+This is only useful if you build images for SLES11 SP1 or later. The 
+following procedure creates a root filesystem which is immutable:
+
+1. Enable the LVM configuration in the 'Configuration' > 'Appliance' tab.
+2. Define a volume group name (default is set to 'systemVG').
+3. Create a root partition and a data partition. The root partition will
+be read-only (placeholder LVM_GROUP_NAME), but the data partition will be set to read-write.
+4. Go to the 'Configuration' > 'Appliance' tab and enable 
+'Run script whenever the appliance boots'.
+5. Enter the following lines into the text field and replace '{LVM_GROUP_NAME}'
+with the real LVM root name:
+   
+       rm -f /etc/mtab && ln -s /proc/mounts /etc/mtab
+       sed -i 's#^\(\s*kernel .*\)#\1 readonlyroot state=/dev/mapper/{LVM_GROUP_NAME}-LVRoot#g' /boot/grub/menu.lst
+6. Build the appliance.
 
 
 [uncompress-blog]: http://blogs.simplythebest.net/entry.php?w=RadianT&e_id=8

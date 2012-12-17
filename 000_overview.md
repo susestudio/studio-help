@@ -1,4 +1,4 @@
-# SUSE Studio Online Help
+# SUSE Studio Help
 
 
 * **Newcomers**, should read our [Quickstart Guide](quickstart/index.html).
