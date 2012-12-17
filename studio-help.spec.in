@@ -18,7 +18,7 @@
 # norootforbuild
 
 Name:           studio-help
-Version:        1.2.70
+Version:        #VERSION#
 Release:        1.0
 License:        GFDL
 Summary:        SUSE Studio documentation
