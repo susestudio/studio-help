@@ -1,8 +1,24 @@
 # Logging In
 
-Before you can use SUSE Studio, you need to log in.
+Before you can use SUSE Studio, you need to log in. There are
+two possible variantes of SUSE Studio:
 
-SUSE Studio allows you to use your login credentials from [Novell],
+* SUSE Studio Onsite: this variant is a SUSE Studio release intended for
+  installation on a server machine behind the firewall.
+
+* SUSE Studio Online: this variant is the publicly hosted version at http://susestudio.com.
+
+
+## Logging in to SUSE Studio Onsite
+
+SUSE Studio Onsite allows you to log in with your username and password.
+Get it from your administrator.
+
+![Studio Qs Login Onsite](studio-qs-login-onsite.png)
+
+## Logging In to SUSE Studio Online
+
+SUSE Studio Online allows you to use your login credentials from [Novell],
 [Google], [Yahoo], [Twitter], [Facebook], or an any [OpenID] provider.
 
 [Novell]:   https://secure-www.novell.com/selfreg/jsp/createAccount.jsp
