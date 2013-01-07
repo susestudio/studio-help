@@ -1,5 +1,7 @@
 #!/usr/bin/ruby
 
+require "shellwords"
+
 if ARGV.size != 1
   STDERR.puts "Usage: do_create <output_directory>"
   exit 1
@@ -11,7 +13,7 @@ puts "Generating help into directory '#{output_dir}'"
 
 input_dir = File.expand_path( File.dirname( __FILE__ ) )
 
-cmd = "helphelp -o #{output_dir} #{input_dir}"
+cmd = "helphelp -o #{Shellwords.escape(output_dir)} #{Shellwords.escape(input_dir)}"
 
 if !system cmd
   STDERR.puts "Error executing command '#{cmd}'"
