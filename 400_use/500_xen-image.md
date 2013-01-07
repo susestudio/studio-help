@@ -34,4 +34,20 @@ the guest system:
 <pre>xm create -c file-with-suffix.xenconfig</pre>
 Please note not all Xen kernel versions and guest/Domain&ndash;0
 combinations work well. So far we recommend to use SLE11 Xen servers
-along with SLE11 Xen guests
+along with SLE11 Xen guests.
+
+### Xen and PXE
+For building xen guests on a PXE format, it is required to use mboot.c32
+to be able to load the xen hypervisor via pxe. Here is an example how your
+*pxelinux.0.config.xen* should look like:
+
+<pre>
+DEFAULT KIWI-Boot
+
+LABEL KIWI-Boot
+        kernel mboot.c32
+        append boot/xen.gz --- boot/linux !! kernel-options !! --- boot/initrd
+
+LABEL Local-Boot
+        localboot 0
+</pre>
