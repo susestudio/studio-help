@@ -7,6 +7,7 @@ rsync -av . build/studio-help-$VERSION --exclude build --exclude .git
 ( cd build/studio-help-$VERSION; bundle package )
 ( cd build/ ; tar jcvf ../studio-help-$VERSION.tar.bz2 studio-help-$VERSION )
 git tag v$VERSION
+git push --tags
 
 
 
