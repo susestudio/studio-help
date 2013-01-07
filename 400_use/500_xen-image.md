@@ -37,9 +37,9 @@ combinations work well. So far we recommend to use SLE11 Xen servers
 along with SLE11 Xen guests.
 
 ### Xen and PXE
-For building xen guests on a PXE format, it is required to use mboot.c32
+For building Xen guests on a PXE format, it is required to use mboot.c32
 to be able to load the xen hypervisor via pxe. Here is an example how your
-*pxelinux.0.config.xen* should look like:
+*pxelinux.0.config.xen* file should look like:
 
 <pre>
 DEFAULT KIWI-Boot
