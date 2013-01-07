@@ -16,7 +16,11 @@ From here, you can:
 * **Work on Existing Appliances.** Click an entry on the appliances
   lists to work with a saved appliance. To use a previously saved
   appliance as a base template, mouse over it and click "Clone" to
-  create a new appliance based on the currently selected one.
+  create a new appliance based on the currently selected one. Cloning
+  an appliance from the home page will copy the latest configuration of
+  the appliance. If you want to clone the configuration of a specific
+  version of the appliance, you can clone from the build tab when
+  editing this appliance.
 * **Clone Shared Appliances.** If another user has shared an appliance
   with you, you may clone it, starting a new appliance based on it. You
   cannot modify an appliance that is shared with you.

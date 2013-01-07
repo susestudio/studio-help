@@ -31,7 +31,7 @@ POST /api/v2/user/files?appliance_id=`<id>`&filename=`<name>`&path=`<path>`&owne
 > * For Uploads from the web you have to provide the `url` parameter.
 >
 > Optionally, one or more metadata settings can be specified. If those
-> are left out, they can also be change later (see below).
+> are left out, they can also be changed later (see below).
 >
 > Result: [Example](file.xml)
 
