@@ -106,3 +106,22 @@ LABEL Local-Boot
 6. Connect the client to the network and reboot.
 
 
+## Alternative Protocols
+
+The previous subsections used the TFTP protocol. With PXE, the download protocol is fixed. 
+You cannot change the way how the kernel and boot image (initrd) is downloaded.
+
+However, as soon as Linux takes over control, the download protocols http, https, and ftp
+are supported too. In order to use these additional protocols, use the following kernel
+parameters:
+
+kiwiserver
+: Name or IP address of the server who implements the protocol
+
+kiwiservertype
+: Name of the download protocol; could be one of http, https, or ftp
+
+Open the file '/srv/tftpboot/pxelinux.cfg/default' on your PXE boot server and change
+the 'append' line accordingly. Find more details in the KIWI documentation (package
+kiwi-doc).
+
