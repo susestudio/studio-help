@@ -1,6 +1,6 @@
 # PXE images
 
-The Preboot Execution Environment (PXE) is a boot protocoll implemented in most BIOS
+The Preboot Execution Environment (PXE) is a boot protocol implemented in most BIOS
 implementations. The protocol sends DHCP requests to assign an IP address. After it
 got an IP address, it uses TFTP to download kernel and boot instructions.
 
