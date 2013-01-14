@@ -15,7 +15,10 @@ The general procedure to work with PXE is like this:
 3. Build the PXE image in SUSE Studio Onsite.
 4. Deploy the PXE image.
 
-Keep in mind, Aftp is *not supported* for SUSE Linux Enterprise 10.
+Keep in mind, the previous procedure is *not supported* for SUSE Linux Enterprise 10.
+For SUSE Linux Enterprise 10 you should use one of alternative protocols for
+deployment (see Alternative Protocols section below).
+
 
 ## Setup a Atftp Server
 
