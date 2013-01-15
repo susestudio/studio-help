@@ -92,7 +92,7 @@ and their respective release cycles.
   </tr>
 </table>
 
-**_The complete table was last update on 14 January 2013._**
+**_The complete table was last updated on 14 January 2013._**
 _All dates are in the yyyy-mm-dd format._
 
 The operating systems that the browsers run on is also a factor. We use the same grade system as the browsers.
