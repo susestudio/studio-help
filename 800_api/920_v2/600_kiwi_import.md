@@ -1,4 +1,4 @@
-### Kiwi import
+# Kiwi import
 
 POST /api/v2/user/kiwi_import?config_file=`<config_file>`&base_system=`<base_system>`&arch=`<arch>`&name=`<name>`
 > * `<config_file>`: The Kiwi configuration file or archive
