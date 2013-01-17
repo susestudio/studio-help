@@ -1,8 +1,8 @@
-# Using Appliances Created With SUSE Studio
+# Using appliances
 
 SUSE Studio appliances can be used in many ways, depending on the formats
 chosen. Some formats can be copied to hard drives, USB sticks, CDs, and DVDs.
-Other formats are intended to be run inside of virtual machines.
+Other formats are intended to be run inside of virtual machines or cloud systems.
 
 If you are looking for a way to quickly and easily run Linux on your
 computer, we suggest building a Live CD / DVD or a VMDK (VMware / VirtualBox)
@@ -12,9 +12,6 @@ boots on an actual computer (from the DVD drive) while virtualization formats
 (such as VMDK) are similar to running a software-based computer inside of a
 computer.
 
-## Working with Archives
-
-### How do I extract compressed archive files?
 
 When the file has been downloaded, most desktop environments (Gnome, KDE, and
 Mac OS X) provide a way to uncompress the archive by right-clicking the file (in

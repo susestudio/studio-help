@@ -22,4 +22,5 @@ in your SUSE Studio Onsite server, use the following procedure:
 Limitations:
 
 * Some of the appliances that are published may have a package conflict. 
-That's likely caused by the changes in the repositories or packages of that appliances.
+That's likely caused by the changes in the repositories or packages of that
+appliances.
