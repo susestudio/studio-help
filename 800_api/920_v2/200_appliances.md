@@ -94,8 +94,7 @@ GET /api/v2/user/appliances/`<id>`/configuration/slms_ssl_certificate
 >
 > Returns the appliance SLMS SSL certificate.
 >
-> Available only in
-> [SUSE Studio Onsite](https://www.suse.com/products/susestudio/).
+> *Available only in [SUSE Studio Onsite].*
 
 PUT /api/v2/user/appliances/`<id>`/configuration/slms_ssl_certificate
 > * `<id>`: Id of the appliance
@@ -105,8 +104,7 @@ PUT /api/v2/user/appliances/`<id>`/configuration/slms_ssl_certificate
 >
 > Returns a success or fail message.
 >
-> Available only in
-> [SUSE Studio Onsite](https://www.suse.com/products/susestudio/).
+> *Available only in [SUSE Studio Onsite].*
 
 ### Sharing
 
@@ -325,3 +323,5 @@ DELETE /api/v2/user/appliances/`<id>`/gpg_keys/`<key_id>`
 > * `<key_id>`: Id of the GPG key.
 >
 > Deletes the GPG key with the id `key_id` from the appliance.
+
+[SUSE Studio Onsite]: https://www.suse.com/products/susestudio/
