@@ -4,6 +4,8 @@
   <description>This is a LAMP server.
 
 It provides Linux, Apache, MySQL, and Perl.</description>
+  <version>0.0.1</version>
+  <type>oem</type>
   <website>http://susestudio.com</website>
   <tags count="2">
     <tag>lamp</tag>
@@ -31,6 +33,7 @@ It provides Linux, Apache, MySQL, and Perl.</description>
   </firewall>
   <users count="3">
     <user>
+      <uid>0</uid>
       <name>root</name>
       <password>linux</password>
       <group>root</group>
@@ -38,6 +41,7 @@ It provides Linux, Apache, MySQL, and Perl.</description>
       <homedir>/root</homedir>
     </user>
     <user>
+      <uid>1000</uid>
       <name>tux</name>
       <password>linux</password>
       <group>users</group>
@@ -45,6 +49,7 @@ It provides Linux, Apache, MySQL, and Perl.</description>
       <homedir>/home/tux</homedir>
     </user>
     <user>
+      <uid>1001</uid>
       <name>webdev</name>
       <password>linux1234</password>
       <group>users</group>
@@ -162,4 +167,11 @@ It provides Linux, Apache, MySQL, and Perl.</description>
       <enabled>false</enabled>
     </autoyast>
   </scripts>
+  <!-- SUSE Studio Onsite only -->
+  <slms>
+    <enabled>true</enabled>
+    <vendor>MegaCorp, Inc.</vendor>
+    <server_host>slms.megacorp.com</server_host>
+    <gpg_key_name>C847016A</gpg_key_name>
+  </slms>
 </configuration>
