@@ -55,6 +55,12 @@ to see which version is right for you, or contact a sales representative at 800-
 for more information.
 
 
+## Which web browser can I use with SUSE Studio?
+
+The short answer is: current and prior versions of Chrome, Firefox and Internet Explorer. 
+For the long answer, see our [Browser Support Policy](browser_policy.html)
+
+
 ## How can I get access to SUSE Studio?
 
 Simply visit [http://susestudio.com](http://susestudio.com/ "SUSE Studio") and sign in via
