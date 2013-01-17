@@ -89,6 +89,25 @@ PUT /api/v2/user/appliances/`<id>`/configuration/background
 >
 > Returns a success or fail message.
 
+GET /api/v2/user/appliances/`<id>`/configuration/slms_ssl_certificate
+> * `<id>`: Id of the appliance
+>
+> Returns the appliance SLMS SSL certificate.
+>
+> Available only in
+> [SUSE Studio Onsite](https://www.suse.com/products/susestudio/).
+
+PUT /api/v2/user/appliances/`<id>`/configuration/slms_ssl_certificate
+> * `<id>`: Id of the appliance
+>
+> Changes the appliance SLMS SSL certificate.  The data must be sent as
+> a form-based upload (RFC 1867) in the `file` parameter in the body.
+>
+> Returns a success or fail message.
+>
+> Available only in
+> [SUSE Studio Onsite](https://www.suse.com/products/susestudio/).
+
 ### Sharing
 
 GET /api/v2/user/appliances/`<id>`/sharing
