@@ -8,16 +8,16 @@ Change your default locale and timezone, configure your network, enable
 your firewall, and manage users and groups.
 
 **Personalize**
-Add new logo and background for your appliance, or pick from the default
-options, and see an overview of how your appliance will look like during
-boot and login in the Preview section.
+Add a new logo and background for your appliance or pick from the default
+options. In the Preview section you'll see an overview of how your appliance will look like during
+boot and login.
 
 ![Studio Qs Config Personalize](studio-qs-config-personalize.png)
 
 **Startup**
 Define your default runlevel and any end user licence agreements.
 Usually this is empty, but if add any EULAs, the user has to agree to
-your licences on the first boot of your appliance.
+your licences during the first boot of your appliance.
 
 **Server**
 Set up a PostgreSQL or MySQL database server, including upload of an
@@ -28,7 +28,7 @@ Configure automatic login for users and programs which are automatically
 started after login.
 
 **Appliance**
-Set up advanced configuration for your appliance like disk, memory, and
+Set up advanced configuration for your appliance, like disk, memory, and
 logical volume manager. Many of these settings depend on the environment
 your appliance will run in.
 
