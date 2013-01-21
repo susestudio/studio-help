@@ -7,18 +7,18 @@ formats. Each format is used for a different purpose:
 
 **USB stick/hard disk image**
 Dump this format on your USB stick or hard disk and boot from it. You
-may need to instuct the machine's BIOS to boot from an external source
-if you're usign a USB stick. You can write the disk image using either
-the `dd` command, or image writing software on any existing OS.
+may need to instruct the machine's BIOS to boot from an external source
+if you're usign a USB stick. You can write the disk image by using either
+the `dd` command or image writing software on any existing OS.
 
 **Live CD/DVD (.iso)**
 Use this format if you want to burn your appliance on CD or DVD. This is
-the easiest way to prepare bootable media; simply download the .iso
-file, and burn it to disk via any existing OS.
+the easiest way to prepare bootable media. Simply download the .iso
+file and burn it to disk via any existing OS.
 
 **Preload ISO (.iso)**
-This is an ideal format if you planning to do installations on physical
-machines, when you do not require a 'live' experience (running from the
+This is an ideal format if you are planning to perform installations on physical
+machines without a 'live' experience (running from the
 media *without installing*).  Your appliance's disk image will be
 wrapped in a simple bootable installer that asks only which hard disk to
 install to. Your installation media can be prepared on any existing OS
