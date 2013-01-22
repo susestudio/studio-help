@@ -10,7 +10,7 @@ your local SUSE Studio server, and publish it in your SUSE Gallery.
 For both use cases you need the KIWI export file. The KIWI export file
 is a compressed tar file, which contains all the necessary configurations to build your appliance without SUSE Studio.
 The KIWI export file is available when you go to the build tab of your appliance and click the 
-'Export your appliance\'s KIWI configuration' link to activate the download.
+'Export your appliance's KIWI configuration' link to activate the download.
 
 
 ## Build your appliance locally with KIWI
