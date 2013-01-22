@@ -21,12 +21,12 @@ file and select something like "burn ISO file to disc".
 
 * The yast2-live-installer reads its workflow configuration from
   `/etc/YaST2/control.xml`.
-* Overlay this file with your own and you'll get a new workflow .
+* Replace this file with your own and you'll get a new workflow.
 
 
-## How to apply the customizations on the default user to the new created ones
+## How to apply the customizations made for the default user to newly created ones
 
-The modified files added to the appliance that are stored in
-`/home/tux/*` should be copied to the `/etc/skel` directory so the new
-users created at the installation time (or later) had the same behaviour
+The modified files added to the appliance are stored in
+`/home/tux/*` and should be copied to the `/etc/skel` directory. Then new
+users created at installation time or later will have the same behaviour
 and appearence as the liveCD default one.
