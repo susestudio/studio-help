@@ -7,24 +7,24 @@
 
 A software appliance is a pre-configured combination of:
 
-* an operating system (e.g. SUSE Linux Enterprise Server)
-* applications (e.g. a database, web browser)
-* configuration
+* an operating system (e.g. SUSE Linux Enterprise Server),
+* applications (e.g. a database, web browser),
+* and their configuration.
 
 The parts are integrated into a single image and deployable on industry
 standard hardware.
 
-If it is intended for deployment on a server, it is a software
-appliance. If it is intended for deployment on a hypervisor or in a
+If intended for deployment on a server, it is a software
+appliance. If intended for deployment on a hypervisor or in a
 cloud computing environment, it is a special type of software appliance
 called a virtual appliance.
 
-You can read more details at https://www.suse.com/partners/integrated-systems/
+For further information, refer to: https://www.suse.com/partners/integrated-systems/
 
 
 ## Who should use SUSE Studio?
 
-Everyone who is interested in creating a well tailored openSUSE or SUSE
+Everyone interested in creating a well tailored openSUSE or SUSE
 Linux Enterprise appliance. You will need basic knowledge in the use of
 repositories and software packages and some knowledge in Linux
 configuration.
@@ -35,18 +35,18 @@ configuration.
 There are many advantages of using appliances over traditional software
 deployment methods, such as:
 
-* ease of use/deploy
-* smaller size
-* having a well defined software selection and configuration
-* customized to fit perfectly within a specific environment
-* ease of maintenance and updates
+* ease of use/deploy,
+* smaller size,
+* having a well defined software selection and configuration,
+* customized to fit perfectly within a specific environment,
+* ease of maintenance and updates.
 
 
 ## How much does it cost?
 
 [SUSE Studio Online](http://susestudio.com/ "SUSE Studio") is a free service
-sponsored by Novell. Of course you must take care of the legal stuff
-that will come along with the applications and the Linux system.
+sponsored by Novell. Of course you must take care of the legal aspects relating to
+the applications and the Linux system.
 
 [SUSE Studio Onsite](https://www.suse.com/products/susestudio/ "SUSE Studio Onsite")
 is available in two different flavors based on your needs.
@@ -57,7 +57,7 @@ for more information.
 
 ## Where and how can I report bugs?
 
-Please send us your problem via the feedback link (the speech bubble
+Please, send us your problem via the feedback link (the speech bubble
 shown on the top left in the appliance editor or your home page).
 
 
@@ -75,10 +75,10 @@ This list will be updated continuously.
 During maintenance time new updates and bugfixes will be deployed to
 [SUSE Studio](http://susestudio.com/ "SUSE Studio").
 Most of the times you will still be able to access our service and edit
-your appliance, but starting new builds or running testdrive for your
+your appliance, but starting new builds or running Testdrive for your
 appliance will be disabled.
 
-In rare cases you might not be able to access SUSE Studio during these
+In rare cases you may not be able to access SUSE Studio during these
 times.
 
 
