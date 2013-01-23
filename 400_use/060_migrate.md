@@ -15,7 +15,7 @@ in your SUSE Studio Onsite server, use the following procedure:
 2. Select your preferred appliance.
 3. Click the _Clone appliance..._ link on the right side.
 4. Select appropriate image type in the _Build_ tab. (Note that only specific image type data for this image type will be stored in the resulting Kiwi export archive).
-5. Export tarball (click the _Export your appliance\'s Kiwi configuration_ link).
+5. Export tarball (click the _Export your appliance's Kiwi configuration_ link).
 6. Import tarball on your SUSE Studio onsite server.
 
 
