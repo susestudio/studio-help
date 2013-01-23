@@ -1,7 +1,7 @@
 # Using the API with curl
 
 All API functions can be used with curl. The following examples should
-give you an idea on how this is to be used.
+give you an idea how to use this feature.
 
 ## Get the list of template sets
 
@@ -33,7 +33,7 @@ A specific appliance:
 
 ## Clone an appliance
 
-To create a new appliance pick a template from the template set and use
+To create a new appliance, pick a template from the template set and use
 its id with the following command (name and arch are optional
 parameters):
 
@@ -55,7 +55,7 @@ Upload a file:
 [Example][example-5]
 
 Optionally, you can specify the filename, path, owner, group or
-permissions, here.
+permissions.
 
 
 ## Build your appliance
@@ -72,7 +72,7 @@ Monitor build progress:
 
 ## URL Encoding
 
-Not all the characters are allowed into an URL
+Not all characters are allowed in an URL
 ([http://tools.ietf.org/html/rfc1738][rfc-characters]).
 This is a problem for example if you try to add the gcc-c++ package into
 your appliance as "+" is not allowed. So, the following will not work:
@@ -82,7 +82,7 @@ your appliance as "+" is not allowed. So, the following will not work:
 However, some characters can be encoded.
 See [http://www.w3schools.com/tags/ref_urlencode.asp][w3s-ref-urlencode].
 
-So, in our example, you should :
+In our example, use the following command:
 
        curl -u  user:secret -XPOST http://susestudio.com/api/v2/user/appliances/263276/cmd/add_package?name=gcc-c%2B%2B
 
