@@ -17,5 +17,5 @@ When the file has been downloaded, most desktop environments (Gnome, KDE, and
 Mac OS X) provide a way to uncompress the archive by right-clicking the file (in
 the file manager) and selecting an "Extract here" option.
 
-In a terminal files can be extracted with programs such as '''gunzip'''
-and '''tar'''.
+In a terminal files can be extracted with programs such as ''gunzip''
+and ''tar''.
