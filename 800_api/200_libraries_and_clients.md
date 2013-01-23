@@ -1,6 +1,6 @@
 # Libraries & Clients
 
-There are a number of libraries and clients which use the SUSE Studio API:
+There are a number of libraries and clients, which use the SUSE Studio API:
 
 ## Libraries
 
