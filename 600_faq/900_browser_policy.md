@@ -1,7 +1,7 @@
 # Browser Support Policy
 
 We are committed to making SUSE Studio as accessible and consistent as we can. However, it is not practical for us to
-support every available operating system and web browser combination. Thus we have adopted the following graded browser
+support every available operating system and web browser combination. Therefore we have adopted the following graded browser
 and operating system support policy, which is inspired by [Yahoo's GBS](http://yuilibrary.com/yui/docs/tutorials/gbs/).
 
 Please note that this does not mean SUSE Studio will only work on A-grade browsers - we expect it to work in all modern
@@ -17,7 +17,7 @@ A     |Yes  |Normal                 |Current and previous major releases of Fire
 B     |No   |Low, possibly WONT_FIX |Current major release of Safari.                                                                                                                                          |
 C     |No   |WONT_FIX               |All browser and version combinations that are not in grades A or B. This includes old versions of A grade browsers and A grade browsers on unsupported operating systems. |
 
-Mobile browsers running on current versions of Android and iOS should generally work as well, although certain features
+Mobile browsers running on current versions of Android and iOS should generally work as well although certain features
 like mouse-over pop-ups will not work on touch devices.
 
 The following table provides an example of the major browser and version combinations, the corresponding graded support,
@@ -95,23 +95,23 @@ and their respective release cycles.
 **_The complete table was last updated on 14 January 2013._**
 _All dates are in the yyyy-mm-dd format._
 
-The operating systems that the browsers run on is also a factor. We use the same grade system as the browsers.
+The operating systems on which the browsers run is also a factor. We use the same grade system as for the browsers.
 
 **A-grade operating systems:**
 
-* Linux (latest supported SUSE desktop versions) - openSUSE 12.2, SLED11 SP2
-* Microsoft Windows (latest two versions) - Windows 7, Windows 8
+* Linux (latest supported SUSE desktop versions) - openSUSE 12.2, SLED11 SP2.
+* Microsoft Windows (latest two versions) - Windows 7, Windows 8.
 
 **B-grade operating systems:**
 
-* Apple Mac OS X (latest two versions) - Lion (10.7), Mountain Lion (10.8)
+* Apple Mac OS X (latest two versions) - Lion (10.7), Mountain Lion (10.8).
 
 **C-grade operating systems:**
 
-* Everything not in A or B grade
+* Everything not in A or B grade.
 
 [Cookies](http://en.wikipedia.org/wiki/HTTP_cookie) and [JavaScript](http://en.wikipedia.org/wiki/JavaScript)
 must both be enabled for the site to function properly.
 
 In addition, Adobe Flash Player&reg; must be present for the Testdrive feature to work. Since iOS devices do not include
-Flash, Testdrive will not work there.
+Flash, Testdrive will not work on these.
