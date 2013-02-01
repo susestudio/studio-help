@@ -1,6 +1,6 @@
 # Selecting Appliance Formats
 
-SUSE Studio helps you build your appliance in a variety different
+SUSE Studio helps you to build your appliance in a variety of
 formats. Each format is used for a different purpose:
 
 ##Physical media formats##
@@ -9,7 +9,7 @@ formats. Each format is used for a different purpose:
 Dump this format on your USB stick or hard disk and boot from it. You
 may need to instuct the machine's BIOS to boot from an external source
 if you're usign a USB stick. You can write the disk image using either
-the `dd` command, or image writing software on any existing OS.
+the `dd` command or image writing software on any existing OS.
 
 Live USB sticks provide a high-performance option for creating a
 portable, persistent image using the same data that would be present on
@@ -17,22 +17,22 @@ a hard drive.
 
 **Live CD/DVD (.iso)**
 Use this format if you want to burn your appliance on CD or DVD. This is
-the easiest way to prepare bootable media; simply download the .iso
-file, and burn it to disk via any existing OS.
+the easiest way to prepare bootable media. Simply download the .iso
+file and burn it to disk via any existing OS.
 
-Live discs provide a complete bootable image of your appliance which
-will run in a computer's memory, rather than loading from the hard
+Live discs provide a complete bootable image of your appliance, which
+will run in a computer's memory rather than loading from the hard
 drive. This allows end users to experience and evaluate your appliance
 without installing it or making any changes to their existing system.
 Live discs are unique because they can run on a computer without a hard
-drive, or act as rescue systems for computers with a corrupted hard
+drive or act as rescue systems for computers with a corrupted hard
 drive or file system.
 
 **Preload ISO (.iso)** and **Preload USB stick image**
 These are ideal formats if you planning to do installations on physical
-machines, when you do not require a 'live' experience (running from the
+machines without a 'live' experience (running from the
 media *without installing*).  Your appliance's disk image will be
-wrapped in a simple bootable installer that asks only which hard disk to
+wrapped in a simple bootable installer that only asks which hard disk to
 install to. Your installation media can be prepared on any existing OS
 by simply burning the .iso file to disc (Preload ISO) or by writing it to
 an USB stick (Preload USB stick image).
@@ -53,13 +53,13 @@ most host operating systems.  [KVM] virtualization is for Linux only.
 **OVF virtual machine (.ovf)**
 [Open Virtualization Format (OVF)][OVF] is an open, standards-based
 format for virtual machines.
-A variety of hypervisors including SUSE Cloud, VirtualBox, VMware ESX,
-IBM SmartCloud, and Oracle VM support creating virtual machines by
+A variety of hypervisors, including SUSE Cloud, VirtualBox, VMware ESX,
+IBM SmartCloud, and Oracle VM, support creating virtual machines by
 importing an .ovf file.
 
 [OVF]: http://www.dmtf.org/standards/ovf
 
-In order to use the an OVF image, you may require the `ovftool` from
+In order to use an OVF image, you may require the `ovftool` from
 VMware. Due to licensing issues we cannot distribute the tools with SUSE
 Studio at the moment. Download links, installation instructions, and
 documentation are available at
@@ -67,7 +67,7 @@ documentation are available at
 
 **Xen guest**
 Use this format if you want to run your appliance on a Xen host system,
-such as SUSE Linux Enterprise Server. Xen guests works only on
+such as SUSE Linux Enterprise Server. Xen guests only work on
 Xen-enabled Linux hosts, including many virtual hosting providers.
 
 See the [SLES Xen Book] for more information on Virtualization with Xen

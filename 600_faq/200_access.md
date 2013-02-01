@@ -12,7 +12,7 @@ email address.
 ## Which web browser can I use with SUSE Studio?
 
 The short answer is: current and prior versions of Chrome, Firefox and Internet Explorer. 
-For the long answer, see our [Browser Support Policy](browser_policy.html)
+For the long answer, see our [Browser Support Policy](browser_policy.html).
 
 
 ## How can I get access to SUSE Studio?

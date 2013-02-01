@@ -12,7 +12,7 @@ Log in to SUSE Studio with an account of your choice.
 ## 2. Choosing a Base Template.
 
 The base template determines the operating system your appliance is
-based upon. This can be any of the openSUSE, SUSE Linux Enterprise
+based on. This can be any of the openSUSE, SUSE Linux Enterprise
 Desktop, or SUSE Linux Enterprise Server flavors, for either 32-bit or
 64-bit x86 architectures.
 
@@ -48,7 +48,7 @@ target the cloud with EC2 and Azure formats.
 ## 6. Testing Your Appliance
 
 With the "testdrive" of SUSE Studio start a test session in your browser
-and log in with SSH or VNC. The "Modified Files" feature allows you
+and log in with SSH or VNC. The "Modified Files" feature allows you to
 track and import changes to the file system made during a testdrive.
 
 ![Studio Qs Testdrive](studio-qs-testdrive.png)

@@ -15,9 +15,9 @@ GET /api/v2/user/api_version
 
 Studio returns several types of return values:
 
-* XML according to the call documentation above
-* A success message: `<success></success>`
-* One of many error results, which contain a `code` and a `message`.
+* XML according to the call documentation above,
+* a success message: `<success></success>`,
+* one of many error results, which contain a `code` and a `message`.
   You will find an example at the bottom of the list.
 
   __access_denied__

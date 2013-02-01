@@ -2,13 +2,13 @@
 
 ## RESTful API
 
-SUSE Studio features a RESTful API over HTTP which can be used to clone
-appliances, upload files, trigger and monitor builds and more. See the SUSE
+SUSE Studio features a RESTful API over HTTP, which can be used to clone
+appliances, upload files, trigger and monitor builds, and more. See the SUSE
 [Studio API documentation][studio-api] for more details.
 
 ## Authentication
 
-In order to use the API you have to create an API key which will be used as the
+To use the API you have to create an API key, which will be used as the
 password for HTTP Basic Authentication. This can be done on [the user page
 within SUSE Studio][studio-api-key].
 

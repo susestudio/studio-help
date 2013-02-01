@@ -6,7 +6,7 @@ gallery appliances, and appliances other users have shared with you.)
 
 ![Studio Home - Your appliances](studio-home-online.png)
 
-From here, you can:
+Here you can:
 
 * **Create a New Appliance.** Click "Create new appliance..." and choose
   a base template, like you did for you first appliance.
@@ -15,7 +15,7 @@ From here, you can:
   [Use > Windows Azure] for details.
 * **Work on Existing Appliances.** Click an entry on the appliances
   lists to work with a saved appliance. To use a previously saved
-  appliance as a base template, mouse over it and click "Clone" to
+  appliance as a base template, move your mouse over it and click "Clone" to
   create a new appliance based on the currently selected one. Cloning
   an appliance from the home page will copy the latest configuration of
   the appliance. If you want to clone the configuration of a specific
