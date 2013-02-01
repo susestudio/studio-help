@@ -51,7 +51,7 @@ provided the sound theme defines a startup sound):
 
 ## How to customize menus
 
-* To customize the applications menu using SUSE studio,
+* To customize the applications menu using SUSE Studio,
   upload a customized `applications.xbel` to the folder
   `/home/tux/.local/share/gnome-main-menu/` in the "overlay files"
   section. Replace tux with your username.

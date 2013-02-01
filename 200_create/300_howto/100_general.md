@@ -70,12 +70,12 @@ formats, such as Xen) and a maximum file size of 4 GB.
 
 ## How to login for the first time
 
-* Use the SUSE studio openSUSE default root password of linux
+* Use the SUSE Studio openSUSE default root password of linux
 
     `username: root or tux`
     `password: linux`
 
-* You can change this in SUSE studio on the configuration page
+* You can change this in SUSE Studio on the configuration page
   'susestudio.com/appliance/edit/NNNN#tab-configuration'
 
 
