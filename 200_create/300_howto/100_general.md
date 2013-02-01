@@ -70,7 +70,7 @@ formats, such as Xen) and a maximum file size of 4 GB.
 
 ## How to login for the first time
 
-* Use the SUSE studio OpenSUSE default root password of linux
+* Use the SUSE studio openSUSE default root password of linux
 
     `username: root or tux`
     `password: linux`
