@@ -69,7 +69,7 @@ your changes, select the version you want to publish, and press
 
 ## How can I unpublish an appliance?
 
-Go to susestudio.com, then the "Home" screen. Select your appliance
+Go to your [SUSE Studio home page](http://susestudio.com/home). Select your appliance
 and click on the "Share" tab. In the "Share with everyone" section,
 select the version you want to unpublish and click the "Unpublish"
 button.
