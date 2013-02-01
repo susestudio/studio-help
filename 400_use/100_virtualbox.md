@@ -8,7 +8,7 @@ will see a new subdirectory with two files with the suffixes *.vmdk* and
 popular solution for using the VMDK appliance format. It is free software (GPL)
 and available on most popular platforms.
 
-Virtualbox needs .ovf files to import virtual machines.
+VirtualBox needs .ovf files to import virtual machines.
 SUSE Studio built VMs contain vmdk and vmx files.
 To use your VMs in VirtualBox, perform these steps:
 
