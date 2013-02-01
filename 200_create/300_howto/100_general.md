@@ -91,12 +91,10 @@ to run firstboot scripts.)
 ## How to run local scripts
 
 * If you want your script to run during every boot, either use the "Scripts" 
-option on the "Configuration" Tab or
-  write your own service.
+  option on the "Configuration" Tab or write your own service.
 * By using the "Scripts" option, your script will be run before any
   services are started. If that is want you want, check the "Run script 
-whenever the
-  appliance boots" option and write your script.
+  whenever the appliance boots" option and write your script.
 * If you to run your script after the other services,
   create your own service. To do so, copy the
   `/etc/init.d/skeleton` file and adapt it to your needs. Set the
@@ -132,15 +130,7 @@ overlay section:
 
     Defaults always_set_home Defaults env_reset
 
-    Defaults env_keep = "LANG LC_ADDRESS LC_CTYPE LC_COLLATE LC_IDENTIFICATION 
-LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER 
-LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS XDG_SESSION_COOKIE" 
-LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER 
-LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS XDG_SESSION_COOKIE XMODIFIERS 
-GTK_IM_MODULE QT_IM_MODULE QT_IM_SWITCHER" Defaults targetpw # ask for the 
-password of the target user i.e. root ALL ALL=(ALL) ALL # WARNING! Only use 
-this together with 'Defaults targetpw'! root ALL=(ALL) ALL tux ALL=(ALL) 
-NOPASSWD:ALL
+    Defaults env_keep = "LANG LC_ADDRESS LC_CTYPE LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS XDG_SESSION_COOKIE" LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS XDG_SESSION_COOKIE XMODIFIERS GTK_IM_MODULE QT_IM_MODULE QT_IM_SWITCHER" Defaults targetpw # ask for the password of the target user i.e. root ALL ALL=(ALL) ALL # WARNING! Only use this together with 'Defaults targetpw'! root ALL=(ALL) ALL tux ALL=(ALL) NOPASSWD:ALL
 
 
 ## How to customize yast2-firstboot
@@ -349,7 +339,6 @@ driver-input - sax2
 [winrar]: http://www.rarlab.com/
 [7-zip]: http://www.7-zip.org/
 [libarchive]: http://gnuwin32.sourceforge.net/packages/libarchive.htm
-[libarchive2]: http://downloads.sourceforge.net/gnuwin32/libarchive-2.4.12-1-
-setup.exe
+[libarchive2]: http://downloads.sourceforge.net/gnuwin32/libarchive-2.4.12-1-setup.exe
 [libarchive-tool]: http://gnuwin32.sourceforge.net/packages/libarchive.htm
 [win-sys-path]: http://vlaurie.com/computers2/Articles/environment.htm#editing

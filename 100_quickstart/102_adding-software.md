@@ -5,7 +5,8 @@
 [VideoLan]:    http://www.videolan.org/vlc/download-suse.html
 [other-repos]: http://en.opensuse.org/Additional_package_repositories
 
-Once you've created your appliance from a base template, you have different options for adding software:
+Once you've created your appliance from a base template, you have different
+options for adding software:
 
 1. **Base template sources.**  Every base template is pre-subscribed to
    repositories that supply the software for the template. Every package
@@ -58,7 +59,7 @@ that to SUSE Studio instead of uploading each individual package. SUSE
 Studio can extract this archive and add the individual RPM packages to
 your software collection.
 
-Click "Upload and Manage RPMs..." and you'll see a list of packages you
+Click "Upload and manage RPMs..." and you'll see a list of packages you
 have uploaded into your appliance. To upload a package on your local
 machine, click the "Upload RPM..." button or click "Add from the Web
 (URL)..." and enter an address for SUSE Studio to fetch the package

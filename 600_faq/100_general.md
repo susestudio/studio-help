@@ -45,7 +45,7 @@ deployment methods, such as:
 ## How much does it cost?
 
 [SUSE Studio Online](http://susestudio.com/ "SUSE Studio") is a free service
-sponsored by Novell. Of course you must take care of the legal aspects relating to
+sponsored by SUSE. Of course you must take care of the legal aspects relating to
 the applications and the Linux system.
 
 [SUSE Studio Onsite](https://www.suse.com/products/susestudio/ "SUSE Studio Onsite")
