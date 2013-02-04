@@ -7,10 +7,10 @@ GET /api/v2/user/repositories?base_system=`<base>`&filter=`<search_string>`
 >   string.
 >
 > Returns a list of repositories. If neither `base_system` nor `filter`
-> are specified all available repositories are returned.
+> are specified, all available repositories are returned.
 >
 > When filtering the results with the `filter` parameter, the repository
-> name, repository url and repository packages are searched.
+> name, repository url, and repository packages are searched.
 >
 > Result: [Example](repositories.xml)
 

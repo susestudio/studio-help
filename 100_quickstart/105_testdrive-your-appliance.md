@@ -16,12 +16,12 @@ You may manipulate or test your appliance via:
 3. an SSH session.
 4. an HTTP or HTTPS connection (for web applications).
 
-If you want to use a VNC session, log in with SSH, or test your web
+If you want to use a VNC session, log in with SSH or test your web
 application (including [WebYaST]), click the "Networking" tab;
-this tab displays some explanations how to use these methods.
+this tab displays some explanations on how to use these methods.
 Click the "Enable Networking" button to turn these features on.
 
-The "Modified Files" tab allows you track and import changes to the file
+The "Modified Files" tab allows you to track and import changes to the file
 system made during a testdrive.
 
 [WebYaST]: http://en.opensuse.org/Portal:WebYaST

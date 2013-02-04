@@ -1,13 +1,13 @@
 # VMware
 
 Virtual machines in the VMware format are similar to disk images, but
-with special information which specifies memory and hard drive sizes.
+with additional information specifying memory and hard drive sizes.
 They do not include a swap partition as it is common practice to leave
 memory management to the hypervisor. The swap setting in SUSE Studio
 only applies to disk images.  To use these images, simply open the file
 in VMware, VMware player, or VirtualBox.  This set of howtos are
-specific to VMware machines. They are focused on changing some stuff
-after the image is built but usually after booting for the first time.
+specific to VMware machines. They focus on how to make changes
+after the image has been built, usually after booting for the first time.
 
 * This will become a table of contents (this text will be scraped).
 {:toc}
@@ -17,10 +17,9 @@ after the image is built but usually after booting for the first time.
 
 The VMware image produced by SUSE Studio runs on VMware Player and
 Workstation. VMware Server, ESX, and ESXi require a different .vmdk
-format and hence conversion is required. There are several possible
-options here:
+format and hence conversion is required. There are several options:
 
-* Convert to .vmdk to OVF format:
+* Convert .vmdk to OVF format:
   * Open-OVF on [Gitorious][git-open-ovf]: and [SourceForge][sf-open-ovf].
   * [VMware OVF tool][vmw-ovf].
 * Convert and import directly using [VMware vCenter converter][vmw-converter].
@@ -31,43 +30,43 @@ command on a ESX host:
     vmkfstools -d thin -i original.vmdk new.vmdk
 
 
-##     How to make preallocated disks for better performance
+##     How to create preallocated disks for better performance
 
 * You can convert a growable virtual disk (which is what SUSE Studio
   creates) to a preallocated disk with 'vmware-vdiskmanager'. It is
   bundled with the standard VMWare installation.
 * Preallocated disks offer better I/O performance over growable ones at
-  expense of disk space.
+  the expense of disk space.
 * The following command converts the growable "sourceDisk.vmdk" to a
   preallocated "destinationDisk.vmdk":
 
     vmware-vdiskmanager -r sourceDisk.vmdk -t 2 destinationDisk.vmdk
 
 
-## How to change hardware on vmware
+## How to change hardware on VMware
 
-All hardware in vmware is defined into the .vmx file. This is a text
+All hardware in VMware is defined in the .vmx file. This is a text
 file you can edit with any text editor. Be careful when editing this
-file. Also, edit this file before any boot, as on the first boot the
-hardware detection will happen and it would be too late to make
+file. Also, edit this file before booting since during first boot
+hardware detection is performed. Afterward it is too late to make
 permanent changes.
 
 
-## How to change configurations on vmware disc
+## How to change configurations on VMware disc
 
-Use vmware-tools. In short, use the vmware-mount tool utility. This way
-you can mount the disc and change configurations before you boot.
+Use the vmware-mount tool utility, which is part of the vmware-tools,
+to mount the disc and change configurations before you boot.
 
 
 ## How to add a new ethernet
 
-See how to change hardware on vmware
+See how to change hardware on VMware.
 
 
 ## How to add a swap file
 
-For those developers that really feel they need to have swapping in
-their VMware image, you can setup Linux to Swap to a file.
+If you need swapping in
+the VMware image, setup Linux to swap to a file.
 
 
 ## How to upload OVF images to an ESX server
@@ -75,8 +74,8 @@ their VMware image, you can setup Linux to Swap to a file.
 VMware's [Open Virtualization Format Tool][vmw-ovf2] can be used to
 deploy OVF images directly to an ESX server.
 
-Note: This is a basic Linux use case. For Windows or additional options
-please refer to VMWare's user guide.
+Note: This is a basic Linux use case. For Windows or additional options,
+refer to VMWare's user guide.
 
 Once the tool is installed, extract your OVF image:
 
@@ -86,7 +85,7 @@ and execute:
 
     $ ovftool JeOS.x86_64-0.0.1.ovf vi://<esx-server>/
 
-Tool asks for login credentials and automatically add the VM to the
+The tool asks for login credentials and automatically adds the VM to the
 inventory.
 
     Opening OVF source: JeOS.x86_64-0.0.1.ovf
@@ -106,7 +105,7 @@ inventory.
 ### VMware Player 3.0 crashes on Windows Server 2003
 
 This is a VMware Player bug - it crashes the host OS (blue screen of
-death) when looking for a CD-ROM drive on first boot. To workaround this
+death) when looking for a CD-ROM drive on first boot. To work around this
 problem, edit the .vmx file and remove the following lines:
 
     ide0:0.present = "true"
@@ -114,7 +113,7 @@ problem, edit the .vmx file and remove the following lines:
     ide0:0.autodetect = "true"
     ide0:0.startConnected = "true"
 
-The appliance should now be able to boot normally. You can add them back
+The appliance should now be able to boot normally. You can add these lines again
 after first boot if you want CD-ROM support in your VM, or add it using
 the VMware Player user interface.
 

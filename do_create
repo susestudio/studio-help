@@ -11,13 +11,13 @@ puts "Generating help into directory '#{output_dir}'"
 
 input_dir = File.expand_path( File.dirname( __FILE__ ) )
 
-cmd = "helphelp -o #{output_dir} #{input_dir}"
+cmd = ['helphelp', '-o', output_dir, input_dir]
 
-if !system cmd
+if !system *cmd
   STDERR.puts "Error executing command '#{cmd}'"
   STDERR.puts "Make sure you have installed the helphelp gem by running"
   STDERR.puts "  sudo gem install helphelp"
   exit 1
 end
 
-system "xdg-open #{output_dir}/overview.html"
+system "xdg-open", "#{output_dir}/overview.html"

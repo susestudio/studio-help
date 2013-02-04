@@ -1,14 +1,14 @@
 # WebHooks
 
-[WebHook][webhooks] are simple event notification and user-definied callback mechanism based on 
+[WebHooks][webhooks] are simple event notifications and offer a user-definied callback mechanism based on 
 the Hypertext Transfer Protocol (HTTP).
 With WebHooks you can react to events in your application emitted by your SUSE Studio server.
 An event occurs on the source site (typically your Studio server) and can invoke special 
 behaviour on the receiving site (usually a receiving script or application).
 
-For example, you can automatically ask the status of the build process of your
+For example, you can automatically query the status of the build process of your
 appliance, convert an image format, perform additional configuration changes, or 
-automatically import Studio built images into your SUSE Cloud or OpenStack
+automatically import Studio-built images into your SUSE Cloud or OpenStack
 installation.
 
 
@@ -26,18 +26,18 @@ URL like the following:
 
 ![Postbin URL](requestbin_url.png)
 
-Copy the URL and paste it into your SUSE Studio account's page and save:
+Copy the URL, paste it into your SUSE Studio account's page and save:
 
 ![WebHook URL](webhook_url.png)
 
 ### Trigger WebHooks
 
-To test that the hook fires you will need to build an appliance. In this example
+To test that the hook fires, you will need to build an appliance. In this example
 we build an existing appliance.
 
 ![Build](build.png)
 
-When the build completes, a call will be made to the URL stored in your account
+When the build completes, a call will be sent to the URL stored in your account
 settings.
 
 ![Build done](build_done.png)
@@ -54,9 +54,9 @@ Finally, check the exact data sent by reloading the PostBin page.
 
 ## Setting up WebHooks
 
-SUSE Studio provides [WebHooks][webhooks] feature, which you may utilize, by
-adding a URL that will receive POST requests upon complete build. The JSON sent
-will contain information about the build and a public download URL for you to
+SUSE Studio provides the [WebHooks][webhooks] feature, which you can use by
+adding a URL that receives POST requests when the build is completed. The JSON sent
+contains information about the build and a public download URL for you to
 download the image directly.
 
 The following Ruby template is used to generate JSON:
@@ -107,7 +107,7 @@ Example of the generated JSON:
       }
     }
 
-With the JSON data, you may wish to use the following examples, to process the
+With the JSON data, you may wish to use the following examples to process the
 received POST requests.
 
 Example in Ruby (using SinatraRB):
@@ -168,7 +168,7 @@ Example written in Perl for use as a CGI script:
     close LOG;
 
 
-## For more Information
+## For more Information:
 
 * [API documentation of WebHook](http://susestudio.com/help/api/webhooks.html)
 * [Reference implementation of WebHook receivers](https://github.com/susestudio/susestudio-webhook-receivers)

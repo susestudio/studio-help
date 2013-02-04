@@ -14,10 +14,10 @@ The downloaded file has the suffix *.vhd.zip*.
 * Microsoft Windows Server 2003 SP2 (desirable)
 
 
-Microsoft users, follow these steps:
+Microsoft users should follow these steps:
 
 **On your SUSE Studio guest:**
-1. Create your appliance if you haven't done yet.
+1. Create your appliance if you haven't done so yet.
 2. Go to the 'Build' tab and select 'Hyper-V (.vhd)' as format.
 3. Wait until the appliance has been built.
 4. Download your appliance.

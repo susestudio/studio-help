@@ -1,12 +1,13 @@
 # Logging In
 
 Before you can use SUSE Studio, you need to log in. There are
-two possible variantes of SUSE Studio:
+two variantes of SUSE Studio:
 
 * SUSE Studio Onsite: this variant is a SUSE Studio release intended for
   installation on a server machine behind the firewall.
 
-* SUSE Studio Online: this variant is the publicly hosted version at http://susestudio.com.
+* SUSE Studio Online: this variant is the publicly hosted version at
+[susestudio.com].
 
 
 ## Logging in to SUSE Studio Onsite
@@ -38,13 +39,15 @@ your Studio account:
 2. On your account page, switch to the "Linked accounts" tab.
 3. Click "Add another account..."
 
-You'll be prompted to login again, but this time we'll link your
+You'll be prompted to log in again, but this time we'll link your
 accounts instead of creating a new one.
 
-If you forget your credentials, the [account help form] will help you
-out by letting you search by username or email, and sending you a hint
-about your login.
+If you forget your credentials, the [account help form] will let you search by
+username or email and send you a hint about your login.
 
 [account help form]: http://susestudio.com/account/help
 
 ![Studio account help](studio-account-help.png)
+
+
+[susestudio.com]: http://susestudio.com

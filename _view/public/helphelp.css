@@ -349,14 +349,31 @@ div.content hr {
 
 .content table {
     width: 100%;
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 5px 10px;
 }
 
-.content thead {
-    border-bottom: 1px solid #999;
+.content thead{
+    background: #EDEDED;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    color: #666666;
+}
+
+.content table td{
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+}
+
+.content th {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
 }
 
 .content tr:nth-child(even) {
-    background-color: #eee;
+    background-color: #F8F8F8;
 }
 
 div.navigation {

@@ -5,8 +5,8 @@
 [VideoLan]:    http://www.videolan.org/vlc/download-suse.html
 [other-repos]: http://en.opensuse.org/Additional_package_repositories
 
-Once you've created your appliance from a base template, you have a few
-different options for adding software:
+Once you've created your appliance from a base template, you have different
+options for adding software:
 
 1. **Base template sources.**  Every base template is pre-subscribed to
    repositories that supply the software for the template. Every package
@@ -17,7 +17,7 @@ different options for adding software:
 2. **External sources.**  Add additional repositories from the
    [openSUSE Build Service][OBS] or any other compatible software
    collection on the web. *Be sure to use sources which are compatible
-   with the base template you selected.*
+   with the base template you have selected.*
    Popular third-pary sources include [Packman], [VideoLan],
    and hardware vendors.
    [The openSUSE wiki][other-repos] has a more definitive list.
@@ -34,17 +34,17 @@ different options for adding software:
 To add an external repository from [OBS] to SUSE Studio:
 
 1. Click "Add Repositories..." on the Software tab. You'll see
-   a selection of available repositories, submitted by users:
+   a selection of available repositories submitted by users:
 
    ![Studio Qs Addrepo Overview](studio-qs-addrepo-overview.png)
 
-2. Enter a search term to reduce the list of shown repositories.
-   When you find the repository you're looking for, click the "add" to
+2. Enter a search term to filter the list of displayed repositories.
+   When you find the repository you're looking for, click "add" to
    include it in your appliance.
 
 3. If your can't find what you're looking for, click "Import New
    Repository..." and enter either the name of an
-   [OBS] project, or the URL of a collection
+   [OBS] project or the URL of a collection
    on the web:
 
    ![Studio Qs Addrepo Import](studio-qs-addrepo-import.png)
@@ -53,7 +53,7 @@ To add an external repository from [OBS] to SUSE Studio:
 ## 2.2. Uploading RPMs
 
 SUSE Studio allows you to upload software packaged in the RPM format. If
-you have a few RPMs you need to upload, you may find it easier to create
+you need to upload a few RPMs, you may find it easier to create
 an archive (.tar, .tar.gz, .tgz, .tar.bz2, .tbz, or .zip) and upload
 that to SUSE Studio instead of uploading each individual package. SUSE
 Studio can extract this archive and add the individual RPM packages to
@@ -61,7 +61,7 @@ your software collection.
 
 Click "Upload and manage RPMs..." and you'll see a list of packages you
 have uploaded into your appliance. To upload a package on your local
-machine, click the "Upload RPM..." button, or click "Add from the Web
+machine, click the "Upload RPM..." button or click "Add from the Web
 (URL)..." and enter an address for SUSE Studio to fetch the package
 directly.
 

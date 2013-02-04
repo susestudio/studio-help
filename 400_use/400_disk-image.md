@@ -6,8 +6,8 @@
 
 ## Writing image to USB flash drives (in Linux)
 
-To make a bootable USB stick from the appliance you've created, select
-the disk image type in the build tab, and then build and download the
+To store the appliance you've created on a bootable USB stick, select
+the disk image type in the build tab, then build and download the
 gzip-compressed appliance.
 [Uncompress and untar the appliance][uncompress-blog].
 
@@ -16,13 +16,13 @@ gzip-compressed appliance.
 
 Install [imagewriter from the SUSE:SUSEStudio
 repository][studio-repo-imagewriter].
-You can then run `imagewriter` as root and write your chosen image to
+Then run `imagewriter` as root and write your image to
 your chosen USB device.
 
 
 ### The dd way
 
-In order to write your appliance to a USB stick, you will need to find
+To write your appliance to a USB stick, you need to find
 the device to write to. After inserting the USB stick, open a terminal
 and type:
   
@@ -37,7 +37,7 @@ You will see output similar to this:
        /dev/sdb1              7816228      1492   7814736   1% /media/disk
        
 The last entry should be the USB stick you just plugged in.
-If you're in doubt, try removing it, running df again, and see if the
+If you're in doubt, remove it, run df again and check that the
 line disappears.
 The left column in df's output is the partition, and the path up to the
 number is the path to the device.
@@ -47,29 +47,29 @@ In our example, '/dev/sdb1' is the partition, and '/dev/sdb' is the
 **Important note: It is really, really important that you get the device path
 right - you can cause irreparable damage to your system if you don't.**
 
-After finding the device path, you will need to run dd to write your
+After finding the device path, use the dd command to write your
 appliance to the USB stick. dd needs two arguments: the input file (your
 appliance), and the output file (the path to your USB device). In our
 example, the input file is named "/home/suse/myappliance.raw" and the
-path to the device is "/dev/sdb", so we would run this command from a
-terminal window:
+path to the device is "/dev/sdb", so we run the following command in a
+terminal:
     
        sudo dd if=/home/suse/myappliance.raw of=/dev/sdb bs=4k
 
-The last argument (`bs=4k`) is optional, but adding it will make writing
-to the USB device much faster.
+The last argument (`bs=4k`) is optional, but adding it speeds up writing
+to the USB device.
 
-**Please bear in mind that this will completely overwrite the USB device so
-make sure you don't have any important data on it first!** 
+**Bear in mind that this will completely overwrite the USB device.
+Make sure you don't have any important data on it first!** 
 
 Writing to a USB stick is usually quite slow, so don't be alarmed if it
-seems like it takes forever. When dd has finished, it will tell you some
+takes a long time. When dd has finished, it will tell you some
 statistics about how much data it has written to the USB stick. If your
 USB stick has a light on it that blinks when data is being written, wait
 until it stops blinking before removing it.
 
-**Note: As writing images blockwise is a critical process, please compare the
-md5sums of the raw image and the newly created device**
+**Note: As writing images blockwise is a critical process, compare the
+md5sums of the raw image and the newly created device:**
 
        md5sum /home/suse/myappliance.raw
        md5sum /dev/sdb
@@ -77,8 +77,8 @@ md5sums of the raw image and the newly created device**
 Now you have a custom software appliance ready to be booted from your
 USB stick!
 
-To get persistence on live hybrid USB stick system you have to create
-second partition on the stick:
+To get persistence on a live hybrid USB stick system, you have to create
+a second partition on the stick:
 
       fdisk /dev/sdb
       The number of cylinders for this disk is set to 3935.
@@ -111,7 +111,7 @@ second partition on the stick:
 
 ### The GUI way
 
-Microsoft Windows, install
+On Microsoft Windows, install
 [SUSE Studio ImageWriter for Microsoft Windows][win-imagewriter].
 
 
@@ -120,17 +120,17 @@ Microsoft Windows, install
 **Danger! This instruction is for experts!  
 You can cause irreparable damage to your system if you make errors here.**
 
-To make a bootable USB stick from the appliance you've created, select
-the **disk image** type in the build tab, and then build and download
+To store the appliance you've created on a bootable USB stick, select
+the **disk image** type in the build tab, then build and download
 the gzip-compressed appliance.
 [Uncompress and untar][uncompress-blog] the appliance.
 Perhaps you can use [7-zip][win-7zip], a tool unter GNU LGPL licence.
 
-In order to write your appliance to a USB stick in a Windows enviroment,
-you will need to the '[dd for windows][win-dd]' tool.
+To write your appliance to a USB stick in a Windows enviroment,
+you need to the '[dd for windows][win-dd]' tool.
 
-To find the device to write, after inserting the USB stick, open the
-command line (cmd) and type:
+To find the device to write to, insert the USB stick, open the
+command line (cmd), and type:
 
        dd --list
 
@@ -201,9 +201,9 @@ You will see output similar to this:
         
         C:\temp>
 
-The entry we are looking for is the one that says removable media which
+The entry we are looking for is the one that says removable media, which
 is the USB stick you just plugged in.
-If you're in doubt, try removing it, running dd --list again, and see if
+If you're in doubt, remove it, run dd --list again, and check if
 the line disappears.
 The information we need is the \\.\f:
     
@@ -215,24 +215,24 @@ The information we need is the \\.\f:
 Important note: It is really, really important that you get the device path
 right - you can cause irreparable damage to your system if you don't.
 
-After finding the device path, you will need to run dd to write your
+After finding the device path, you need to run dd to write your
 appliance to the USB stick.
-dd needs two arguments: the input file (your appliance), and the output
+dd needs two arguments: the input file (your appliance) and the output
 file (the path to your USB device).
 In our example, the input file is named "c:\temp\myappliance.raw" and
-the path to the device is "\\.\f:", so we would run this command from a
+the path to the device is "\\.\f:", so we run the following command in a
 terminal window:
   
        dd if=c:\home\suse\myappliance.raw of=\\.\f: bs=4k
 
-The last argument (bs=4k) is optional, but adding it will make writing
-to the USB device much faster.
+The last argument (bs=4k) is optional, but adding it will speed up writing
+to the USB device.
 
-**Please bear in mind that this will completely overwrite the USB device
-so make sure you don't have any important data on it first!**
+**Bear in mind that this will completely overwrite the USB device.
+Make sure you don't have any important data on it first!**
 
 Writing to a USB stick is usually quite slow, so don't be alarmed if it
-seems like it takes forever.
+takes a long time.
 When dd has finished, it will tell you some statistics about how much
 data it has written to the USB stick.
 If your USB stick has a light on it that blinks when data is being
@@ -244,36 +244,36 @@ USB stick!
 
 ## Check the MD5SUM of the raw image and the USB stick
 
-We got some feedback that defective USB sticks can show problems with
+We received feedback that defective USB sticks can show problems with
 whole systems but not with single files.
-If your USB stick shows confusing behavior check the MD5SUM to be sure
+If your USB stick shows confusing behavior, check the MD5SUM to be sure
 that your Linux system is not broken.
 
 **Note: As writing images blockwise is a critical process, please
-compare the md5sums of the raw image and the newly created device**
+compare the md5sums of the raw image and the newly created device:**
 
        md5sum /home/suse/myappliance.raw
        md5sum /dev/sdb
 
 
-## Copying an image into hard disc
+## Copying an image onto a hard disk
 
-That is the same case as How to copy an image into the USB drive but
-with the difference that you need to boot with some external media, like
-another USB stick or livecd with the dd tool in it.
+That is the same case as How to copy an image onto a USB drive but
+with the difference that you need to boot from an external media, like
+another USB stick or liveCD with the dd tool on it.
 
-An alternative is to boot from some live medium and then transfer the
+An alternative is to boot from some live media and then transfer the
 image over the network from another machine.
-To do that you need a live medium which contains netcat and you have to
+To do so, you need a live media, which contains netcat, and you have to
 execute the following command on the machine, where the image should be
-written to:
+written to the hard disk:
        
        netcat -l -p1234 | dd of=/dev/sda
 
 Make sure that the of argument points to the disk you want to write to.
 Content on this disk will be lost.
 
-Then on the machine where the image is execute this command:
+On the machine where the image is located, execute the following command:
 
    dd if=/path/to/image.raw | netcat 1.2.3.4 1234
 
@@ -282,9 +282,9 @@ Replace 1.2.3.4 by the IP address of the machine you are writing to.
 Use a different number here, if needed.
 
 
-## Changing configurations on disc image
+## Changing configurations on disk image
 
-You can mount the disc image by using the following command:
+You can mount the disk image by using the following command:
        
        losetup /dev/loop0 yourimage.raw 
        kpartx -av /dev/loop0
@@ -293,18 +293,17 @@ You can mount the disc image by using the following command:
 Then change whatever you want to change and umount.
 
 
-## Trying out an image on qemu
+## Testing an image on qemu
 
-You can try out the images on qemu before copying them into USB or disc.
-Even thought you can do that with qemu, I would recommend to use
-qemu-kvm as it has a better performance.
-In any case, the disc image has no free space, as it would expand on the
-USB or disc, but it would not on qemu.
-So, after making a copy of it, you can add some free space by doing:
+You can test the images on qemu before copying them to USB or disk.
+Although you can do this with qemu, qemu-kvm shows a better performance.
+In any case, the disk image has no free space, as it would expand on the
+USB or disk, but it would not on qemu.
+After making a copy of it, you can add some free space with the command:
 
        dd if=/dev/zero of=image.raw bs=1 count=1 conv=notrunc seek=3G	
 
-And then try the image on qemu or qemu-kvm:
+Then try the image on qemu or qemu-kvm:
 
        qemu image.raw	
 
@@ -319,10 +318,10 @@ or
 
 ## Making a USB drive bootable
 
-It is known that in some situation the USB drive would not boot.
-Even sometimes it will boot once and stop booting afterwards.
+It is known that in some situations the USB drive would not boot.
+Sometimes it may boot once, then stop booting afterwards.
 The problem is that the main partition should be marked as bootable.
-In order to do that, connect the usb disk and from a terminal do:
+To do this, connect the usb disk and in a terminal enter:
 (/dev/sdb has to be your USB: Make sure to use the right device!)
 
        umount /dev/sdb1 (and any other partition you have mounted automatically. Check it with the mount command)

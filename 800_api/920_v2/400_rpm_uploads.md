@@ -22,7 +22,7 @@ GET /api/v2/user/rpms/`<rpm_id>`/data
 POST /api/v2/user/rpms?base_system=`<base>`
 > * `<base>`: Base system of the RPM or archive, e.g. 11.1 or SLED11.
 >
-> Adds an RPM or archive to the user repository for appliances base on `base`.
+> Adds an RPM or archive to the user repository for appliances based on `base`.
 >
 > The file is expected to be wrapped as with form-based file uploads
 > in HTML (RFC 1867) in the body of the POST request as the `file`
