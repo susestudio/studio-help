@@ -59,9 +59,7 @@ PUT /api/v2/user/appliances/`<id>`/configuration
 >       </network>
 >     </configuration>
 
-> The result is then the current configuration setting, or an error.
->
-> Result: [Example](configuration.xml)
+> The result is then a success message (`<success></success>`) or an error.
 
 GET /api/v2/user/appliances/`<id>`/configuration/logo
 > * `<id>`: Id of the appliance.
