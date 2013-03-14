@@ -1,9 +1,9 @@
 # Gallery
 
-GET /api/v2/user/gallery/appliances?query=`<searchquery>`&page=`<pagenum>`&per_page=`<number_per_page>`
+GET /api/v2/user/gallery/appliances?`<query>`&page=`<pagenum>`&per_page=`<number_per_page>`
 > * `<query>`: One of four query types (see below).
->   For example, `?latest` will list the latest appliances.
->   `?search=kde` will search for KDE appliances.
+>   For example, `latest` will list the latest appliances.
+>   `search=kde` will search for KDE appliances.
 
 > * (optional) `<page>`: Change the list page.
 > * (optional) `<per_page>`: Number of results per-page (default: 10).
@@ -13,8 +13,8 @@ GET /api/v2/user/gallery/appliances?query=`<searchquery>`&page=`<pagenum>`&per_p
 > * __latest__ - Lists the latest published appliances.
 > * __popular__ - Lists the most popular published appliances.
 > * __username__ - Lists the appliances published by a specific user.
-> * __search__ - Searches appliances based on the search term specified
->   in `searchquery`.
+> * __search=`<searchquery>`__ - Searches appliances based on the search term specified
+>   in `<searchquery>`.
 >
 > Result: [Example](gallery_appliances.xml)
 
