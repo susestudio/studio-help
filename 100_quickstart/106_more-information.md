@@ -24,5 +24,5 @@ improve it!
 
 [API]:               ../api/index.html
 [FAQ]:               ../faq.html
-[Troubleshooting]:   ../troubleshoot.html
+[Troubleshooting]:   ../faq/troubleshoot.html
 [how to contribute]: ../contribute.html
