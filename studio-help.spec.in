@@ -18,13 +18,13 @@
 # norootforbuild
 
 Name:           studio-help
-Version:        #VERSION#
+Version:        __VERSION__
 Release:        1.0
 License:        GFDL
 Summary:        SUSE Studio documentation
 Url:            https://github.com/susestudio/studio-help
 Group:          Documentation/HTML
-Source:         %{name}-%{version}.tar.bz2
+Source:         %{name}-%{version}.tar.gz
 BuildRequires:  rubygem-bundler, apache2, fdupes
 Requires:       apache2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
