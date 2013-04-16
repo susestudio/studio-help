@@ -24,5 +24,6 @@ We hope that helps and you enjoy using SUSE Studio.
 [online help]: ../overview.html
 [frequently asked questions]: ../faq/index.html
 [online forum]: http://susestudio.com/forum
+[feedback]: https://susestudio.com/feedback
 [onsite]: https://www.suse.com/products/susestudio/
 [browser support policy]: ../faq/browser_policy.html
