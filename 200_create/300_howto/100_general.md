@@ -55,8 +55,7 @@ Here is a step-by-step guide for
 `LAMP_Server.i686-1.0.0.vmx.tar.gz`:
 
 1. Download and install LibArchive:
-   [http://downloads.sourceforge.net/gnuwin32/libarchive-2.4.12-1-setup.exe]
-[libarchive2].
+   [http://downloads.sourceforge.net/gnuwin32/libarchive-2.4.12-1-setup.exe][libarchive2].
 2. Add the LibArchive path (default is `C:\Program Files\GnuWin32\bin`)
    to your [system %PATH% variable][win-sys-path].
 3. Extract the tarball by executing the following in the command
