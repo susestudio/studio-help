@@ -25,7 +25,8 @@ Summary:        SUSE Studio documentation
 Url:            https://github.com/susestudio/studio-help
 Group:          Documentation/HTML
 Source:         %{name}-%{version}.tar.gz
-BuildRequires:  rubygem-bundler, rubygem-helphelp, fdupes
+BuildRequires:  rubygem-bundler, apache2, fdupes
+Requires:       apache2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch:      noarch
 
@@ -36,12 +37,15 @@ This is the content of the SUSE Studio Online documentation.
 %setup -q
 
 %build
+bundle install --deployment
 mkdir -p html
-./do_create html
+bundle exec ./do_create html
 
 %install
 mkdir -p %{buildroot}/srv/studio-help
 cp -r html %{buildroot}/srv/studio-help
+mkdir -p %{buildroot}/etc/apache2/vhosts.d/
+cp studio-help.conf.example %{buildroot}/etc/apache2/vhosts.d/
 %fdupes -s %{buildroot}/srv/studio-help
 
 %clean
@@ -49,6 +53,7 @@ cp -r html %{buildroot}/srv/studio-help
 
 %files
 %defattr(-,root,root)
+%config /etc/apache2/vhosts.d/studio-help.conf.example
 /srv/studio-help
 
 %changelog
