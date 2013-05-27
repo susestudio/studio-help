@@ -24,7 +24,7 @@ License:        GFDL
 Summary:        SUSE Studio documentation
 Url:            https://github.com/susestudio/studio-help
 Group:          Documentation/HTML
-Source:         %{name}-%{version}.tar.gz
+Source:         %{name}-%{version}.tar.bz2
 BuildRequires:  rubygem-bundler, fdupes
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch:      noarch
