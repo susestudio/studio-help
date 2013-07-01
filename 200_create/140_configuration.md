@@ -172,9 +172,6 @@ See the [SLES Administration Guide][lvm-sles]
 or the [openSUSE documentation][lvm-open]
 for more information on LVM in SUSE Linux.
 
-[lvm-sles]: http://www.suse.com/documentation/sles11/stor_admin/?page=/documentation/sles11/stor_admin/data/lvm.html
-[lvm-open]: http://doc.opensuse.org/documentation/html/openSUSE/opensuse-reference/cha.advdisk.html#sec.yast2.system.lvm
-
 SUSE Studio supports LVM with *one volume group*. To create your
 individual logical volumes, switch to the *Configure+Appliance* tab and:
 
@@ -184,3 +181,6 @@ individual logical volumes, switch to the *Configure+Appliance* tab and:
 4. Enter the volume mount path and its size. *You need at least one
    volume entry.*
 5. More can be added by clicking "Add new LVM volume..." again.
+
+[lvm-sles]: http://www.suse.com/documentation/sles11/stor_admin/?page=/documentation/sles11/stor_admin/data/lvm.html
+[lvm-open]: http://doc.opensuse.org/documentation/html/openSUSE/opensuse-reference/cha.advdisk.html#sec.yast2.system.lvm
