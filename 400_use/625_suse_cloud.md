@@ -1,4 +1,4 @@
-## SUSE Cloud
+# SUSE Cloud
 
 [SUSE Cloud][suse_cloud] is a pre-packaged and supported version of OpenStack that has
 been tested to work with the SUSE family of products. It is designed for
