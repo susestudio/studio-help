@@ -1,6 +1,6 @@
 # Amazon EC2
 
-## Using SUSE® Studio to Build and Deploy Amazon EC2 Format Images
+## Using SUSE Studio to Build and Deploy Amazon EC2 Format Images
 
 Regular users of SUSE Studio have long known about the [Amazon Elastic
 Compute Cloud (EC2)][EC2] build format that is available for SUSE Linux
