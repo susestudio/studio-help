@@ -45,8 +45,8 @@ Cloud, VirtualBox, VMware ESX, IBM SmartCloud, and Oracle VM support
 creating virtual machines by importing an .ovf file.
 
 **qcow2**
-Use this format if you want to run your appliance on a QEMU/KVM host system.
-It allows to store multiple virtual machine setup.
+Use this format if you want to run your appliance on a QEMU/KVM host system. It
+is the format used by OEMU/KVM and allows to store multiple virtual machine setup.
 
 **Xen guest**
 Use this format if you want to run your appliance on a Xen host system,
