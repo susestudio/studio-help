@@ -20,7 +20,7 @@ POST /api/v2/user/running_builds?appliance_id=`<id>`&force=`<force>`&version=`<v
 >   existing build.
 > * (optional) `<version>`: The version of the appliance.
 > * (optional) `<image_type>`: The format of the build. Supported are
->   'xen', 'oem', 'vmx', 'iso', 'ec2', 'net', 'oemiso'.
+>   'ec2', 'iso', 'kvm', 'net', 'oem', 'oemiso', 'oemstick', 'vhd', 'vmx', and 'xen'.
 > * (optional) `<multi>`: If set to true, it enables multibuild mode,
 >   which allows to build different formats of one version.
 >
