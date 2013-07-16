@@ -68,26 +68,16 @@ Choose from:
   configure the network during the appliance's first boot.
 
   __Note for s390 users__: the appliance tries to activate DASD 191 and search
-  for the parm file named "<USER_ID>.PARM-S11". If the file is found, the
-  parameters are used to set up the network.
+  for the parm file named "<USER_ID>.PARM-S11". Replace <USER_ID> with the name 
+  of the guest, for example, LINUX035.
+  If the file is found, the parameters are used to set up the network.
   The parm file should be parseable by Bash:
 
-      hostname=s390guest03.domain.net 
-      hostip=192.168.1.5 
-      gateway=192.168.1.254
-      nameserver=192.168.1.254 
-      netmask=255.255.255.0 
-      domain=domain.net
-      broadcast=192.168.1.255 
-      instnetdev=osa 
-      readchannel=0.0.070a
-      writechannel=0.0.070b 
-      datachannel=0.0.070c 
-      layer2=0
-      osainterface=qdio 
-      samedium=eth 
-      portno=0 
-      portname=vswn1
+      hostname=s390guest03.domain.net hostip=192.168.1.5 gateway=192.168.1.254
+      nameserver=192.168.1.254 netmask=255.255.255.0 domain=domain.net
+      broadcast=192.168.1.255 instnetdev=osa readchannel=0.0.070a
+      writechannel=0.0.070b datachannel=0.0.070c layer2=0
+      osainterface=qdio osamedium=eth portno=0 portname=vswn1
   
   If the parm file is correct the network should be set up without any
   user interaction but manually accepting the EULA is still required.
