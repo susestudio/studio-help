@@ -19,4 +19,4 @@ within SUSE Studio][studio-api-key].
 
 
 [studio-api]: v2/index.html
-[studio-api-key]: http://susestudio.com/user/show_api_key
+[studio-api-key]: user/account#/api-hooks
