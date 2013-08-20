@@ -89,6 +89,16 @@ for more information on virtualizing with Hyper-V.
 
 ##Cloud formats##
 
+**SUSE Cloud / OpenStack / KVM (.qcow2)**
+This format provides the best experience when virtualizing with QEMU/KVM hosts, 
+or deploying on SUSE Cloud.
+Qcow2 is a dynamically expanding copy-on-write file system.
+Version 2 adds support for multiple snapshots in a single qcow2 file.
+See [Use > SUSE Cloud] for more information.
+
+[Use > SUSE Cloud]: ../use/suse_cloud.html
+
+
 **Amazon EC2 image**
 If you plan to use Amazon Web Services to host your server, this format
 will properly configure the appliance for you do to so. Link your AWS
