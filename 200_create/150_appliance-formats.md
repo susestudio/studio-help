@@ -65,6 +65,10 @@ Studio at the moment. Download links, installation instructions, and
 documentation are available at
 <http://communities.vmware.com/community/vmtn/server/vsphere/automationtools/ovf>.
 
+**qcow2**
+Use this format if you want to run your appliance on a QEMU/KVM host system. It
+is the format used by OEMU/KVM and allows to store multiple virtual machine setup.
+
 **Xen guest**
 Use this format if you want to run your appliance on a Xen host system,
 such as SUSE Linux Enterprise Server. Xen guests only work on
