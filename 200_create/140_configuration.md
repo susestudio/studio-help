@@ -68,7 +68,7 @@ Choose from:
   configure the network during the appliance's first boot.
 
   __Note for s390 users__: the appliance tries to activate DASD 191 and search
-  for the parm file named "<USER_ID>.PARM-S11". Replace <USER_ID> with the name 
+  for the parm file named *USER_ID*.PARM-S11. Replace *USER_ID* with the name 
   of the guest, for example, LINUX035.
   If the file is found, the parameters are used to set up the network.
   The parm file should be parseable by Bash:
