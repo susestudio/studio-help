@@ -19,4 +19,4 @@ within SUSE Studio][studio-api-key].
 
 
 [studio-api]: v2/index.html
-[studio-api-key]: user/account#/api-hooks
+[studio-api-key]: /user/account#/api-hooks
