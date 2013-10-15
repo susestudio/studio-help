@@ -10,3 +10,4 @@ The SUSE Studio online help content is licensed under the GNU Free Documentation
 License (GFDL). See file 001_legal_notice.md for details.
 
 If you need a Markdown Cheat Sheet, visit: http://goo.gl/byBVT
+
