@@ -20,9 +20,15 @@ POST /api/v2/user/running_builds?appliance_id=`<id>`&force=`<force>`&version=`<v
 >   existing build.
 > * (optional) `<version>`: The version of the appliance.
 > * (optional) `<image_type>`: The format of the build. Supported are
->   'ec2', 'iso', 'kvm', 'net', 'oem', 'oemiso', 'oemstick', 'vhd', 'vmx', and 'xen'.
+>   'ec2', 'iso', 'kvm', 'net', 'oem', 'oemiso', 'oemstick', 'vhd', 'vmx'
+>   'ovf','xen', 'zfcp' and 'dasd'.
 > * (optional) `<multi>`: If set to true, it enables multibuild mode,
 >   which allows to build different formats of one version.
+>
+>   *Image type 'ovf' needs to be enabled first. Detailed instructions
+>   how to do that can be found in the SUSE Studio Admin Guide*
+>   *Image types 'zfcp' and 'dasd' are only valid for appliances for System Z.
+>   System Z Addon can be purchased separately*
 >
 > Start a new build for the appliance with id `id`.
 >
