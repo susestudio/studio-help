@@ -8,7 +8,7 @@ give you an idea how to use this feature.
 The available templates are grouped in template sets. The following
 command gets the list of template sets from Studio:
 
-       curl -u <user>:<api_key> "http://susestudio.com/api/v2/user/template_sets"
+       curl -u <user>:<api_key> "https://susestudio.com/api/v2/user/template_sets"
    
 [Example][example-1]
 
@@ -21,13 +21,13 @@ it.
 
 All appliances:
 
-       curl -u <user>:<api_key> "http://susestudio.com/api/v2/user/appliances"
+       curl -u <user>:<api_key> "https://susestudio.com/api/v2/user/appliances"
 
 [Example][example-2]
 
 A specific appliance:
 
-       curl -u <user>:<api_key> "http://susestudio.com/api/v2/user/appliances/<id>"
+       curl -u <user>:<api_key> "https://susestudio.com/api/v2/user/appliances/<id>"
 
 [Example][example-3]
 
@@ -37,20 +37,20 @@ To create a new appliance, pick a template from the template set and use
 its id with the following command (name and arch are optional
 parameters):
 
-       curl -u <user>:<api_key> -XPOST "http://susestudio.com/api/v2/user/appliances?clone_from=14774&name=My%20Server&arch=x86_64"
+       curl -u <user>:<api_key> -XPOST "https://susestudio.com/api/v2/user/appliances?clone_from=14774&name=My%20Server&arch=x86_64"
 
 
 ## Manage overlay files
 
 List the files of an appliance:
 
-       curl -u <user>:<api_key> "http://susestudio.com/api/v2/user/files?appliance_id=<id>"
+       curl -u <user>:<api_key> "https://susestudio.com/api/v2/user/files?appliance_id=<id>"
 
 [Example][example-4]
 
 Upload a file:
 
-       curl -u <user>:<api_key> -XPOST -F "file=@/path/to/your/file" "http://susestudio.com/api/v2/user/files?appliance_id=<id>"
+       curl -u <user>:<api_key> -XPOST -F "file=@/path/to/your/file" "https://susestudio.com/api/v2/user/files?appliance_id=<id>"
 
 [Example][example-5]
 
@@ -62,11 +62,11 @@ permissions.
 
 Trigger a build of an appliance:
 
-       curl -u <user>:<api_key> -XPOST "http://susestudio.com/api/v2/user/running_builds?appliance_id=<id>"
+       curl -u <user>:<api_key> -XPOST "https://susestudio.com/api/v2/user/running_builds?appliance_id=<id>"
 
 Monitor build progress:
 
-       curl -u <user>:<api_key> "http://susestudio.com/api/v2/user/running_builds?appliance_id=<id>"
+       curl -u <user>:<api_key> "https://susestudio.com/api/v2/user/running_builds?appliance_id=<id>"
    
 [Example][example-6]
 
@@ -77,22 +77,22 @@ Not all characters are allowed in an URL
 This is a problem for example if you try to add the gcc-c++ package into
 your appliance as "+" is not allowed. So, the following will not work:
 
-       curl -u user:secret -XPOST http://susestudio.com/api/v2/user/appliances/263276/cmd/add_package?name=gcc-c++
+       curl -u user:secret -XPOST https://susestudio.com/api/v2/user/appliances/263276/cmd/add_package?name=gcc-c++
 
 However, some characters can be encoded.
 See [http://www.w3schools.com/tags/ref_urlencode.asp][w3s-ref-urlencode].
 
 In our example, use the following command:
 
-       curl -u  user:secret -XPOST http://susestudio.com/api/v2/user/appliances/263276/cmd/add_package?name=gcc-c%2B%2B
+       curl -u  user:secret -XPOST https://susestudio.com/api/v2/user/appliances/263276/cmd/add_package?name=gcc-c%2B%2B
 
 
-[example-1]: http://www.susestudio.com/help/api/v2/template_sets.xml
-[example-2]: http://www.susestudio.com/help/api/v2/appliances.xml
-[example-3]: http://www.susestudio.com/help/api/v2/appliance.xml
-[example-4]: http://www.susestudio.com/help/api/v2/files.xml
-[example-5]: http://www.susestudio.com/help/api/v2/file.xml
-[example-6]: http://www.susestudio.com/help/api/v2/running_builds.xml
+[example-1]: /help/api/v2/template_sets.xml
+[example-2]: /help/api/v2/appliances.xml
+[example-3]: /help/api/v2/appliance.xml
+[example-4]: /help/api/v2/files.xml
+[example-5]: /help/api/v2/file.xml
+[example-6]: /help/api/v2/running_builds.xml
 
 
 [rfc-characters]: http://tools.ietf.org/html/rfc1738
