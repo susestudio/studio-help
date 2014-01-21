@@ -1,6 +1,6 @@
 # SUSE Studio User API v2.0
 
-SUSE Studio offers a RESTful API, which can be accessed entirely via HTTP.
+SUSE Studio offers a RESTful API, which can be accessed entirely via HTTPS.
 
 The Studio API uses HTTP Basic authentication.
 

@@ -2,7 +2,7 @@
 
 ## RESTful API
 
-SUSE Studio features a RESTful API over HTTP, which can be used to clone
+SUSE Studio features a RESTful API over HTTPS, which can be used to clone
 appliances, upload files, trigger and monitor builds, and more. See the SUSE
 [Studio API documentation][studio-api] for more details.
 
