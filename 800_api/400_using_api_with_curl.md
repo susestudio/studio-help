@@ -87,12 +87,12 @@ In our example, use the following command:
        curl -u  user:secret -XPOST http://susestudio.com/api/v2/user/appliances/263276/cmd/add_package?name=gcc-c%2B%2B
 
 
-[example-1]: http://www.susestudio.com/help/api/v2/template_sets.xml
-[example-2]: http://www.susestudio.com/help/api/v2/appliances.xml
-[example-3]: http://www.susestudio.com/help/api/v2/appliance.xml
-[example-4]: http://www.susestudio.com/help/api/v2/files.xml
-[example-5]: http://www.susestudio.com/help/api/v2/file.xml
-[example-6]: http://www.susestudio.com/help/api/v2/running_builds.xml
+[example-1]: /help/api/v2/template_sets.xml
+[example-2]: /help/api/v2/appliances.xml
+[example-3]: /help/api/v2/appliance.xml
+[example-4]: /help/api/v2/files.xml
+[example-5]: /help/api/v2/file.xml
+[example-6]: /help/api/v2/running_builds.xml
 
 
 [rfc-characters]: http://tools.ietf.org/html/rfc1738
