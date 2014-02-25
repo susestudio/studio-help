@@ -24,6 +24,14 @@ wrapped in a simple bootable installer that asks only which hard disk to
 install to. Your installation media can be prepared on any existing OS
 by simply burning the .iso file to disc.
 
+**DASD (.raw)** and **zFCP (.raw)**
+These are formats found on IBM zSeries. Choose between DASD
+(Direct Access Storage Device) or zFCP (Fibre Channel Attached SCSI
+Disks) if you want to start from a SCSI disk.
+For further details, refer to the SLES Deployment Guide at
+http://www.suse.com/documentation/sles11/book_sle_deployment/data/sec_i_yast2_s390_part.html
+
+
 ##Virtual formats##
 
 [VirtualBox]: https://www.virtualbox.org/
