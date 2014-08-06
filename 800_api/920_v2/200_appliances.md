@@ -104,6 +104,22 @@ PUT /api/v2/user/appliances/`<id>`/configuration/slms_ssl_certificate
 >
 > *Available only in [SUSE Studio Onsite].*
 
+GET /api/v2/user/appliances/`<id>`/configuration/changelog
+> * `<id>`: Id of the appliance.
+>
+> Returns the changelog of the current image from the last version.
+>
+> Result: [Example](changelog.xml)
+
+GET /api/v2/user/appliances/`<id>`/configuration/changelog?version=`<version>`
+> * `<id>`: Id of the appliance.
+> * `<version>`: specified version number.
+>
+> Returns the changelog of specified version from the prior version.
+>
+> Result: [Example](changelog.xml)
+
+
 ### Sharing
 
 GET /api/v2/user/appliances/`<id>`/sharing
