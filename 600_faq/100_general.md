@@ -55,6 +55,14 @@ to see which version is right for you, or contact a sales representative at 800-
 for more information.
 
 
+## Given my software appliance include SLES, what are my legal obligations for distribution and commecialization?
+
+SLES is distributed under a proprietary EULA which permits copying
+and distribution only within your organization. Should you desire to
+distribute your SLES-based appliance outside of your organization, you
+must enter into an agreement with SUSE which permits you to do so.
+
+
 ## Where and how can I report bugs?
 
 Please, send us your problem via the feedback link (the speech bubble
