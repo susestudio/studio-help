@@ -63,6 +63,23 @@ distribute your SLES-based appliance outside of your organization, you
 must enter into an agreement with SUSE which permits you to do so.
 
 
+##  Which license should I use for my appliance based on openSUSE?
+
+License it as collective work under the GPLv2 licensed. See the
+openSUSE 13.2 license for more information and as an example:
+
+[openSUSE 13.2 license]http://download.opensuse.org/distribution/13.2/repo/oss/license.tar.gz
+
+Make sure to include the GPLv2 text license on your appliance.
+
+If you add other work than the one included in the openSUSE distribution,
+make sure you have permission for distributing it and that you include its
+license.
+
+Check also the Trademark guidelines
+  [Trademark Guidelines](https://en.opensuse.org/openSUSE:Trademark_guidelines)
+
+
 ## Where and how can I report bugs?
 
 Please, send us your problem via the feedback link (the speech bubble
