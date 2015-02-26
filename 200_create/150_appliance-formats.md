@@ -71,8 +71,9 @@ importing an .ovf file.
 In order to use an OVF image, you may require the `ovftool` from
 VMware. Due to licensing issues we cannot distribute the tools with SUSE
 Studio at the moment. Download links, installation instructions, and
-documentation are available at
-<http://communities.vmware.com/community/vmtn/server/vsphere/automationtools/ovf>.
+documentation are available at the [VMware Developer Center][OVF_TOOL].
+
+[OVF_TOOL]: http://communities.vmware.com/community/vmtn/server/vsphere/automationtools/ovf
 
 **qcow2**
 Use this format if you want to run your appliance on a QEMU/KVM host system. It
