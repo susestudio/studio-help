@@ -42,7 +42,7 @@ These are formats found on IBM zSeries. Choose between DASD
 (Direct Access Storage Device) or zFCP (Fibre Channel Attached SCSI
 Disks) if you want to start from a SCSI disk.
 For further details, refer to the SLES Deployment Guide at
-[Section 14.1, "Installing iSCSI Target and Initiator"][SYSTEMZ_DOCU].
+[Section 6.9, "IBM System z: Hard Disk Configuration"][SYSTEMZ_DOCU].
 
 [SYSTEMZ_DOCU]: http://www.suse.com/documentation/sles11/book_sle_deployment/data/sec_i_yast2_s390_part.html
 
