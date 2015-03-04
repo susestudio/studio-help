@@ -88,6 +88,18 @@ from other users in Gallery.
 It's a file that will overwrite existing files. In Studio it is under
 "Files".
 
+## Which are the default permissions for users in postgresql?
+
+If you add users to the postgresql and specify the databases they have access to it, studio will grant all privileges on that databases to those users.
+
+You may not want to do that for security implications. If that is the case, we advice you to set up the users and grant them privileges as sql calls in the postgresql dump.
+
+If you have uploaded a postgresql dump that creates a database, you need to run the grant commands in the dump as well.
+
+For more information on how to create users and grant them privileges, see:
+
+http://www.postgresql.org/docs/9.4/static/sql-grant.html
+
 
 ## Do SLES images exported to EC2 fall under the terms and conditions of http://aws.amazon.com/suse/  or under the Linux/Unix usage at http://aws.amazon.com/ec2/ ?
 
